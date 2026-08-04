@@ -6,7 +6,7 @@ Three runtime components. Strict separation: the frontend never touches the data
 
 ```
 ┌─────────────┐       HTTP/JSON       ┌──────────────┐      sqlite3       ┌────────────┐
-│  React UI   │ ────────────────────► │  FastAPI     │ ────────────────► │  SQLite    │
+│  React UI   │ ────────────────────► │  FastAPI     │ ────────────────►  │  SQLite    │
 │  (Vite)     │ ◄──────────────────── │  backend     │ ◄────────────────  │  schemes   │
 └─────────────┘                       └──────────────┘                    └────────────┘
                                               │

@@ -1,0 +1,59 @@
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+
+# ─── Production build outputs ─────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+**/dist/
+**/dist-ssr/
+**/build/
+.tmp/
+**/.tmp/
+*.tsbuildinfo
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── Environment variables ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ─── Data files (large / scraped / generated) ─────────────────────────────────
+data/scraped_schemes.jsonl
+data/*.jsonl
+data/*.json
+data/*.csv
+
+# ─── Local AI agent caches & tool harnesses ───────────────────────────────────
+.gemini/
+.claude/
+.codex/
+.agents/
+.opencode/
+.impeccable/
+
+# ─── OS & Editor files ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.suo
+*.user
+.vscode/
+.idea/
+
+# ─── Vite / TypeScript cache ──────────────────────────────────────────────────
+vite.config.ts.timestamp-*
+*.d.ts.map
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+coverage/
+.nyc_output/

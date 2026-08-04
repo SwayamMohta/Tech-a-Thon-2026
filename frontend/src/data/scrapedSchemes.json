@@ -1,0 +1,3950 @@
+[
+  {
+    "id": "scraped-syss",
+    "title": "Skilled Youth Startup Scheme",
+    "short_name": "SYSS",
+    "ministry": "Commerce & Industries Department",
+    "description": "Sikkim Skilled Youth Startup Scheme was launched in 2020 and is implemented by the Department of Commerce & Industries which aims at assisting the educated unemployed youth in setting up a myriad of enterprises through loans with back-ended financial subsidy assistance. ",
+    "benefits": "1. Financial support through bank loans with back-ended subsidy of 35% or 50%.\n   1. Maximum admissible project cost varies by category, up to ₹20 lakhs.\n   1. Mandatory Entrepreneur Development Train",
+    "application_url": "https://www.myscheme.gov.in/schemes/syss",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Sikkim"
+      ]
+    }
+  },
+  {
+    "id": "scraped-kbpyy",
+    "title": "Krishak Bakri Palan Yojna",
+    "short_name": "KBPYY",
+    "ministry": "Animal Husbandry Department, Himachal Pradesh",
+    "description": "The Department of Animal Husbandry, Government of Himachal Pradesh has introduced a scheme named \"Krishak Bakri Palan Yojna\" with the aim to increase income generation opportunities for economically weaker segments of the society as well as to increase meat production.",
+    "benefits": "1. **Financial Assistance:** Farmers receive goat units on a 60% subsidy, significantly reducing the initial investment required for goat farming.1. **Improved Livelihoods:** The scheme helps improve ",
+    "application_url": "https://www.myscheme.gov.in/schemes/kbpyy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Himachal Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mmkssy-assam",
+    "title": "Mukhya Mantri Krishi Sa Sajuli Yozana - Assam",
+    "short_name": "MMKSSY-ASSAM",
+    "ministry": "Agriculture Department",
+    "description": "The scheme “Mukhya Mantri Krishi Sa Sajuli Yojana” is a State Owned Priority Development (SOPD) scheme for farmers launched by the Assam government in FY 2018-19.  The main purpose of launching this scheme for farmers is their holistic development by implementing several farm mechanization schemes.",
+    "benefits": "The scheme “Mukhya Mantri Krishi Sa Sajuli Yojana” is a State Owned Priority Development (SOPD) scheme for farmers launched by the Assam government in FY 2018-19.  The main purpose of launching this s",
+    "application_url": "https://www.myscheme.gov.in/schemes/mmkssy-assam",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Assam"
+      ]
+    }
+  },
+  {
+    "id": "scraped-madilu",
+    "title": "Madilu Kit",
+    "short_name": "Madilu",
+    "ministry": "Rural Development and Panchayat Raj Department",
+    "description": "The Madilu Programme is a government initiative focused on empowering rural communities through skill development and entrepreneurship opportunities.\nIt aims to create sustainable livelihoods, reduce poverty, and enhance social and economic well-being in rural areas.",
+    "benefits": "The Madilu Programme is a government initiative focused on empowering rural communities through skill development and entrepreneurship opportunities.\nIt aims to create sustainable livelihoods, reduce ",
+    "application_url": "https://www.myscheme.gov.in/schemes/madilu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Karnataka"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cctofp",
+    "title": "Community Canning & Training On Fruit Preservation",
+    "short_name": "CCTOFP",
+    "ministry": "Horticulture Department",
+    "description": "The office of the Deputy Director of Agriculture (Fruit Preservation) Assam was\ncreated in 1978, under the Directorate of Agriculture and in 2008 it was transferred to the Directorate of Horticulture and Food Processing.",
+    "benefits": "1. To forward facilities to the public, in particular to ladies and housewives, throughout the state, for preservation of fruits and vegetables.\n1. Home scale preservation and canning of seasonal frui",
+    "application_url": "https://www.myscheme.gov.in/schemes/cctofp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Assam"
+      ]
+    }
+  },
+  {
+    "id": "scraped-uppy",
+    "title": "Uttam Pashu Puraskar Yojana",
+    "short_name": "UPPY",
+    "ministry": "Animal Husbandry Department, Himachal Pradesh",
+    "description": "The scheme “Uttam Pashu Puraskar Yojana” was launched by the Department of Animal Husbandry, Government of Himachal Pradesh to provide incentives and encouragement to livestock Owners for rearing good quality high yielding animals.",
+    "benefits": "1. Livestock owners of Cattle/Buffaloes giving 15 liters or more milk per day will be awarded a cash prize of ₹1000/- per Cow/Buffalo.\n1. The prize will be admissible to a maximum of two animals per f",
+    "application_url": "https://www.myscheme.gov.in/schemes/uppy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Himachal Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ssieemaf",
+    "title": "Scheme For Subsidy On Interest For Establishment Of 1 To 20 Milch Animal Farm",
+    "short_name": "SSIEEMAF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Scheme for Subsidy on Interest for Establishment of 1 to 20 Milch Animal Farm for the State Cattle Breeders” was started by the Dept. of Agriculture, Farmers Welfare & Co-operation, Government of Gujarat.",
+    "benefits": "1. The beneficiary can purchase 1 to 20 Milch animals (Any dairy animal cow &amp;amp; buffalo) at a subsidized rate as per their need and capacity to maintain.\n   1. The beneficiary can get an interes",
+    "application_url": "https://www.myscheme.gov.in/schemes/ssieemaf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sse25krbust",
+    "title": "Subsidy Scheme On Establishment Of - 25 Kadaknath/R.I.R. Birds Unit To Scheduled Tribes",
+    "short_name": "SSE25KRBUST",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Subsidy Scheme on Establishment of - 25 Kadaknath/R.I.R. Birds Unit to Scheduled Tribes” was launched by the Dept. of Agriculture, Farmers Welfare & Co-operation, Govt. of Gujarat to provide employment, nutritious diet and to raise the income of Scheduled Tribe People of Gujarat State.",
+    "benefits": "1.\tThe beneficiary will be given 25 R.I.R birds unit along with poultry feed.\n2.\tThe Subsidy will be given 75% of the unit cost of the scheme (maximum ₹4500/- in the form of birds and poultry feed).\n3",
+    "application_url": "https://www.myscheme.gov.in/schemes/sse25krbust",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ioaibfcpbic",
+    "title": "Incentive To Owners Of Artificial Insemination Born Female Calf Through Pure Breeding In Indigenous Cow",
+    "short_name": "IOAIBFCPBIC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Incentive to Owners of Artificial Insemination Born Female Calf through Pure Breeding in Indigenous Cow” was started by the Department of Agriculture, Farmers Welfare & Co-operation, Government of Gujarat.",
+    "benefits": "1.\tThe incentive of ₹3,000/- will be given to owners of a female calf born through Artificial Insemination by pure breeding in indigenous cows.\n2.\tThe incentive/assistance shall be given once per year",
+    "application_url": "https://www.myscheme.gov.in/schemes/ioaibfcpbic",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-itg",
+    "title": "Incentive To Girls",
+    "short_name": "ITG",
+    "ministry": "Agriculture Department",
+    "description": "Rajasthan State started a scheme \"Incentive for Girls\" for state students.",
+    "benefits": "- ₹15,000/- per annum: To the girl students studying in senior secondary by taking agriculture subjects in 11th and 12th classes \n- ₹25,000/- per annum: To girl students studying in Agricultural gradu",
+    "application_url": "https://www.myscheme.gov.in/schemes/itg",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fapsnsrna",
+    "title": "Financial Assistance To Purchase Singel Net / Small Rampon Net & Its Accessories",
+    "short_name": "FAPSNSRNA",
+    "ministry": "Fisheries Department",
+    "description": "The scheme “Financial Assistance To Purchase Singel Net / Small Rampon Net & Its Accessories” is a scheme by the Department of Fisheries, Government of Goa. Through this scheme, a 50% subsidy is provided to the fishermen of Goa for the purchase of Singel Net/ Small Rampon Net and its accessories.",
+    "benefits": "Subsidy to the extent of **50% of the actual cost limited to ₹ 50,000/-** for the purchase of Singel Net/ Small Rampon Net and its accessories, after every five years.",
+    "application_url": "https://www.myscheme.gov.in/schemes/fapsnsrna",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fatpomo2t5ffttfc",
+    "title": "Financial Assistance to Purchase Outboard Motor of 2HP to 5 HP for Fitting to the Fishing Canoe",
+    "short_name": "FATPOMO2T5FFTTFC",
+    "ministry": "Fisheries Department",
+    "description": "“Financial Assistance to Purchase Outboard Motor of 2HP to 5 HP for Fitting to the Fishing Canoe” is a scheme by the Department of Fisheries, Government of Goa. This Scheme has been introduced to grant financial assistance in the form of a subsidy on the purchase of an outboard motor of 2HP to 5HP.",
+    "benefits": "> **For General Category**\n\n50% subsidy, limited to ₹30,000 on a unit cost of ₹60,000 (excluding GST).\n> **For SC/ST/Woman Category**\n\n60% subsidy, limited to ₹36,000 on a unit cost of ₹60,000 (exclud",
+    "application_url": "https://www.myscheme.gov.in/schemes/fatpomo2t5ffttfc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fapcnfclt26ffiw",
+    "title": "Financial Assistance to Purchase/Construct New Fishing Craft less than 26 feet for Fishing in Inland Waters of Goa",
+    "short_name": "FAPCNFCLT26FFIW",
+    "ministry": "Fisheries Department",
+    "description": "The scheme has been introduced to uplift the sizeable community of traditional Fishermen, by providing them financial help in the form of subsidy on the construction/ purchase of Fishing Craft less than 26 feet for fishing in inland waters of Goa. The applications are accepted only in offline mode.",
+    "benefits": "> **For General Category**\n\n50% subsidy, limited to ₹30,000, on a unit cost of ₹60,000 (excluding GST).\n> **For SC/ST/Woman Category**\n\n60% subsidy, limited to ₹36,000, on a unit cost of ₹60,000 (excl",
+    "application_url": "https://www.myscheme.gov.in/schemes/fapcnfclt26ffiw",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fafvrdfparfv",
+    "title": "Financial Assistance to the Fish Vendors Registered with the Directorate of Fisheries to Purchase the Accessories Required for Fish Vending",
+    "short_name": "FAFVRDFPARFV",
+    "ministry": "Fisheries Department",
+    "description": "Under this scheme, Financial Assistance is provided to the fish vendors for the purchase of Crates, Weighing Balance, Insulated Box, Gloves, Stools, Platforms to keep Fish/ Shed/ Umbrella, Choppers, and Other Equipment, so that the fish can reach the people in hygienic conditions.",
+    "benefits": "> **For General Category**\n\n50% subsidy, limited to ₹10,000, on a unit cost of ₹20,000.\n> **For SC/ST/Woman Category**\n\n60% subsidy, limited to ₹12,000, on a unit cost of ₹20,000.\n**NOTE:** The benefi",
+    "application_url": "https://www.myscheme.gov.in/schemes/fafvrdfparfv",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fapsna",
+    "title": "Financial Assistance for Purchase of Stake Net and its Accessories",
+    "short_name": "FAPSNA",
+    "ministry": "Fisheries Department",
+    "description": "“Financial Assistance for Purchase of Stake Net and its Accessories” is a scheme by the Dept. of Fisheries, Govt. of Goa. Under this scheme, financial assistance is provided in the form of a subsidy on the purchase of stake nets and accessories for the fishermen.",
+    "benefits": "> **For General Category**\n\nSubsidy of 50%, limited to ₹30,000 on a unit cost of ₹60,000 (excluding GST).\n> **For SC/ST/Woman Category**\n\nSubsidy of 60%, limited to ₹36,000 on a unit cost of ₹60,000 (",
+    "application_url": "https://www.myscheme.gov.in/schemes/fapsna",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sib",
+    "title": "Supply of Insulated Boxes",
+    "short_name": "SIB",
+    "ministry": "Fisheries Department",
+    "description": "A subsidy to the extent of 75% of the cost for the purchase of an insulated box of at least 50 liters capacity. Only the fisherman engaged in selling and marketing fish, fishing at sea with a canoe, and fishing at sea with a mechanized fishing vessel with upto 6-cylinder engines are eligible.",
+    "benefits": "> **For the Beneficiary Engaged in Selling/Marketing Fish**\n\nOne insulated box of 50 liters capacity will be entitled to a subsidy to the extent of 75% of the cost limited to ₹ 1,500/-.\n> **For the Be",
+    "application_url": "https://www.myscheme.gov.in/schemes/sib",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fapllf",
+    "title": "Financial Assistance for the Purchase of Lifejackets and Lifebuoys for Fishermen",
+    "short_name": "FAPLLF",
+    "ministry": "Fisheries Department",
+    "description": "“Financial Assistance for the Purchase of Lifejackets and Lifebuoys for Fishermen” is a scheme by the Dept. of Fisheries, Govt. of Goa. Through this scheme, financial assistance amounting to ₹50% is provided by the Government to eligible fishermen for the Purchase of Lifejackets and Lifebuoys.",
+    "benefits": "- The support is extended up to ₹1,000/- per lifejacket and ₹1,500/- per lifebuoy.\n- For Canoe Fitted With OBM: 05 Life Jackets and 01 Lifebuoy.\n- For Mechanised Trawlers Engaged in Trawling Operation",
+    "application_url": "https://www.myscheme.gov.in/schemes/fapllf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mkuy",
+    "title": "Mukhya mantri Krishak Udyami Yojana",
+    "short_name": "MMKUY",
+    "ministry": "Micro, Small & Medium Enterprises Department",
+    "description": "The objective of this scheme is to provide financial assistance to the sons and daughters of farmers to establish their businesses. the government of Madhya Pradesh provided loans to the bank for all citizens of the state.",
+    "benefits": "> **For projects worth Rs 10 lakh or more:-**\n\n\n- For general class\t15% (maximum ₹12,00,000)\n- For BPL category 20% (maximum ₹18, 00, 000)\n- For women entrepreneurs, a 6% and male 5% interest subsidy ",
+    "application_url": "https://www.myscheme.gov.in/schemes/mkuy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-spwfrpsmb-faascdmf",
+    "title": "Subsidy for the Purchase of Wooden/Fiber Reinforced Plastic/Steel Mechanised Boats",
+    "short_name": "SPWFRPSMB-FAASCDMF",
+    "ministry": "Fisheries and Fishermen Welfare Department, Puducherry",
+    "description": "The scheme \"Subsidy for the Purchase of Wooden/Fiber Reinforced Plastic/Steel Mechanised Boats\" is introduced by the Government of Puducherry with the objective of increasing marine fish production by extending subsidies for the procurement of wooden/fiber-reinforced plastic/steel mechanized boats.",
+    "benefits": "- 50% subsidy subject to a maximum of ₹7,50,000 for a mechanized boat of overall length above 47 feet with nets linked with bank finance for the purchase of a new fishing vessel.\n- 50% subsidy subject",
+    "application_url": "https://www.myscheme.gov.in/schemes/spwfrpsmb-faascdmf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-gspv",
+    "title": "Grant of Subsidy for Procurement of Vehicle",
+    "short_name": "GSPV",
+    "ministry": "Fisheries and Fishermen Welfare Department, Puducherry",
+    "description": "\"Grant of Subsidy for Procurement of Vehicle\" aims to facilitate the quick transportation of fish catches from landing centers to marketing places, thereby preventing/minimizing spoilage of fish. It provides a 50% subsidy for the procurement of specified vehicles.",
+    "benefits": "- 50% subsidy for the purchase of auto goods carrier up to 1-ton capacity (maximum subsidy of ₹75,000).\n- 50% subsidy for the purchase of a mini truck with 1-3 ton capacity (maximum subsidy of ₹1,50,0",
+    "application_url": "https://www.myscheme.gov.in/schemes/gspv",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-phms",
+    "title": "Post Harvest Marketing Scheme",
+    "short_name": "PHMS",
+    "ministry": "Agriculture Department",
+    "description": "The “Post Harvest Marketing Scheme” was launched by the Department of Agriculture & Farmers’ Welfare, Government of Meghalaya for the creation of post harvest marketing infrastructure. ",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Creation of infrastructural facilities for post harvest marketing, Grading Units etc.\n\n> **Type of Assistance and Entitlement (If Any):**\n\n**Sl. No.****Entitlement****",
+    "application_url": "https://www.myscheme.gov.in/schemes/phms",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ascfiscmpa",
+    "title": "Assistance to Scheduled Caste Farmers for Installation of Submersible / Centrifugal Motor Pumpsets With Accessories",
+    "short_name": "ASCFISCMPA",
+    "ministry": "Agriculture Department, Puducherry",
+    "description": "Through this scheme, the farmers from the Scheduled Caste Category are provided with a grant of 90% subsidy towards the installation of suitable Submersible / Centrifugal motor pump sets with accessories, subject to a maximum of ₹60,000/‐ per tubewell per individual.",
+    "benefits": "- 90% subsidy towards the installation of suitable Submersible / Centrifugal motor pump sets with accessories, subject to a maximum of ₹60,000/‐ per tubewell per individual.\n\n**NOTE:** The subsidy amo",
+    "application_url": "https://www.myscheme.gov.in/schemes/ascfiscmpa",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mhh",
+    "title": "Maintenance of Horti Hubs",
+    "short_name": "MHH",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to procure good quality disease-free and commercially accepted varieties of the identified flowers and multiply and, to serve as a demonstration cum training ground for those who are interested in Floriculture and who intend to make this as their means of livelihood.",
+    "benefits": "&gt; **Pattern of Assistance:**\n\nOrganizing demonstration cum training on hi-tech floriculture for farmers who are interested in floriculture, and renovation/repairing of old hubs.\n&gt; **Type of Assi",
+    "application_url": "https://www.myscheme.gov.in/schemes/mhh",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-arsls",
+    "title": "Agriculture Research Stations and Laboratories Scheme",
+    "short_name": "ARSLS",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to conduct adaptive research trials on different crops in the Research Farms and in Farmers' Field for adaptability and use of bio pesticides/bio agents.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Adaptive research at farmers&#39; field.\n\n> **Type of Assistance And Entitlement (If Any):**\n\n\n- Training on Soil management, Providing Soil Health Cards, Conducting s",
+    "application_url": "https://www.myscheme.gov.in/schemes/arsls",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-oms",
+    "title": "Organic Manure Scheme",
+    "short_name": "OMS",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to provide hands on training at the village level on production of organic compost inputs such as compost for plant health management for sustainable agriculture.",
+    "benefits": "> **Type of assistance:**\n\n\n- Training and awareness campaign in the production of organic composts.",
+    "application_url": "https://www.myscheme.gov.in/schemes/oms",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sams",
+    "title": "Supply of Agriculture Machineries Scheme",
+    "short_name": "SAMS",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to distribute and sale of agricultural machinery such as Power Tillers, etc. to farmers at subsidized rates.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Subsidy on Power tillers, Reapers, Harvesters, etc.\n\n> **Type of Assistance and Entitlement (If Any):**\n\n\n- 50% subsidy sale.",
+    "application_url": "https://www.myscheme.gov.in/schemes/sams",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ky",
+    "title": "Krishi Yantra",
+    "short_name": "KY",
+    "ministry": "Agriculture Department",
+    "description": "In the Krishi Yantra scheme, the farmer purchases farming-related equipment from an authorized dealer, then the state government gives a subsidy to the farmers.",
+    "benefits": "> **Grant Details :** Details of grant payable scheme-wise and category-wise of instruments\n\n\n\nS. No.Mechanization (Tractor/Power Operated Equipment)Horsepower RangeSC/ST/small/marginal and women farm",
+    "application_url": "https://www.myscheme.gov.in/schemes/ky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-wit",
+    "title": "Walk In Tunnel",
+    "short_name": "WIT",
+    "ministry": "Agriculture Department",
+    "description": "Under the Walk-In Tunnel, the Rajasthan government provides the benefit of a subsidy to the farmers with affordable and efficient structures that offer protection from adverse weather conditions, pests, and diseases.",
+    "benefits": "1. 50 percent grant is payable for the area.\n1. 800 square meters (maximum 5 units per beneficiary).\n1. 400 square meters (maximum 10 units per beneficiary).",
+    "application_url": "https://www.myscheme.gov.in/schemes/wit",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-abn",
+    "title": "Anti Bird Net",
+    "short_name": "ABN",
+    "ministry": "Agriculture Department",
+    "description": "Under the Anti Bird Net Birds will never leave your garden if they are used to pecking on certain trees and plants, but if you install anti-bird nets at the appropriate places, you can prevent them from coming again to peck your plants.",
+    "benefits": "> **50 percent subsidy is payable for a maximum area of 5000 square meters.**",
+    "application_url": "https://www.myscheme.gov.in/schemes/abn",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-csssscspscc",
+    "title": "Cattle Shed Subsidy Scheme under Scheduled Castes Sub Plan (SC Category) ",
+    "short_name": "CSSSSCSP(SCC)",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Cattle Shed Subsidy Scheme under Scheduled Castes Sub Plan (SCSP)” is implemented by the Directorate of Animal Husbandry, Government of Gujarat. Under this scheme, the financial assistance is given to Scheduled Caste beneficiaries for construction of Cattle Shed for 2 animals.",
+    "benefits": "1. Under the scheme, financial assistance of either ₹30,000/- or 50% of the cost of the cattle shed, whichever is less, is provided to Scheduled Caste beneficiaries for the construction of a cattle sh",
+    "application_url": "https://www.myscheme.gov.in/schemes/csssscspscc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-apdccsifdsgc",
+    "title": "Assistance for Power Driven Chaff Cutter Scheme under Integrated Fodder Development Scheme (General Category)",
+    "short_name": "APDCCSIFDS(GC)",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme provides financial assistance to dairy farmers belonging to General Caste category on purchase of electric powered chaff cutters. By using power driven chaff cutter, dairy farmers can reduce wastage of green & dry fodder which is economically important for their profitable dairy farming.",
+    "benefits": "1. Under the scheme, financial assistance up to 75% of the purchase cost of powered chaff cutter or ₹18,000/-, whichever is less, is given to beneficiaries belonging to General category.  \n\n**Note:** ",
+    "application_url": "https://www.myscheme.gov.in/schemes/apdccsifdsgc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-beds",
+    "title": "Buffalo Entrepreneurship Development Scheme",
+    "short_name": "BEDS",
+    "ministry": "Fisheries and Animal Resources Development Department",
+    "description": "The \"Buffalo Entrepreneurship Development Scheme\" aims to enhance livestock productivity, especially among marginalized farmers in Odisha. This scheme seeks to address protein deficiency, boost nutritional status, & promote livelihood through dairy farming. ",
+    "benefits": "**Subsidy Payment for beneficiary opted for Shed:**\n**Phase****Time****SC/ST/Women/PwD/ Transgender****General**1st PhaseAfter completion of the shed and purchase of 1st milch graded Murrah she Buffal",
+    "application_url": "https://www.myscheme.gov.in/schemes/beds",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Odisha"
+      ]
+    }
+  },
+  {
+    "id": "scraped-aapd",
+    "title": "Agricultural Activities for Persons with Disabilities",
+    "short_name": "AAPD",
+    "ministry": "Welfare of Scheduled Caste & Backward Classes Department",
+    "description": "This scheme provides loans up to ₹10,00,000/- to the persons with disabilities for agricultural production, irrigation, horticulture, sericulture, the purchase of agricultural machinery and equipment for agricultural services, and the marketing of agricultural products etc.",
+    "benefits": "1. Under this scheme, loans up to ₹10,00,000/- are provided to persons with disabilities for agricultural production, irrigation, horticulture, sericulture, purchasing agricultural machinery/equipment",
+    "application_url": "https://www.myscheme.gov.in/schemes/aapd",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ntkjky",
+    "title": "Niji Talabon Ka Jirnoddhar Ki Yojana",
+    "short_name": "NTKJKY",
+    "ministry": "Animal & Fisheries Resources Department",
+    "description": "The government of Bihar launched the \"Niji Talabon Ka Jirnoddhar Ki Yojana\" scheme aims to enhance the water holding capacity of private ponds to boost fish productivity & production as well as provide benefits to private fish farmers through the expansion/renovation of their ponds.",
+    "benefits": "**Renovation of 150 hectares of private ponds with the following category-specific targets:**\n\n- Other category beneficiaries: 86 hectares\n- Extremely backward castes: 27 hectares\n- Scheduled castes: ",
+    "application_url": "https://www.myscheme.gov.in/schemes/ntkjky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-docsos",
+    "title": "Distribution of Certified Seeds-Oil Seeds",
+    "short_name": "DOCSOS",
+    "ministry": "Agriculture Department",
+    "description": "The \"Distribution of Certified Seeds-Oil Seeds\" scheme offers subsidies to farmers for purchasing certified oil seeds, helping them improve their crop yield and quality.\n\n",
+    "benefits": "- **Financial Assistance:** Subsidy of 50% of the seed cost or ₹1,200/- per quintal, whichever is less.",
+    "application_url": "https://www.myscheme.gov.in/schemes/docsos",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dor",
+    "title": "Distribution of Rhizobium",
+    "short_name": "DOR",
+    "ministry": "Agriculture Department",
+    "description": "The “Distribution of Rhizobium” scheme offers a subsidy on the cost of Rhizobium, to farmers raising seed farms with Pulses crops in Tamil Nadu.\n\n",
+    "benefits": "- **Quantum of Assistance:** 50% on the cost of Rhizobium or ₹100/- per ha. whichever is less.",
+    "application_url": "https://www.myscheme.gov.in/schemes/dor",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ahtn",
+    "title": "Animal Husbandry",
+    "short_name": "AHTN",
+    "ministry": "Adi Dravidar and Tribal Welfare Department",
+    "description": "This scheme provides subsidies on the distribution of sheep units, milch animals, and calves, as well as health coverage and artificial insemination for the animals. It is targeted at Tribal communities to improve their livelihood through animal husbandry.\n",
+    "benefits": "- **Subsidy:** Subsidy of 50% to 75% on sheep units, milch animals, and calves.  - **Health Care Facility for Animals:** Provision of health care and veterinary services.  - **Others:** Artificial ins",
+    "application_url": "https://www.myscheme.gov.in/schemes/ahtn",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-aspie",
+    "title": "Afforestation Schemes Providing Incentives And Employment To Tribals In Forest",
+    "short_name": "ASPIE",
+    "ministry": "Adi Dravidar and Tribal Welfare Department",
+    "description": "This scheme offers grants to unemployed tribals for afforestation work, providing them with incentives and employment opportunities in forest operations.",
+    "benefits": "- **Incentive:** Financial grants for afforestation activities.  - **Employment:** Employment opportunities in forest management.\n&lt;br&gt;",
+    "application_url": "https://www.myscheme.gov.in/schemes/aspie",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-obdopmtig",
+    "title": "Organizing Block Demonstration on Polythene Mulch Technology in Groundnut",
+    "short_name": "OBDOPMTIG",
+    "ministry": "Agriculture Department",
+    "description": "The scheme provides financial assistance to farmers for adopting polythene mulch technology in groundnut cultivation to improve productivity.\n",
+    "benefits": "- **Financial Assistance:** An assistance of  ₹4,000/- towards the cost of inputs to organize the demonstration and  ₹4,000/- to cover the land with Polythene sheet per hectare will be provided.",
+    "application_url": "https://www.myscheme.gov.in/schemes/obdopmtig",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pocs",
+    "title": "Production Of Certified Seeds",
+    "short_name": "POCS",
+    "ministry": "Agriculture Department",
+    "description": "The \"Production of Certified Seeds\" scheme, offers a subsidy to farmers for producing certified seeds of Pulses.\n",
+    "benefits": "- **Financial Assistance:** A subsidy of ₹,1000/- per quintal.",
+    "application_url": "https://www.myscheme.gov.in/schemes/pocs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-v-vhcs",
+    "title": "Ved-Vyas Housing Construction Scheme",
+    "short_name": "V-VHCS",
+    "ministry": "Department of Agriculture, Animal Husbandry & Co-operative",
+    "description": "The \"Ved Vyas Housing Construction Scheme\" provides financial assistance to active and traditional fish farmers in Simdega district for building houses. The scheme prioritizes individuals particularly those living in kutcha or thatched houses. ",
+    "benefits": "- **Financial assistance of ₹1,20,000/- for housing construction.**",
+    "application_url": "https://www.myscheme.gov.in/schemes/v-vhcs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Jharkhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mbydfvy",
+    "title": "Mukhyamantri Bagwani Mission: Dragon Fruit Vikas Yojana",
+    "short_name": "MBYDFVY",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to expand dragon fruit cultivation in 21 districts of the state, providing financial assistance to ryot farmers for establishing and maintaining dragon fruit plantations.\n",
+    "benefits": "&amp;amp;gt; **Financial Support:** \n\n\n\n      1. **First year:** ₹1,80,000/- per hectare.      1. **Second year:** ₹60,000/- per hectare.      1. **Third year:** ₹60,000/- per hectare.",
+    "application_url": "https://www.myscheme.gov.in/schemes/mbydfvy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-kiay",
+    "title": "Krishi Input Anudan Yojana",
+    "short_name": "KIAY",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to provide agricultural input subsidies in affected areas due to the rise in water levels of rivers like Ganga and Kosi and flood-related crop damage from heavy rainfall.\n\n",
+    "benefits": "&gt; **Subsidy Amounts per Hectare:**\n\n\n\n      1. Non-irrigated (year-dependent) crop areas: ₹8,500/-.\n      1. Irrigated crop areas: ₹17,000/-.\n      1. Perpetual/ perennial crops: ₹22,500/-.\n\n\n&gt; ",
+    "application_url": "https://www.myscheme.gov.in/schemes/kiay",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mvyb",
+    "title": "Makhana Vikas Yojana",
+    "short_name": "MVYB",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to boost Makhana cultivation by providing training to farmers and financial support for traditional equipment.",
+    "benefits": "- **Training:** Workshops and training for farmers to adopt modern methods and improve productivity.  - **Equipment Kits:** Grants of 75% of the cost (up to ₹16,575/-) for traditional tools (i.e. Auka",
+    "application_url": "https://www.myscheme.gov.in/schemes/mvyb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-gtiar",
+    "title": "Gausevak Training (Initial and Refresher)",
+    "short_name": "GTIAR",
+    "ministry": "Animal Husbandry Department",
+    "description": "The scheme \"Gausevak Training (Initial and Refresher)\" aims to empower educated unemployed rural youth with self-employment opportunities and the skills to provide primary veterinary services in remote rural areas. A 100% stipend of ₹6,000 for initial training and ₹500 for refresher training.",
+    "benefits": "**Initial Training:**\nTraining cost: ₹6,000.\nStipend: ₹1,200 for six months at ₹1,000 per month.\nTotal: ₹7,200 per Gausevak.\n**Refresher Training:**\nStipend: ₹500.\nStudy material: ₹100.\nTotal: ₹600 pe",
+    "application_url": "https://www.myscheme.gov.in/schemes/gtiar",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-tws",
+    "title": "Tap Water Scheme (Nal Jal Yojana)",
+    "short_name": "TWS",
+    "ministry": "Panchayat and Rural Development Department",
+    "description": "\"Tap Water Scheme\" (नल जल योजना) by the Panchayat and Rural Development Department, Government of Madhya Pradesh aims to provide clean water in Gram Panchayat areas in an accessible manner. The application has to be made to the concerned Gram Panchayat.",
+    "benefits": "Tap Water Connection is provided by the Gram Panchayat",
+    "application_url": "https://www.myscheme.gov.in/schemes/tws",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-kpyg",
+    "title": "Kisan Parivahan Yojana",
+    "short_name": "KPYG",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat. It aims to provide financial assistance to farmers for purchasing medium-sized goods vehicles to facilitate the transportation of agricultural produce.",
+    "benefits": "**Name of the Component****Standard of Assistance (For Small, Marginal, Women, SC/ST Farmers)****Standard of Assistance (For General/Other Farmers)**Medium-sized goods vehicles (capacity of 600kg to 1",
+    "application_url": "https://www.myscheme.gov.in/schemes/kpyg",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-spfasae",
+    "title": "Scheme to Provide Financial Assistance to Farmers for Purchasing Sanedo Agricultural Equipment",
+    "short_name": "SPFASAE",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat. It aims to provide financial assistance to farmers for purchasing Sanedo (Mini Tractor) equipment, which enhances efficiency and reduces labor dependency in farming operations.",
+    "benefits": "**Name of the Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming  Benefits**“Sanedo” agricultural equipmentAssistance of 25 % or ₹25,000/- of total cost whichever is l",
+    "application_url": "https://www.myscheme.gov.in/schemes/spfasae",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sapsf",
+    "title": "Scheme for Assistance on Purchase of Smartphone by the Farmers",
+    "short_name": "SAPSF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Dept., Gujarat. It aims to provide financial assistance to farmers for purchasing smartphones, enabling them to access agricultural technology, weather updates, pest control techniques, and government assistance.",
+    "benefits": "**Name of the Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming  Benefits**Scheme for assistance on Purchase of Smartphone by the farmers40% assistance on the purchas",
+    "application_url": "https://www.myscheme.gov.in/schemes/sapsf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-bvby",
+    "title": "Bhavantar Bharpai Yojana",
+    "short_name": "BVBY",
+    "ministry": "Horticulture Department",
+    "description": "The scheme is implemented by the Department of Horticulture, Government of Haryana, aims to protect horticultural farmers from market price fluctuations and compensate them if they receive low prices for their produce in the market.",
+    "benefits": "1. To make vegetable growers risk free.\n   1. To fix protected price for the crops (Ladyfinger, Chilli, Bottle Gourd, Bitter Gourd, Cabbage, Radish, Tomato, Onion, Potato, Cauliflower, Carrot, Peas, C",
+    "application_url": "https://www.myscheme.gov.in/schemes/bvby",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dvrsf",
+    "title": "Diesel VAT Relief Scheme for Fishermen",
+    "short_name": "DVRSF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Diesel VAT Relief Scheme for Fishermen\" introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, aims to provide financial assistance by subsidizing the VAT levied on high-speed diesel used in fishing boats. ",
+    "benefits": "**Name of Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming Benefits**Diesel VAT assistancePer litre maximum assistance up to ₹15/-Assistance is available as per fixe",
+    "application_url": "https://www.myscheme.gov.in/schemes/dvrsf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-eotmaf",
+    "title": "Establishment of 1 to 20 Milch Animal Farm",
+    "short_name": "EOTMAF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Establishment of 1 to 20 Milch Animal Farm\" scheme introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, provides financial assistance in the form of an interest subsidy to livestock farmers to take up animal husbandry as a sustainable business.",
+    "benefits": "- **Interest Subsidy:** Eligible farmers receive an interest subsidy of 12% on the unit cost fixed by NABARD or banks.",
+    "application_url": "https://www.myscheme.gov.in/schemes/eotmaf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ics",
+    "title": "Intensive Castration Scheme",
+    "short_name": "ICS",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Intensive Castration Scheme\" introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, aims to control the stray animal population by castrating male calves and helps in reducing accidents caused by stray male animals in rural and urban areas.\n\n",
+    "benefits": "- **Financial Assistance:** An amount of ₹500/- subsidy per animal (male calf) for castration by close method (Burdizo Castrator)/open method (Surgical Method).",
+    "application_url": "https://www.myscheme.gov.in/schemes/ics",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-acfapsc",
+    "title": "Assistance of Concentrate Feed After Parturition (Scheduled Caste Category)",
+    "short_name": "ACFAPSC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Assistance of Concentrate Feed After Parturition (Scheduled Caste Category)\" provides 150 kg of BIS Type II concentrate feed to Scheduled Caste Category livestock owners after parturition to support cattle health, increase milk production, and enhance calf development.\n\n",
+    "benefits": "**Name of Component****Standard of assistance****Remarks****Minimum Time Limit (in Years) for Reclaiming Benefits**Concentrate Feed 150 kg BIS type II Concentrate feed per beneficiary100% assistanceEv",
+    "application_url": "https://www.myscheme.gov.in/schemes/acfapsc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-acfpagc",
+    "title": "Assistance of Concentrate Feed for Pregnant Animals (General Category)",
+    "short_name": "ACFPAGC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme provides free BIS type II concentrate feed to pregnant cattle owned by General Category livestock owners in Gujarat to ensure their good health, boost immunity, prevent metabolic diseases, and enhance milk production.\n\n",
+    "benefits": "**Name of Component****Standard of assistance****Remarks****Minimum Time Limit (in Years) for Reclaiming Benefits**Concentrate Feed 150 kg BIS type II Concentrate feed per beneficiary100% assistanceEv",
+    "application_url": "https://www.myscheme.gov.in/schemes/acfpagc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sfugp",
+    "title": "Scheme for Upgradation of Gaushala/ Panjrapole",
+    "short_name": "SFUGP",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Scheme for Upgradation of Gaushala/ Panjrapole\"  aims to promote indigenous cow breeds and make cow rearing economically viable.\n\n",
+    "benefits": "**Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming Constituent Benefits**1. Water Fogger; 2. Mechanized Reaper Machine or Reaper Machine; 3. Chaff cutter 4. Drip irr",
+    "application_url": "https://www.myscheme.gov.in/schemes/sfugp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-spebj",
+    "title": "Subsidy to Purchase E-Bike for Journalists",
+    "short_name": "SPEBJ",
+    "ministry": "Information and Publicity Department",
+    "description": "The scheme aims to provide financial assistance to journalists in Goa for purchasing e-bikes at a subsidised rate. The benefits include making it more convenient for journalists to gather and disseminate news, with the intended beneficiaries being eligible Goa-based journalists.",
+    "benefits": "- Subsidy up to 50% of the value on quotation or ₹ 50,000/-, whichever is less, and the remaining 50% value shall be borne by the beneficiaries. \n- The payment shall be effected directly to the benefi",
+    "application_url": "https://www.myscheme.gov.in/schemes/spebj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-msofru",
+    "title": "Pradhan Mantri Matsya Sampada Yojana: Medium Scale Ornamental Fish Rearing Unit (Fresh Water) - Haryana",
+    "short_name": "PMMSYMSOFRU",
+    "ministry": "Fisheries Department",
+    "description": "Under this scheme, financial assistance in the form of a subsidy is provided to eligible beneficiaries for setting up infrastructure such as sheds, breeding units, and rearing and culture tanks for ornamental fish. ",
+    "benefits": "**Tangible Benefits:**\n\n- Project Cost: ₹8,00,000/- per unit\n- Subsidy will be limited to 40% of the project cost for General Category applicant.\n- Subsidy will be limited to 60% of the project cost f",
+    "application_url": "https://www.myscheme.gov.in/schemes/msofru",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sffppc",
+    "title": "PMMSY: Fish Feed Plants of Production Capacity of at least 100 Ton/Day - Haryana",
+    "short_name": "FFPPC",
+    "ministry": "Fisheries Department",
+    "description": "This scheme provides capital subsidy for setting up fish feed plants with a minimum production capacity of 100 tons per day, under the Pradhan Mantri Matsya Sampada Yojana (PMMSY) to general , schedule caste and women beneficiaries .",
+    "benefits": "- The project cost is ₹650,00,000/-\n\n> **Subsidy Distribution :**\n\n\n1. A 40% subsidy is available for the General Category.\n1. A 60% subsidy is offered for SC (Scheduled Caste) and Women beneficiaries",
+    "application_url": "https://www.myscheme.gov.in/schemes/sffppc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-enffhr",
+    "title": "PMMSY: Establishment of New Freshwater Fin Fish Hatcheries-Haryana",
+    "short_name": "ENFFHR",
+    "ministry": "Fisheries Department",
+    "description": "The scheme aims to support the establishment of new freshwater finfish hatcheries. Through this scheme, financial assistance in the form of subsidies is provided to beneficiaries for setting up these hatcheries.",
+    "benefits": "> The project cost for one unit is ₹25,00,000/-.\n\n\n\n  - The subsidy will be limited to 40% of the project cost for beneficiaries belonging to the General Category.\n  - The subsidy will be limited to 6",
+    "application_url": "https://www.myscheme.gov.in/schemes/enffhr",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-lfvcs",
+    "title": "PMMSY: Live Fish Vending Centres Scheme - Haryana",
+    "short_name": "LFVCS",
+    "ministry": "Fisheries Department",
+    "description": "The scheme aims to support fishers by providing financial assistance for live fish vending centers. A subsidy per unit is provided under PMMSY.",
+    "benefits": "**Monetary Benefit:**\n\n- Financial assistance of ₹20,00,000/- per unit for setting up a live fish vending center.\n- Subsidy of 40% of unit cost for general category beneficiaries.\n- Subsidy of 60% of ",
+    "application_url": "https://www.myscheme.gov.in/schemes/lfvcs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-aith-atisis",
+    "title": "\"Agricultural Income Tax Holiday\" under the \"Assam Tea Industries Special Incentives Scheme\"",
+    "short_name": "AITH-ATISIS",
+    "ministry": "Finance Department",
+    "description": "The scheme aims to ensure long-term financial sustainability of the Tea industry and to incentivize manufacturers to move from Crush, Tear, Curl tea to Orthodox tea production. The scheme is implemented by the Finance Department and the Industries & Commerce Department, Government of Assam.",
+    "benefits": "**Benefit Period:** 3 years of Agricultural Income Tax holiday.\n**Applicable Financial Years:** 2022-23 to 2024-25.\n**Condition:** Returns must be filed within the due date; if not filed on the due da",
+    "application_url": "https://www.myscheme.gov.in/schemes/aith-atisis",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Assam"
+      ]
+    }
+  },
+  {
+    "id": "scraped-faotaaonw",
+    "title": "Scheme for the Welfare of Schedule Caste Families in Fisheries Sector: Subsidy on Annual Auction of Notified Waters",
+    "short_name": "SWSCFFSSAANW",
+    "ministry": "Fisheries Department",
+    "description": "The objective of the scheme is to provide full-time employment to individuals from Scheduled Caste families in the fisheries sector and uplift their socio-economic status by promoting fish farming through subsidization of fishing contract costs in designated water bodies. ",
+    "benefits": "- 50% subsidy of the actual auctioned amount with maximum limit of ₹5,00,000/- per auction, whichever is less.",
+    "application_url": "https://www.myscheme.gov.in/schemes/faotaaonw",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pashupalangbcdc",
+    "title": "Pashupalan (GBCDC)",
+    "short_name": "PASHUPALANGBCDC",
+    "ministry": "Social Justice and Empowerment Department",
+    "description": "The scheme aims to provide an amount for animal husbandry activities. Low-interest loans are provided to Pashu Palaks.",
+    "benefits": "1. **Low-Interest Loan:** A loan is provided at an interest rate of 6 per cent per annum.1. **Maximum Loan Limit:** The maximum loan limit in this scheme is up to ₹1,00,000/-.1. **Unit Cost Coverage:*",
+    "application_url": "https://www.myscheme.gov.in/schemes/pashupalangbcdc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsycngpguj",
+    "title": "Pradhan Mantri Matsya Sampada Yojana (PMMSY-Inland): Construction of New Grow-out Pond - Gujarat",
+    "short_name": "PMMSYCNGPGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to enhance fish production and provide employment through inland fisheries. It offers financial support to construct new grow-out ponds for eligible beneficiaries.",
+    "benefits": "> Financial assistance is provided for the Construction of the New Grow-out Pond (PMMSY). The unit cost of the project is ₹7,00,000/- per hectare.\n\n\n- **General Category:** 40% of the unit cost (₹2,80",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsycngpguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sfidfh",
+    "title": "Scheme for Integrated Development for Horticulture (HRT-2)",
+    "short_name": "SFIDFH",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Scheme for Integrated Development for Horticulture (HRT-2)\" aims to promote holistic horticultural growth through financial assistance for production, processing, marketing, and infrastructure support to farmers across Gujarat.",
+    "benefits": "- **Promotional Activities Support:** Provides assistance for publications, exhibitions, competition seminars, Krishi Mela, and stall rental payments related to horticultural crops.  - **Farm Mechaniz",
+    "application_url": "https://www.myscheme.gov.in/schemes/sfidfh",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-nmoen",
+    "title": "National Mission on Edible Oil- Oil Palm: Nursery",
+    "short_name": "NMOEN",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme component \"Nursery\" launched under the \"National Mission on Edible Oil–Oil Palm\" scheme aims to increase the production of oil palm in the state and reduce dependence on imports through providing subsidy assistance for setting up nurseries for farmers.\n\n",
+    "benefits": "- **Subsidy:** ₹40,00,000/- per nursery.- **Capacity:** 10 hectares for ₹1,00,000 worth of saplings.",
+    "application_url": "https://www.myscheme.gov.in/schemes/nmoen",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-nmoeppm",
+    "title": "National Mission on Edible Oil–Oil Palm: Planting Materials",
+    "short_name": "NMOEPPM",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme component \"Planting Materials\" launched under the \"National Mission on Edible Oil–Oil Palm\" scheme aims to increase oil palm production in the state and reduce dependency on imports through financial assistance to farmers for procuring planting materials.",
+    "benefits": "- **For Locally Sourced Planting Materials.:** ₹20,000/- per hectare   - **For Imported Plants (including transportation cost):** ₹29,000/- per hectare\n> **Note:** For imported seedlings (along with t",
+    "application_url": "https://www.myscheme.gov.in/schemes/nmoeppm",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-atmfcvc",
+    "title": "Assistance in Trellise Mandap for Cultivation of Vegetable Crops",
+    "short_name": "ATMFCVC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Assistance in Trellise Mandap for Cultivation of Vegetable Crops\" aims to promote structured vegetable farming through the provision of financial assistance for constructing kachha/semi-pucca/pucca trellis mandaps to all farmers across the state.",
+    "benefits": "> **Monetary Assistance:**\n\n\n- **General Farmers:** 50% of unit cost or ₹80,000/- per hectare- **SC/ST Farmers:** 75% of unit cost or ₹1,20,000/- per hectare- **Devipoojak Farmers:** 90% of cost or ₹4",
+    "application_url": "https://www.myscheme.gov.in/schemes/atmfcvc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dspvsfwcplguj",
+    "title": "Distribution of Seeds of more productions varieties/ Hybrids varieties Seeds and fertilizer at subsidies etc. to Adivasi farmers in Tribal Area: Water Carrying Pipe Line (TASP & OTASP) Gujarat",
+    "short_name": "DSPVSFWCPLGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to improve the agricultural productivity of Scheduled Tribe farmers through subsidized seeds, fertilizers, and equipment. It provides direct support to tribal farmers for enhancing crop production and livelihood.",
+    "benefits": "1. The assistance provided is 75% of the purchase price or ₹ 22,500/- per beneficiary, whichever is less.\n\n\n\n> **Remark:** As per conditions No. 5, 16, 17, 19 and 22 of [Appendix-1](https://mariyojana",
+    "application_url": "https://www.myscheme.gov.in/schemes/dspvsfwcplguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dsmpvhvstguj",
+    "title": "Distribution of Seeds of more productions varieties/ Hybrids varieties Seeds and fertilizer at subsidies etc. to Adivasi farmers in Tribal Area: Tarpaulin Gujarat",
+    "short_name": "DSMPVHVSTGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to enhance crop production and livelihood. It provides subsidies on seeds, fertilizers, tarpaulins, and other agricultural inputs to Scheduled Tribe farmers.",
+    "benefits": "1. The assistance covers 75% of the purchase price of the tarpaulin or ₹1,875/-, whichever amount is less.\n\n\n\n> **Conditions:** A maximum of two tarpaulins can be claimed per account.\n\n> **Frequency o",
+    "application_url": "https://www.myscheme.gov.in/schemes/dsmpvhvstguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dsmphsfcclomuk",
+    "title": "Distribution of Seeds of more productions varieties/ Hybrids varieties Seeds and fertilizer at subsidies etc. to Adivasi farmers in Tribal Area: Castor cake/Neem cake/ Liquid Fermented Organic Manure / Green manure seed (For mix in the soil) Gujarat",
+    "short_name": "DSMPHSFCCLOMUK",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to help tribal farmers improve their livelihood by increasing agricultural crop production. Through this scheme, subsidies are provided on high-yield and hybrid seeds, fertilizers, and other agricultural inputs to Scheduled Tribe farmers.",
+    "benefits": "**SCHEDULE-IV and V under FCO 1985:-**\n\n1. **Castor cake/Neem cake/ Liquid Fermented Organic Manure:** 75% of the purchase price or ₹9,000/- per hectare, whichever is less. This assistance is for a ma",
+    "application_url": "https://www.myscheme.gov.in/schemes/dsmphsfcclomuk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ihdptaf",
+    "title": "Integrated Horticulture Development Program for Tribal Area Farmers (TASP) HRT-3",
+    "short_name": "IHDPTAF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Integrated Horticulture Development Program for Tribal Area Farmers (TASP) HRT-3\" by the Agriculture and Co-operation Department, Government of Gujarat, aims to enhance the horticulture sector through financial assistance and subsidies to tribal area farmers across the state.",
+    "benefits": "> **Capacity Building &amp; Promotion:**\n\n\n- Assistance for publication and promotional materials related to horticultural crops.\n- Financial support for organizing and participating in exhibitions, c",
+    "application_url": "https://www.myscheme.gov.in/schemes/ihdptaf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsyfvguj",
+    "title": "PMMSY: Three wheeler with Ice Box including e-rickshaws for fish vending - Gujarat ",
+    "short_name": "PMMSYFVGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to strengthen fish storage infrastructure for hygienic preservation. Through this scheme, beneficiaries receive financial assistance for a three-wheeler with an Ice Box, including e-rickshaws for fish vending.",
+    "benefits": "1. The unit cost is ₹3,00,000/-. 40% assistance for the General category, i.e. ₹1,20,000/- and 60% i.e. up to ₹1,80,000/- for women and the ST/SC category.\n1. The benefit will be available as per the ",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsyfvguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsysadsvtguj",
+    "title": "PMMSY: Support for Acquisition of Deep Sea Fishing Vessels for Traditional Fishermen - Gujarat ",
+    "short_name": "PMMSYSADSVTGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to strengthen fish storage infrastructure for hygienic preservation. Through this scheme, beneficiaries receive financial assistance for the support for acquisition of deep-sea fishing vessels for traditional fishermen.",
+    "benefits": "- Unit cost is ₹1,20,00,000/-. 40 percent assistance for general category i.e. assistance up to ₹48,00,000/-\n- And for women and ST/SC category beneficiaries 60 percent assistance i.e. assistance up t",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsysadsvtguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsyc2guj",
+    "title": "PMMSY: Construction of  Plant/Storage of Minimum 20 Tonne Capacity - Gujarat",
+    "short_name": "PMMSYC2GUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to provide financial support for the construction of 20-tonne capacity ice plant/storage units, ensuring hygienic fish storage and improving the income of beneficiaries.",
+    "benefits": "> **Construction of Ice Plant/Storage (minimum 20 tonne capacity):** \n\n\n- Unit cost is ₹80,00,000/-. The amount of assistance for the beneficiary of general category will be 40% of the unit cost and f",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsyc2guj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsycp3guj",
+    "title": "PMMSY: Construction of  Plant/Storage of Minimum 30 Tonne Capacity - Gujarat ",
+    "short_name": "PMMSYCP3GUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to strengthen fish storage infrastructure for hygienic preservation. Through this scheme, beneficiaries receive financial assistance for constructing 30-tonne capacity plants or storage units.",
+    "benefits": "> **Construction of Ice Plant/Storage (minimum 30 tonne capacity):** \n\n\n1. Unit cost is ₹120,00,000/-. The amount of assistance for the beneficiary of general category will be 40% of the unit cost and",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsycp3guj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmmsyiceboxguj",
+    "title": "PMMSY: Motorcycle with Ice Box - Gujarat",
+    "short_name": "PMMSYICEBOXGUJ",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to provide financial assistance for the purchase of motorcycles with ice boxes. Through this scheme, eligible beneficiaries receive subsidies to enhance their livelihood opportunities.",
+    "benefits": "1. The unit cost of a motorcycle with an ice box is ₹75,000/-.\n1. General category beneficiaries receive 40% assistance, i.e., up to ₹30,000/-.\n1. Women and Scheduled Tribe (ST)/Scheduled Caste (SC) b",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmmsyiceboxguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-lisulm",
+    "title": "National Livestock Mission: Livestock Insurance Scheme - Uttarakhand Livestock Development Board",
+    "short_name": "NLMLIS",
+    "ministry": "Department Of Animal Husbandry",
+    "description": " The scheme aims to provide insurance coverage to livestock in order to protect cattle rearers against the loss of their animals due to death, thereby encouraging them to adopt better animal husbandry practices.",
+    "benefits": "Under this scheme, insurance coverage is provided for livestock to protect cattle rearers in the event of loss of their animals.",
+    "application_url": "https://www.myscheme.gov.in/schemes/lisulm",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mtp",
+    "title": "Maitri Prashikshan Karyakram - Uttarakhand Livestock Development Board",
+    "short_name": "MPKULDB",
+    "ministry": "Department Of Animal Husbandry",
+    "description": "The scheme aims to enhance livestock productivity and improve  artificial insemination services across the state through the training and capacity building of local youth.",
+    "benefits": "- **In Hilly Districts:** ₹100/- per artificial insemination, with a minimum target of 25 to 30 inseminations.- **In Plain Districts:** ₹100/- per artificial insemination, with a minimum target of 50 ",
+    "application_url": "https://www.myscheme.gov.in/schemes/mtp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fishfarminguk",
+    "title": "Machhali Palan",
+    "short_name": "MPUK",
+    "ministry": "Department Of Disaster Management",
+    "description": "The scheme aims to provide financial support to fishermen for repairing, reconstructing, and replacing damaged boats and nets due to disasters. ",
+    "benefits": "Under this scheme, the following compensation is provided to fishermen for the repair or replacement of damaged boats and nets:\n\n- ₹6,000/- for the repair of partially damaged boats\n- ₹3,000/- for the",
+    "application_url": "https://www.myscheme.gov.in/schemes/fishfarminguk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-rccdcwrfv",
+    "title": "Compensation for Crop Damage Caused by Wildlife (in Revenue and Forest Villages)",
+    "short_name": "CDCWRFV",
+    "ministry": "Forest Department",
+    "description": "The scheme aims to provide timely financial assistance to farmers for crop damage caused by wildlife, assessed and compensated within 30 working days as per revenue book circular guidelines.",
+    "benefits": "**Financial Benefits**\n\n- Compensation is provided to farmers whose crops are damaged by wild animals.\n- Loss assessment is conducted as per Madhya Pradesh Revenue Book Circular, Volume 6, Clause 4.\n-",
+    "application_url": "https://www.myscheme.gov.in/schemes/rccdcwrfv",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-copy-of-dmf-acivcu",
+    "title": "Development of Manures & Fertilizers: Assistance for Construction/Installation of Vermi-Compost Units",
+    "short_name": "COPY OF DMF-ACIVCU",
+    "ministry": "Agriculture Department",
+    "description": "The \"Vermi-compost Units\" component of the scheme aims to convert available on-field and farm waste material into chemical-free farm resources as farm input for organic farming through vermicomposting processes. The payment of the sanctioned subsidy is through Electronic Clearance System (ECS).",
+    "benefits": "- Construction/Installation of Vermi-compost unit would be provided 75% subsidy limited to Rs.1,950/- per cu.mt for Vermi-compost units for all categories of farmers. \n- The Standard cost for Vermi-co",
+    "application_url": "https://www.myscheme.gov.in/schemes/copy-of-dmf-acivcu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-hcpp",
+    "title": "Hybrid Chilli Production Program",
+    "short_name": "HCPP",
+    "ministry": "Horticulture and Food Processing Department",
+    "description": "The scheme aims to provide self-employment opportunities and increase income for Scheduled Caste farmers living below the poverty line by promoting hybrid chilli cultivation.",
+    "benefits": "- **Financial Assistance:** Under the scheme, financial assistance ranging from ₹1,400/- to ₹7,000/- is provided per beneficiary.  - **Free Distribution of Inputs:** Beneficiaries are provided seeds, ",
+    "application_url": "https://www.myscheme.gov.in/schemes/hcpp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-msks",
+    "title": "Mukhyamantri Sudharit Kamdhenu Scheme",
+    "short_name": "MSKS",
+    "ministry": "Animal Husbandry & Veterinary Services Department",
+    "description": "The scheme aims to help the farmers to get financial assistance for the purchase of cross bred cows, improved she buffaloes and cows of indigenous breeds namely Sahiwal, Gir, Red Sindhi, Rathi and Tharparkar for their Dairy Unit, to promote self employment in the Dairy Sector.",
+    "benefits": "##### ***Subsidy for Milch Animals***\n\n- For the purchase of 1 to 10 animals, the subsidy is 90% of the unit cost (up to ₹63,000/-) per animal, based on a unit cost of ₹70,000/-.\n- For applicants who ",
+    "application_url": "https://www.myscheme.gov.in/schemes/msks",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-rfcp",
+    "title": "Registration for Crop Procurement",
+    "short_name": "RFCP",
+    "ministry": "Food, Civil Supplies and Consumer Protection Department",
+    "description": "The scheme aims to ensure fair crop prices for farmers by facilitating government procurement and provides easy online registration for landholding farmers to sell their crops at minimum support price. ",
+    "benefits": "- Enables farmers to sell their produce at government-approved procurement centers.\n\n\n- Ensures fair pricing through the Minimum Support Price (MSP) announced by the government.\n- Provides a transpare",
+    "application_url": "https://www.myscheme.gov.in/schemes/rfcp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mmgky",
+    "title": "Mukhyamantri Ghasyari Kalyan Yojana",
+    "short_name": "MMGKY",
+    "ministry": "Co-Operative Department",
+    "description": "The scheme aims to provide affordable and nutritious packed silage and total mixed animal feed to livestock farmers, especially women, in the remote hilly areas of Uttarakhand. Under this scheme, silage is made available to livestock farmers at a subsidized rate of ₹2.75 per kg.",
+    "benefits": "- Packed silage and complete mixed animal feed are prepared by blending nutrients with green maize and are made available to cattle rearers in the remote rural and hilly areas of Uttarakhand at the ra",
+    "application_url": "https://www.myscheme.gov.in/schemes/mmgky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-tdphduk",
+    "title": "Tea Development Programme in the Hilly Districts of Uttarakhand - Uttarakhand Tea Development Board",
+    "short_name": "TDPHDUK",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to promote tea cultivation in the mountainous regions of Uttarakhand, providing sustainable employment, optimal utilization of barren and unused land, and economic upliftment of local farmers.",
+    "benefits": "- Due to large-scale migration of local people in the mountainous areas of Uttarakhand, most of the farmers’ land remains unused or barren, which can be put to good use through tea development program",
+    "application_url": "https://www.myscheme.gov.in/schemes/tdphduk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dpivrcscb",
+    "title": "District Plan: Inter-Village Road Construction Scheme on Contributory Basis",
+    "short_name": "DPIVRCSCB",
+    "ministry": "Sugarcane Development And Sugar Industries",
+    "description": "The scheme aims to facilitate the easy and timely transportation of sugarcane from farms to purchasing centers and sugar mills by improving inter-village road connectivity in sugarcane-growing areas.",
+    "benefits": "Under the scheme, efforts are made to facilitate the transportation of sugarcane from farms to purchasing centers for farmers and to ensure the supply of fresh sugarcane to sugar mills. Of the total e",
+    "application_url": "https://www.myscheme.gov.in/schemes/dpivrcscb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-gscap",
+    "title": "Grant Scheme for Cultivation of Aromatic Plants - Centre for Aromatic Plants",
+    "short_name": "GSCAP",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to encourage farmers to adopt the cultivation of commercially valuable aromatic crops such as lemongrass, citronella, palmarosa, khus, damask rose, mint (except Japanese mint), geranium, black cumin, rosemary, bay leaf, timur & sandalwood by providing financial assistance to them.",
+    "benefits": "- Under this scheme, the maximum grant limit for any individual farmer shall be ₹1.00 lakh or the grant amount admissible for the cultivation of up to 2 hectares of land (based on the survival rate of",
+    "application_url": "https://www.myscheme.gov.in/schemes/gscap",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cg-ubasnfihbe",
+    "title": "Craft & Gear (Unit: Boats of Appropriate Sizes Including Nets, Fish & Ice Holding Boxes, Etc.)",
+    "short_name": "CG-UBASNFIHBE",
+    "ministry": "Fisheries Department",
+    "description": "The scheme aims to uplift traditional fishermen by providing financial help in the form of a subsidy on the purchase or construction of new wooden or Fiberglass Reinforced Plastic fishing crafts below 26 feet for inland fishing activities in Goa.",
+    "benefits": "##### ***Financial Assistance/Subsidy***\n\n- Financial assistance is provided for the purchase or construction of New Fiberglass Reinforced Plastic or wooden canoes below 26 feet, including nets, acces",
+    "application_url": "https://www.myscheme.gov.in/schemes/cg-ubasnfihbe",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ghc",
+    "title": "Greenhouse Construction",
+    "short_name": "GHC",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to promote protected cultivation of vegetables and flowers by encouraging farmers to adopt greenhouse technology through substantial financial assistance and support, thereby increasing productivity, improving crop quality, and enhancing farmers’ income.",
+    "benefits": "To promote vegetable and flower cultivation inside greenhouses, 50% to 80% of the total cost is provided as assistance for fan and pad systems, naturally ventilated polyhouses, and planting materials.",
+    "application_url": "https://www.myscheme.gov.in/schemes/ghc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-nss",
+    "title": "Nishadraj Scholarship Scheme",
+    "short_name": "NSS",
+    "ministry": "Fisheries Department",
+    "description": "The scheme aims to promote higher education among children of fisher families working in federation reservoirs by providing scholarships of up to ₹20,000 for technical courses and up to ₹10,000 for non-technical courses.",
+    "benefits": "- Scholarship up to ₹20,000 or the actual expenditure (whichever is lower) for technical courses such as Medical, Engineering, CLAT-based Law courses, and equivalent technical programs.\n- Scholarship ",
+    "application_url": "https://www.myscheme.gov.in/schemes/nss",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-slfsss",
+    "title": "Grant for Sex-Sorted Semen to Livestock Farmers",
+    "short_name": "GSSSLF",
+    "ministry": "Department Of Animal Husbandry",
+    "description": "The scheme aims to promote breed improvement and increase milk production by encouraging the use of sex-sorted semen for artificial insemination in cows and buffaloes.",
+    "benefits": "Under this scheme, a grant of ₹400 per dose is provided to cattle farmers for breed improvement through artificial insemination of cows and buffaloes using sex-sorted semen.",
+    "application_url": "https://www.myscheme.gov.in/schemes/slfsss",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-tpedb",
+    "title": "Training Programme for Entrepreneurship Development in Biotechnology",
+    "short_name": "TPEDB",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to train youth in biotechnology and develop entrepreneurial skills by providing technical knowledge, mentorship, and guidance to help them initiate biotech startups.",
+    "benefits": "Under this training programme, training and technical information are provided to the youth of the state to promote entrepreneurship development and support them in establishing startups in the field ",
+    "application_url": "https://www.myscheme.gov.in/schemes/tpedb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sfis",
+    "title": "State Fisheries Input Scheme",
+    "short_name": "SFIS",
+    "ministry": "Department Of Fisheries",
+    "description": "The scheme aims to aims to enhance the productivity and income of fish farmers by providing financial support in the form of subsidies on essential fishery inputs such as hand nets, hapa, nets, mini kits, etc.",
+    "benefits": "Fish farmers who are already engaged in fish farming are provided a 50% subsidy on the total cost of essential fishery inputs such as fish feed, medicines, etc.\n\n  - A subsidy of 1 quintal of fish fee",
+    "application_url": "https://www.myscheme.gov.in/schemes/sfis",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-aapcap",
+    "title": "Aromatic Awareness Programme - Centre for Aromatic Plants",
+    "short_name": "AAPCAP",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to raise awareness about aromatic plants and their benefits, and to provide guidance on cultivation practices suitable to different agricultural climates.",
+    "benefits": "- To spread information about aromatic plants and the benefits of their cultivation to the general public.\n  - To provide information about crops according to the agricultural climate.",
+    "application_url": "https://www.myscheme.gov.in/schemes/aapcap",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-vdaps",
+    "title": "Very Dense Apple Plantation Scheme",
+    "short_name": "VDAPS",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to promote intensive apple cultivation among farmers by establishing modern orchards with high-yielding varieties and providing financial assistance through a 60% subsidy on saplings, thereby enhancing productivity and increasing farmers’ income.",
+    "benefits": "Under this scheme, farmers will be provided with a 60% subsidy for establishing orchards of the latest apple varieties. The subsidy is structured as follows: 900 saplings per acre (₹12.36 lakh) for M-",
+    "application_url": "https://www.myscheme.gov.in/schemes/vdaps",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-evcu",
+    "title": "Establishment of Vermicompost Units",
+    "short_name": "EVCU",
+    "ministry": "Horticulture Department",
+    "description": "The scheme aims to promote sustainable agriculture and organic farming by providing financial assistance for setting up vermicompost units to farmers and women self-help groups.",
+    "benefits": "Under this scheme, a subsidy of 75% of the cost, up to ₹33,300/- per unit, is provided for setting up vermicompost units (including pit construction and provision of earthworms).",
+    "application_url": "https://www.myscheme.gov.in/schemes/evcu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ucuk",
+    "title": "Udhyan Card",
+    "short_name": "UCUK",
+    "ministry": "Horticulture Department",
+    "description": "It aims to create a unified identification system for farmers engaged in horticulture activities, enabling them to access all horticulture-related schemes and benefits provided by the Government of Uttarakhand.",
+    "benefits": "The Udhyan Card is mandatory to avail the benefits of all schemes of the Department of Horticulture.",
+    "application_url": "https://www.myscheme.gov.in/schemes/ucuk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ifpiftrainingkitguj",
+    "title": "To Increase Fish Seed Production and Inland Fisheries Resources in Tribal Areas: Training Kit - Gujarat",
+    "short_name": "TIFSPIFRTATK",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to provide training and equipment to boost inland fisheries among Scheduled Tribe beneficiaries.",
+    "benefits": "1. Scheduled Tribe trainees are given a training kit worth ₹2,500/- after completing three months of training.\n1. The kit includes cast nets, gill nets with seekers and floats, nylon twine, cotton rop",
+    "application_url": "https://www.myscheme.gov.in/schemes/ifpiftrainingkitguj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-kvny",
+    "title": "Krishi Vidya Nidhi Yojana",
+    "short_name": "KVNY",
+    "ministry": "Agriculture and Farmers Empowerment Department",
+    "description": "The scheme aims to provide merit-based financial assistance to children of CM-KISAN beneficiaries pursuing professional and technical courses, supporting higher education through Direct Benefit Transfer.",
+    "benefits": "&gt; **Scholarship Support:**\n\n\n   1. Scholarship is provided to students pursuing eligible professional, technical, diploma, postgraduate, and doctoral courses.\n   1. The scholarship is awarded purel",
+    "application_url": "https://www.myscheme.gov.in/schemes/kvny",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Odisha"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ptpapmh",
+    "title": "A Program to Provide 90 Percent Assistance in Planting Material of Horticultural Fruit Crops",
+    "short_name": "PTPAPMH",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme offers 90% financial assistance to farmers for purchasing planting materials of fruit crops to promote horticulture.\n\n",
+    "benefits": "- Farmers receive up to 90% financial assistance on the cost of planting materials.\n> **Pre-fixed assistance rates per hectare for different crops:**\n\n\n\n\nFruit Assistance Mango₹32,000/haSapota (Chiku)",
+    "application_url": "https://www.myscheme.gov.in/schemes/ptpapmh",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-apvcrrm",
+    "title": "Assistance for Planting Vegetable Crops for Raw and Ripe Mandap",
+    "short_name": "APVCRRM",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme provides financial assistance to farmers in Gujarat for setting up vegetable trellises (Mandap) for raw, semi-ripe, and ripe vegetables, with varying support for General, SC, and ST farmers.\n\n",
+    "benefits": "&gt; **Raw Mandap (Tomato/Chilli and other vegetables):**\n\n\n\n    - General Farmers: 50% subsidy, up to ₹26,000/ha.\n    - SC/ST Farmers: 75% subsidy, up to ₹39,000/ha.\n\n\n&gt; **Semi-ripe Mandap (Vine v",
+    "application_url": "https://www.myscheme.gov.in/schemes/apvcrrm",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-rkvp",
+    "title": "Rashtriya Krishi Vigyan Puraskar",
+    "short_name": "RKVP",
+    "ministry": "Department of Agriculture Research and Education",
+    "description": "The Rashtriya Krishi Vigyan Puraskar (RKVP) aims to honor scientists and technical experts for outstanding contributions and innovations in agriculture and allied sciences.",
+    "benefits": "i. In the Award Ceremony, the Awardees shall be presented a Sanad (certificate) signed by the Hon&#39;ble Union Minister (Agriculture &amp; Farmers Welfare) &amp; President, ICAR. A commemorative broc",
+    "application_url": "https://www.myscheme.gov.in/schemes/rkvp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-cdpnerec",
+    "title": "Coffee Development Programme in North Eastern Region: Expansion of Coffee",
+    "short_name": "CDPNER:EC",
+    "ministry": "Department Of Commerce",
+    "description": "The scheme \"Coffee Development Programme in North Eastern Region: Expansion of Coffee\" by the Coffee Board, Department of Commerce, Ministry of Commerce and Industry, aims to facilitate afforestation in the Jhum lands and help settle the tribals on a permanent footing.",
+    "benefits": "**Unit Cost:** ₹1,00,000/per hectare.\n**Scale of Subsidy:** 50% of the Unit Cost, i.e., ₹50,000/per hectare.\n\n\n**Release of Subsidy:** In two installments\n\n- 1st installment: 60% of the unit cost\n- 2n",
+    "application_url": "https://www.myscheme.gov.in/schemes/cdpnerec",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-hsfepqiisaradocscrnpkaos",
+    "title": "Integrated Scheme for Export Promotion & Quality Improvement in Spices and Research and Development of Cardamom: \\Small Cardamom Replanting/New Planting: Karnataka (Ha.) and other States",
+    "short_name": "HSFEPQIISARADOCSCRNPKAOS",
+    "ministry": "Government Department",
+    "description": "To motivate growers in Karnataka and other states to improve production and productivity through systematic replanting of diseased, old, and senile plantations, and to promote area expansion under cultivation.",
+    "benefits": "1. 33.33% of cost of cultivation of subject to a maximum of ₹75,000/- per Ha for General Category and 75% of cost of cultivation ₹1,68,000/- per Ha for SC/ST payable in two annual installments of ₹37,",
+    "application_url": "https://www.myscheme.gov.in/schemes/hsfepqiisaradocscrnpkaos",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-rkvyshfshc",
+    "title": "RKVY Soil Health and Fertility - Soil Health Card",
+    "short_name": "RKVYSHFSHC",
+    "ministry": "Department of Agriculture and Cooperation",
+    "description": "The scheme aims to promote soil test-based nutrient management by providing Soil Health Cards containing soil analysis results and fertilizer recommendations to farmers across India.",
+    "benefits": "- **Soil Health Card:** Provides a Soil Health Card containing detailed soil analysis results.- **Soil Testing Facility:** Provides free or affordable access to soil testing services.- **Soil Analysis",
+    "application_url": "https://www.myscheme.gov.in/schemes/rkvyshfshc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-nfsmcss",
+    "title": "National Food Security Mission NFSM",
+    "short_name": "NFSMCSS",
+    "ministry": "State / UT Government",
+    "description": "National Food Security Mission was launched in 2007-08 to increase the production of rice, wheat and pulses. Later, coarse cereals, nutri cereals, commercial crops (sugarcane, jute, and cotton) were also added to the mission.",
+    "benefits": "The scheme targets to provide following benefits:\n1)\tEnhance production and productivity of crops\n2)\tPromotion and extension of improved technologies and seed varieties through Cluster Demonstration, ",
+    "application_url": "https://www.myscheme.gov.in/schemes/nfsmcss",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-kcc",
+    "title": "Kisan Credit Card",
+    "short_name": "KCC",
+    "ministry": "National Bank For Agriculture And Rural Development",
+    "description": "The Kisan Credit Card (KCC) scheme was introduced in 1998 for issue of Kisan Credit Cards to farmers on the basis of their holdings for uniform adoption by the banks so that farmers may use them to readily purchase agriculture inputs and draw cash for their production needs. ",
+    "benefits": "**Fixation of credit limit/Loan amount**\n\n1. **The short-term limit to arrive for the first year: For farmers raising a single crop in a year:** Scale of finance for the crop (as decided by District L",
+    "application_url": "https://www.myscheme.gov.in/schemes/kcc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-isfepqiisaradocscildrwhs",
+    "title": "Integrated Scheme for Export Promotion & Quality Improvement in Spices and Research and Development of Cardamom:Small Cardamom Irrigation Land Development : Rain water harvesting structure (nos)",
+    "short_name": "ISFEPQIISARADOCSCILDRWHS",
+    "ministry": "Government Department",
+    "description": "Under this scheme to motivate the growers to bring more area under irrigation and land development by constructing rain water harvesting structures for increasing the productivity and improving quality of small cardamom.",
+    "benefits": "1. 33.33 % of cost of construction subject to a maximum of ₹18,000 per structure for General and 75% subject to maximum of ₹40,000 /- per structure for SC/ST.\n1. The above assistance will be for a str",
+    "application_url": "https://www.myscheme.gov.in/schemes/isfepqiisaradocscildrwhs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-isfepqisaradocphipfsclctw",
+    "title": "Integrated Scheme for Export Promotion & Quality Improvement in Spices and Research and Development of Cardamom: Post-Harvest Improvement: Polisher for Small Cardamom, Large Cardamom, Turmeric, etc (nos)",
+    "short_name": "ISFEPQISARADOCPHIPFSCLCTW",
+    "ministry": "Government Department",
+    "description": "The scheme aims to encourage spice growers to adopt proper polishing methods for spices such as small cardamom, large cardamom, and turmeric to improve their appearance, quality, and marketability.",
+    "benefits": "1. 50 % of cost of unit, subject to a maximum of ₹ 94,000/- per unit for General Category and 75% subject to maximum of ₹ 1,40,000 per unit for NE/SC/ST &amp; 90% Spice Producer&#39;s Groups in Identi",
+    "application_url": "https://www.myscheme.gov.in/schemes/isfepqisaradocphipfsclctw",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-pmsy",
+    "title": "SVAMITVA Yojana (Survey of Villages and Mapping with Improvised Technology in Village Areas)",
+    "short_name": "PMSY",
+    "ministry": "Government Department",
+    "description": "SVAMITVA, a Central Sector scheme of Ministry of Panchayati Raj to provide ‘Record of Rights’ to village household owners with issuance of legal ownership cards (Property cards/Title deeds) to the property owners by mapping of land parcels using drone technology.\n",
+    "benefits": "- Drone Digitally Maps All the Land Parcels of the Inhabited Area of the Village.\n- Creation of Property Cards on the Exact Area of Each Property in the Village.\n- Proprietary Rights to the Village Ho",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmsy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-nswf",
+    "title": "National Scheme Of Welfare Of Fishermen",
+    "short_name": "NSWF",
+    "ministry": "Government Department",
+    "description": "The National Scheme of Welfare of Fishermen provides financial assistance to fishermen. They can use these for constructing houses and community halls for both recreation and work purposes. Further, through the amount availed under this scheme, fishermen can install tube wells.",
+    "benefits": "The National Scheme of Welfare of Fishermen provides financial assistance to fishermen. They can use these for constructing houses and community halls for both recreation and work purposes. Further, t",
+    "application_url": "https://www.myscheme.gov.in/schemes/nswf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-ky-smsp",
+    "title": "Krishonnati Yojana - Sub Mission On Seed And Planting Material (SMSP)",
+    "short_name": "KY-SMSP",
+    "ministry": "Department of Agriculture & Farmers Welfare",
+    "description": "The Sub-Mission on Seeds and Planting Material (SMSP) aims to increase the production of certified / quality seed, increase SRR, upgrade the quality of farm-saved seeds, strengthen the seed multiplication chain, promote new technologies and methodologies in seed production, processing, testing, etc.",
+    "benefits": "The Sub-Mission on Seeds and Planting Material (SMSP) aims to increase the production of certified / quality seed, increase SRR, upgrade the quality of farm-saved seeds, strengthen the seed multiplica",
+    "application_url": "https://www.myscheme.gov.in/schemes/ky-smsp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-cmsguy",
+    "title": "Chief Minister Samagra Gramya Unnayan Yojana",
+    "short_name": "CMSGUY",
+    "ministry": "Finance Department",
+    "description": "A 5-year mega-mission called Chief Minister Samagra Gramya Unnayan Yojana (CMSGUY) was launched in the Financial Year(FY) 2016-17, which is scheduled to culminate in the FY 2021-22, coinciding with 75 years of India's Independence.",
+    "benefits": "A 5-year mega-mission called Chief Minister Samagra Gramya Unnayan Yojana (CMSGUY) was launched in the Financial Year(FY) 2016-17, which is scheduled to culminate in the FY 2021-22, coinciding with 75",
+    "application_url": "https://www.myscheme.gov.in/schemes/cmsguy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Assam"
+      ]
+    }
+  },
+  {
+    "id": "scraped-km",
+    "title": "Krushi Mahotsav",
+    "short_name": "KM",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The Krishi Mahotsav Yojana is an agricultural development scheme launched by the Government of Gujarat in the year 2010. The scheme aims to boost agricultural productivity and increase the income of farmers in the state. ",
+    "benefits": "The Krishi Mahotsav Yojana is an agricultural development scheme launched by the Government of Gujarat in the year 2010. The scheme aims to boost agricultural productivity and increase the income of f",
+    "application_url": "https://www.myscheme.gov.in/schemes/km",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mksy",
+    "title": "Mukhyamantri Kisan Sahay Yojana",
+    "short_name": "MKSY",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme was launched on September 6, 2019, to provide relief and support to farmers in case of crop damage due to natural calamities and was implemented by the Revenue Department of the Government of Gujarat in collaboration with the Agriculture and Co-operation Department.",
+    "benefits": "The scheme was launched on September 6, 2019, to provide relief and support to farmers in case of crop damage due to natural calamities and was implemented by the Revenue Department of the Government ",
+    "application_url": "https://www.myscheme.gov.in/schemes/mksy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-farmer-insurance",
+    "title": "₹ 5 Lakh Insurance Cover To Farmers",
+    "short_name": "LICF",
+    "ministry": "Agriculture and Co-operation Department",
+    "description": "Launched on 15 August 2018, the scheme \"₹5 Lakh Insurance Cover for Farmers\" is an Insurance Scheme by the Department of Agriculture, Government of Telangana. This scheme provides ₹5 lakh insurance coverage to all farmers aged between 18 and 60 years.",
+    "benefits": "1. **Financial Security:** Provides ₹5 lakh insurance coverage to farmers&#39; families in case of the farmer&#39;s death, offering substantial financial assistance.\t1. **Inclusive Coverage:** Covers ",
+    "application_url": "https://www.myscheme.gov.in/schemes/farmer-insurance",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Telangana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-anky",
+    "title": "Atma Nirbhar Krishi Yojana",
+    "short_name": "Anky",
+    "ministry": "Agriculture and Marketing Department",
+    "description": "Atma Nirbhar Krishi Yojana (ANKY) is a scheme launched by the Arunachal Pradesh government to boost the agriculture sector. It provides financial assistance to farmers for various agricultural activities",
+    "benefits": "Atma Nirbhar Krishi Yojana (ANKY) is a scheme launched by the Arunachal Pradesh government to boost the agriculture sector. It provides financial assistance to farmers for various agricultural activit",
+    "application_url": "https://www.myscheme.gov.in/schemes/anky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Arunachal Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mvp",
+    "title": "Mukhyamantri Vriksharopan Protsahan Yojana",
+    "short_name": "MVP",
+    "ministry": "Forest Department",
+    "description": "Chhattisgarh Mukhyamantri Vriksharopan Protsahan Yojana has been started by the Government of Chhattisgarh with the aim of conserving the environment and doubling the income of the farmers by promoting tree plantation in the state.",
+    "benefits": "Chhattisgarh Mukhyamantri Vriksharopan Protsahan Yojana has been started by the Government of Chhattisgarh with the aim of conserving the environment and doubling the income of the farmers by promotin",
+    "application_url": "https://www.myscheme.gov.in/schemes/mvp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Chhattisgarh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-apds",
+    "title": "Arun Pig Development Scheme",
+    "short_name": "APDS",
+    "ministry": "Animal husbandry, Veterinary and Dairy Department",
+    "description": "The scheme “Arun Pig Development Scheme” was launched by the Department of Animal Husbandry, Veterinary & Dairy Development, Government of Arunachal Pradesh in the financial year 2019-20 with a focus on pig rearing.",
+    "benefits": "The scheme “Arun Pig Development Scheme” was launched by the Department of Animal Husbandry, Veterinary & Dairy Development, Government of Arunachal Pradesh in the financial year 2019-20 with a focus ",
+    "application_url": "https://www.myscheme.gov.in/schemes/apds",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Arunachal Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-naip",
+    "title": "Nationwide Artificial Insemination Programme",
+    "short_name": "NAIP",
+    "ministry": "Animal Husbandry Department",
+    "description": "The Nationwide Artificial Insemination Programme (NAIP), is a flagship program of the Department of Animal Husbandry and Dairying. The objective of the programme is to increase the productivity of livestock by improving the genetic potential through artificial insemination. ",
+    "benefits": "1. Increased fertility rate: The programme will help to increase the fertility rate by providing access to artificial insemination services. This will help to improve the fertility rate of cows, buffa",
+    "application_url": "https://www.myscheme.gov.in/schemes/naip",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cnkgs",
+    "title": "Cluster Nutritional Kitchen Garden Scheme",
+    "short_name": "CNKGS",
+    "ministry": "Agriculture and Marketing Department",
+    "description": "The Cluster Nutritional Kitchen Garden Scheme (CNKGS) is an initiative launched by the government of Arunachal Pradesh to promote self-sufficiency and improve nutritional needs by encouraging the establishment of kitchen gardens.",
+    "benefits": "The Cluster Nutritional Kitchen Garden Scheme (CNKGS) is an initiative launched by the government of Arunachal Pradesh to promote self-sufficiency and improve nutritional needs by encouraging the esta",
+    "application_url": "https://www.myscheme.gov.in/schemes/cnkgs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Arunachal Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ssegu10stw",
+    "title": "Subsidy Scheme For Establishment Of Goat Unit (10+1) For Scheduled Tribe Women",
+    "short_name": "SSEGU10STW",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Subsidy Scheme for Establishment of Goat Unit (10+1) for Scheduled Tribe Women” was launched by the Department of Agriculture, Farmers Welfare & Co-operation, Government of Gujarat to uplift Economically poor livestock breeders of Gujarat State.",
+    "benefits": "1. 50% Subsidy on Unit Cost or Maximum ₹45,000/-.\n   1. Benefit of the scheme will be available once in a lifetime.",
+    "application_url": "https://www.myscheme.gov.in/schemes/ssegu10stw",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sse40rbudp",
+    "title": "Subsidy Scheme On Establishment Of 40 R.I.R. Birds Unit For Divyang People",
+    "short_name": "SSE40RBUDP",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Subsidy Scheme on Establishment of 40 R.I.R. Birds Unit for Divyang People” was launched by the Dept. of Agriculture, Farmers Welfare & Co-operation, Govt. of Gujarat to provide employment, nutritious diet and to raise the income of Divyang People of the society of Gujarat State.",
+    "benefits": "1.\tThe beneficiary will be given 40 R.I.R birds unit along with poultry feed.\n2.\tThe subsidy will be given 90% of the unit cost of the scheme (maximum ₹7200/- in the form of birds and poultry feed).\n3",
+    "application_url": "https://www.myscheme.gov.in/schemes/sse40rbudp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sspftws",
+    "title": "Stipend Scheme For Poultry Farming Training For Weaker Section",
+    "short_name": "SSPFTWS",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Stipend Scheme for Poultry Farming Training for Weaker Section” was launched by the Department of Agriculture, Farmers Welfare & Co-operation, Government of Gujarat to raise the income of poultry farmers by scientific poultry farming training.",
+    "benefits": "1. The beneficiary will be given maximum ₹2000 (direct in bank account) stipend for six days training. (Considering ₹300/- per day, ₹1800/- for 6 days as daily allowance and ₹200/- as to &amp;amp; fro",
+    "application_url": "https://www.myscheme.gov.in/schemes/sspftws",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-brfsy",
+    "title": "Bihar Rajya Fasal Sahayata Yojna",
+    "short_name": "BRFSY",
+    "ministry": "Co-Operative Department",
+    "description": "The scheme strives to back the farmers with financial incentives in the event of a crop loss due to natural calamities.\n",
+    "benefits": "1. In case of a reduction in the actual yield rate by 20% as compared to the threshold yield rate, total assistance of Rs. 15,000 is estimated at the rate of Rs. 7,500 per hectare up to a maximum of t",
+    "application_url": "https://www.myscheme.gov.in/schemes/brfsy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ssiemafsc",
+    "title": "Scheme For Subsidy On Interest For Establishment Of 1 To 20 Milch Animal Farm For Scheduled Caste",
+    "short_name": "SSIEMAFSC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme “Scheme for Subsidy on Interest for Establishment of 1 to 20 Milch Animal Farm for Scheduled Caste” was started by the Dept. of Agriculture, Farmers Welfare & Co-operation, Government of Gujarat. ",
+    "benefits": "1. The beneficiary can purchase 1 to 20 Milch animals (Any dairy animal cow &amp;amp; buffalo) at a subsidized rate as per their need and capacity to maintain.\n   1. The beneficiary can get an interes",
+    "application_url": "https://www.myscheme.gov.in/schemes/ssiemafsc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dsctawa",
+    "title": "Development Support for Coffee in Traditional Areas: Water Augmentation",
+    "short_name": "DSCTA:WA",
+    "ministry": "Department Of Commerce",
+    "description": "The scheme \"Development Support for Coffee in Traditional Areas: Water Augmentation\" by the Coffee Board, Department of Commerce, aims to improve the production and productivity of coffee plantations by encouraging water augmentation in traditional areas.",
+    "benefits": "> **Scale of Subsidy**\n\n40% of the unit cost, with a ceiling of ₹2,50,000 per beneficiary for all the components put together under the water augmentation scheme.\n\n\n> **Additional Support for Schedule",
+    "application_url": "https://www.myscheme.gov.in/schemes/dsctawa",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-facpwfrpfvcf",
+    "title": "Financial Assistance for Construction/ Purchase of Wooden/ FRP Fishing Vessel (Canoe) for Fishermen",
+    "short_name": "FACPWFRPFVCF",
+    "ministry": "Fisheries Department",
+    "description": "Through this scheme, 50% of the actual cost of the Wooden/ Fiber-Reinforced Plastic (FRP) Fishing Vessel (Canoe) purchased by the fishermen is covered by the Government of Goa. The applicant will be entitled to a subsidy grant once every four years on one craft per family household.",
+    "benefits": "- For General Category, **50% subsidy, limited to ₹ 60,000/-**- For SC/ST Category, **50% subsidy, limited to ₹ 80,000/-**\n\n- The applicant will be entitled to a subsidy grant once every four years on",
+    "application_url": "https://www.myscheme.gov.in/schemes/facpwfrpfvcf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fabwaf",
+    "title": "Financial Assistance to Brackish Water Aquaculture Farms",
+    "short_name": "FABWAF",
+    "ministry": "Fisheries Department",
+    "description": "Through this scheme, financial assistance is provided to eligible fishermen for the construction and renovation of the Farm, for the purchase of farming equipment, and for the purchase of feed. Only the farmers having a water spread area of 2 hectares or less can apply to this scheme.",
+    "benefits": "> **Financial Assistance for Construction &amp; Renovation of Farm**\n\n25% subsidy, limited to ₹2,00,000 per hectare.\n> **Financial Assistance for Purchase of Farming Equipment**\n\n50% subsidy, limited ",
+    "application_url": "https://www.myscheme.gov.in/schemes/fabwaf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fasuccu",
+    "title": "Financial Assistance for Setting up Crab Culture Unit",
+    "short_name": "FASUCCU",
+    "ministry": "Fisheries Department",
+    "description": "Through this scheme, financial assistance of 25% of the actual cost, limited to ₹1,50,000 per hectare is provided to eligible fishermen for setting up crab culture unit. Only Fish Farmer/ Individual/ Registered Self Help Group/ Societies, interested in the setting up of the Crab Farming Unit.",
+    "benefits": "> **Setting Up of the Crab Culture Unit**\n\n\n- Financial assistance of 25% of the actual cost, limited to ₹1,50,000 per hectare.\n- The assistance can be availed for up to 2 hectares of land.\n\n\n\n> **Pur",
+    "application_url": "https://www.myscheme.gov.in/schemes/fasuccu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Goa"
+      ]
+    }
+  },
+  {
+    "id": "scraped-gspaa-dfwasaofbc",
+    "title": "Grant of 50% Subsidy for the Purchase of Aquarium and Its Accessories under \"Development of Freshwater Aquaculture and Setting up of Aquarium, Ornamental Fish Breeding Centre\"",
+    "short_name": "GSPAA-DFWASAOFBC",
+    "ministry": "Fisheries and Fishermen Welfare Department, Puducherry",
+    "description": "\"Grant of 50% Subsidy for the Purchase of Aquarium and Its Accessories\" is introduced with the objective to propagate the importance of aquarium keeping and to inculcate the art of aquarium keeping among the general public. The scheme is extended to all the regions of Puducherry.",
+    "benefits": "- The department has assessed the unit cost for the aquarium and its accessories at ₹ 7,000 per unit. \n- The aquarium proposed to be issued to the beneficiaries consists of one aquarium/moulded aquari",
+    "application_url": "https://www.myscheme.gov.in/schemes/gspaa-dfwasaofbc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cpis",
+    "title": "Coconut Palm Insurance Scheme",
+    "short_name": "CPIS",
+    "ministry": "Department of Agriculture & Farmers Welfare",
+    "description": "The “Coconut Palm Insurance Scheme (CPIS)” is being implemented by the Coconut Development Board, Ministry of Agriculture and Farmers Welfare, Government of India with the objective of insuring coconut palms against natural calamities, climatic risks, pests, diseases, and other perils. ",
+    "benefits": "**Sum Insured &amp;amp; Premium****:** Under this scheme, 50% of the premium is borne by the Board and balance is shared between the State Government and Farmers @ 25% each, as below:\nAge group of Pal",
+    "application_url": "https://www.myscheme.gov.in/schemes/cpis",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {}
+  },
+  {
+    "id": "scraped-aipbo-faascdmf",
+    "title": "\"Annual Insurance Premium for Boat Owners\" under \"Financial Assistance for Availing Subsidy Components for the Development of Marine Fisheries\"",
+    "short_name": "AIPBO-FAASCDMF",
+    "ministry": "Fisheries and Fishermen Welfare Department, Puducherry",
+    "description": "\"Annual Insurance Premium for Boat Owners\" under \"Financial Assistance for Availing Subsidy Components for the Development of Marine Fisheries\" is introduced to increase marine fish production through subsidies for the annual premiums for insurance coverage paid by the mechanized boat operators.",
+    "benefits": "50% subsidy subject to a maximum of ₹ 20,000 per boat on annual insurance premium.\n***The rate of subsidy/maximum limit may be revised by the Government from time to time.***",
+    "application_url": "https://www.myscheme.gov.in/schemes/aipbo-faascdmf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cmmfbdsf-faascdmf",
+    "title": "\"Conversion/Modernisation of Mechanised Fishing Boats for Deep Sea Fishing\" under \"Financial Assistance for Availing Subsidy Components for the Development of Marine Fisheries\"",
+    "short_name": "CMMFBDSF-FAASCDMF",
+    "ministry": "Fisheries and Fishermen Welfare Department, Puducherry",
+    "description": "The scheme \"Conversion/Modernisation of Mechanised Fishing Boats for Deep Sea Fishing\" is introduced by the Dept of Fisheries and Fishermen Welfare, Govt of Puducherry to increase marine fish production by extending grants for the conversion/modernization of mechanized boats for deep-sea fishing.",
+    "benefits": "50% subsidy subject to a maximum of ₹ 2,50,000 per boat linked to bank finance.\n> ***The rate of subsidy/maximum limit may be revised by the Government from time to time.**",
+    "application_url": "https://www.myscheme.gov.in/schemes/cmmfbdsf-faascdmf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ifpisbtcdb",
+    "title": "\"Integrated Farming for Productivity Improvement Scheme\" by the Coconut Development Board",
+    "short_name": "IFPISBTCDB",
+    "ministry": "Agriculture Department, Puducherry",
+    "description": "Through the “Integrated Farming for Productivity Improvement Scheme\" by the Coconut Development Board, the coconut farmers are provided financial assistance through DBT (Direct Benefit Transfer) mode for the Laying of the Demonstration Plot, and for the Construction of the Organic Manure Unit.",
+    "benefits": "- **Laying of Demonstration Plot (LoDP):** Financial assistance @ ₹ 35,000/‐ Ha in two annual instalments.- **Construction of Organic Manure Unit:** Financial assistance @ ₹ 40,000/‐ to ₹ 60,000/‐ per",
+    "application_url": "https://www.myscheme.gov.in/schemes/ifpisbtcdb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-rrcgcdb",
+    "title": "Replanting & Rejuvenation of Coconut Garden\" by the Coconut Development Board",
+    "short_name": "RRCGCDB",
+    "ministry": "Agriculture Department, Puducherry",
+    "description": "Through the scheme “Replanting & Rejuvenation of Coconut Garden (R&R)\" by the Coconut Development Board, the coconut farmers are provided financial assistance through DBT (Direct Benefit Transfer) mode for the cutting & removal, replanting, and for integrated management practices.",
+    "benefits": "- **Cutting &amp; Removal** @ ₹ 1,000/‐ per palm subject to a maximum of ₹ 32,000/ per hectare.  - **Assistance for Replanting** @ ₹ 40 per seedling subject to a maximum of ₹ 4,000.- **Integrated Mana",
+    "application_url": "https://www.myscheme.gov.in/schemes/rrcgcdb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fds",
+    "title": "Fruit Development Scheme",
+    "short_name": "FDS",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to make available to the farmers good quality planting materials in convergence mode and sale at subsidized rates.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n  - Quality planting materials for sale at 50% subsidy and free of cost to the farmers under convergent mode with MGNREGA.\n\n&gt; **Type of Assistance and Entitlement (If",
+    "application_url": "https://www.myscheme.gov.in/schemes/fds",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pcds",
+    "title": "Plantation Crop Development Scheme",
+    "short_name": "PCDS",
+    "ministry": "Agriculture Department",
+    "description": "The objectives of the scheme are to boost up the area and production of all plantation crops like Arecanut, Cashewnut, Coconut, Pineapple etc., and to provide a 50 % subsidy for planting materials and construction of a soakage tank.",
+    "benefits": "> **Type of assistance:**\n\n\n- Financial assistance at a 50% subsidy for purchasing of planting materials, and polypipes.\n- Financial assistance at a 50% subsidy for the construction of soakage tank.\n\n",
+    "application_url": "https://www.myscheme.gov.in/schemes/pcds",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fcds",
+    "title": "Floriculture Development Scheme",
+    "short_name": "FCDS",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to motivate the farmers to take up floriculture (traditional and non-traditional flowers) as a commercial venture through the distribution of planting materials and other inputs.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n  - By providing good quality flower planting material at 50% subsidy and low cost polyhouse free of cost with a minimum of 100sqm/unit area.\n\n&gt; **Type of Assistance:",
+    "application_url": "https://www.myscheme.gov.in/schemes/fcds",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-msvymp",
+    "title": "Masala Shetra Vistar Yojana",
+    "short_name": "MSVYMP",
+    "ministry": "Horticulture and Food Processing Department",
+    "description": "Masala Shetra Vistar Yojana was launched by the Government of Madhya Pradesh the whose objective is to expand the area and increase the production of selected spice crops through quality high yielding varieties.",
+    "benefits": "- In seed spice crops, 50% of the cost of seed, a maximum ₹10,000/- per hectare, whichever is less, will be given as a subsidy.\n- For the production of root and center/rhizome commercial crops garlic,",
+    "application_url": "https://www.myscheme.gov.in/schemes/msvymp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-agfiscmpwa",
+    "title": "Assistance to General Farmers for Installation of Submersible / Centrifugal Motor Pumpsets With Accessories",
+    "short_name": "AGFISCMPWA",
+    "ministry": "Agriculture Department, Puducherry",
+    "description": "Through this scheme, the farmers from the General Category are provided with a grant of 65% subsidy towards the installation of suitable Submersible / Centrifugal motor pump sets with accessories, subject to a maximum of ₹50,000/‐ per tubewell per individual.",
+    "benefits": "- 65% subsidy towards the installation of suitable Submersible / Centrifugal motor pump sets with accessories, subject to a maximum of ₹50,000/‐ per tubewell per individual.\n- The subsidy amount shall",
+    "application_url": "https://www.myscheme.gov.in/schemes/agfiscmpwa",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-bclptls",
+    "title": "Bio Control Laboratory and Pesticides Testing Laboratory Scheme",
+    "short_name": "BCLPTLS",
+    "ministry": "Agriculture Department",
+    "description": "The objective is the production of Bio Control Agents such as Trichoderma, Trichogramma, etc., and further distribution to farmers as awareness and demonstration for organic Plant Health Management in order to promote organic crop production.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Distributions of bio agents to farmers.\n\n> **Type of Assistance and Entitlement (If any):**\n\n\n- Free distribution to popularise the method.",
+    "application_url": "https://www.myscheme.gov.in/schemes/bclptls",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-iteams",
+    "title": "Integrated Technology Enabled Agriculture Management System Or iTEAMS",
+    "short_name": "ITEAMS",
+    "ministry": "Agriculture Department",
+    "description": "The scheme was launched by the Department of Agriculture & Farmers’ Welfare, Govt. of Meghalaya to address critical issues of enabling & facilitating access to remunerative & sustainable markets for farmers produce in most transparent & effective manner through facilitation service iTEAM Dial 1917.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Free Telephonic advisory, Access to Subject Matter Specialist (SMS), Transport services.\n\n> **Type of Assistance and Entitlement (If any):**\n\n\n  - Telephone advice, fr",
+    "application_url": "https://www.myscheme.gov.in/schemes/iteams",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-iatc",
+    "title": "Integrated Agriculture Training Centre Scheme",
+    "short_name": "IATC",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to provide training for enhancing the skills of farmers besides imparting updated agricultural technologies to departmental functionaries. ",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Conduct trainings and awareness programmes.",
+    "application_url": "https://www.myscheme.gov.in/schemes/iatc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-beispgccpts",
+    "title": "\"Back Ended Investment Subsidy to Paddy Growers\" component of the \"Crop Production Technology\" scheme",
+    "short_name": "BEISPGCCPTS",
+    "ministry": "Agriculture Department, Puducherry",
+    "description": "\"Back Ended Investment Subsidy to Paddy Growers\" component of the \"Crop Production Technology\" scheme was introduced by the Dept of Agriculture and Farmer's Welfare, UT of Puducherry. The paddy farmers residing in the Yanam region are provided a back-ended investment subsidy at ₹4,000/- per hectare.",
+    "benefits": "Back-ended investment subsidy to paddy growers @ ₹4,000/- per hectare.",
+    "application_url": "https://www.myscheme.gov.in/schemes/beispgccpts",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Puducherry"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ipm",
+    "title": "Plant Protection including Integrated Pest Management Scheme",
+    "short_name": "IPM",
+    "ministry": "Agriculture Department",
+    "description": "The objective of the scheme is to mobilize and support farmers to use bio-pesticides and bio- agents for plant health management through distribution of bio-pesticides and other IPM tools and through sale of Sprayers and Plant Protection Equipment to encourage organic crop production.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n- Distribution of bio-pesticide and other IPM tools to farmers.\n- Sale of Sprayers and Plant Protection Equipment.\n\n> **Type of Assistance and Entitlement (If any):**\n\n\n",
+    "application_url": "https://www.myscheme.gov.in/schemes/ipm",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fpktnk",
+    "title": "Farm Pond (Khet Talai) Nirman Karyakram",
+    "short_name": "FPKTNK",
+    "ministry": "Agriculture Department",
+    "description": "Under the Farm Pond (Khet Talaee) Nirmaan Kaaryakram scheme provied to help the farmers of Rajasthan to collect rain water and use it for irrigation purposes so that the farmers can get sufficient water for irrigation in their fields.",
+    "benefits": "- Subsidy breakdown:\n\n\n\n   1. Raw farm pond: 50% of the construction cost (capped at ₹52,500)\n   1. Plastic lined farm pond: 50% of the construction cost with lining (capped at ₹75,000)\n\n\n\n- Additiona",
+    "application_url": "https://www.myscheme.gov.in/schemes/fpktnk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-wcdcls",
+    "title": "Winter Cropping & Development of Cultivable Land Scheme",
+    "short_name": "WCDCLS",
+    "ministry": "Agriculture Department",
+    "description": "The objectives of the scheme are to bring more areas under cultivation during the normally lean winter season under different crops other than paddy and increase production and productivity of various crops like cereals, pulses, oilseeds, and vegetables during the Rabi season.",
+    "benefits": "> **Pattern of Assistance:**\n\n\n  - Training, Extension, Technology Support, and Subsidy on Inputs.\n\n&gt; **Type of Assistance and Entitlement (If any):**\n\n\n  - Free distribution of Agril inputs i.e. H",
+    "application_url": "https://www.myscheme.gov.in/schemes/wcdcls",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Meghalaya"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dr",
+    "title": "Diggy",
+    "short_name": "DR",
+    "ministry": "Agriculture Department",
+    "description": "Rajasthan Government has started the Diggy Scheme for the welfare of farmers, under which farmers will be provided grants for making dig for irrigation of crops. This scheme is to help farmers improve their farming by using more water resources and encourage them to grow good crops.",
+    "benefits": "- The farmer must purchase a permanent container with a minimum filling capacity of 4 lakh liters and above.\n- The state government will provide a 75% to 85% subsidy.\n- Farmer will be provided a grant",
+    "application_url": "https://www.myscheme.gov.in/schemes/dr",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mss",
+    "title": "Mini Sprinkler Sanyantr",
+    "short_name": "MSS",
+    "ministry": "Agriculture Department",
+    "description": "The Mini Sprinkler Sanyantr scheme provided a subsidy to the farmers can irrigate more land by getting sprinkler subsidy. The subsidy given by the state government to the farmers will be sent directly to their bank account through DBT.",
+    "benefits": "1. General farmers: Up to 70% of the grant\n1. Small and marginal farmers, including small marginal/SC/ST/women farmers: Up to 75% of the grant",
+    "application_url": "https://www.myscheme.gov.in/schemes/mss",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-gh",
+    "title": "Green House",
+    "short_name": "GH",
+    "ministry": "Agriculture Department",
+    "description": "Under the Green House Scheme Farmers can get the benefit of subsidy on green house and earn more income by cultivating horticultural crops like vegetables, flowers, fruits etc. by controlling the ago-climatic factors, temperature, humidity and sunlight.",
+    "benefits": "- For areas up to a maximum of 4,000 square meters, farmers will receive subsidies grant based on approved rates or department-specified unit costs, whichever is lower.\n\n\n\n   1. General-category farme",
+    "application_url": "https://www.myscheme.gov.in/schemes/gh",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cklpr",
+    "title": "Chhatraon Ke Liye Protsahan Rashi",
+    "short_name": "CKLPR",
+    "ministry": "Agriculture Department",
+    "description": "In the \"Chhatraon Ke Liye Protsahan Rashi\" scheme to encourages girl students to study agriculture subject and provides financial assistance to economically disadvantaged students who may face challenges in accessing education due to financial constraints.",
+    "benefits": "1. Senior Secondary Level:\n\n  - Girls studying agriculture in 11th and 12th standard will receive a scholarship of ₹15,000 per year.\n\n1. Undergraduate Level:\n\n  - Girls enrolled in undergraduate agric",
+    "application_url": "https://www.myscheme.gov.in/schemes/cklpr",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-kky",
+    "title": "Kisan Kaleva Yojana",
+    "short_name": "KKY",
+    "ministry": "Agriculture Department",
+    "description": "Under the Kisan Kaleva Scheme run by the Rajasthan Government, food is provided at concessional rates through coupons to the farmers and their assistants who come to sell crops in the vegetable market premises.",
+    "benefits": "1. The scheme aims to provide affordable and nutritious meals to farmers and their helpers at a subsidized rate of ₹5/- per plate.\n1. The meals will be provided in the mandi premises itself.\n1. The me",
+    "application_url": "https://www.myscheme.gov.in/schemes/kky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-klpbs",
+    "title": "Kam Lagat Pyaaj Bhandaran Sanrachna",
+    "short_name": "KLPBS",
+    "ministry": "Agriculture Department",
+    "description": "Under the Kam Lagat Pyaaj Bhandaran Sanrachna yojana Construction of warehouses should be done at a high level to prevent moisture and dampness which occur due to direct contact of onions with soil.",
+    "benefits": "- Onion storage structure (25 Metric Ton capacity): 50% unit cost subsidy, max grant ₹ 87,500/-.",
+    "application_url": "https://www.myscheme.gov.in/schemes/klpbs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-nfbks",
+    "title": "Naye Fal Bagicho Ki Sthapana",
+    "short_name": "NFBKS",
+    "ministry": "Agriculture Department",
+    "description": "Under the \"Naye Fal Bagecho Ki Sthapana\" subsidies to Increase farmers' income by facilitating the cultivation of high-value fruit crops that have a potentially higher market demand and profitability compared to traditional crops.",
+    "benefits": "1. For high-value and common interval crops, the maximum grant amount is 50% of the unit cost, up to a maximum of Rs. 30,000/- per hectare.\n1. For intensive horticultural orchards, the maximum grant a",
+    "application_url": "https://www.myscheme.gov.in/schemes/nfbks",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-apdccsscspscc",
+    "title": "Assistance for Power Driven Chaff Cutter Scheme under Scheduled Castes Sub Plan (SC Category)",
+    "short_name": "APDCCSSCSP(SCC)",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme provides financial assistance to dairy farmers belonging to Scheduled Caste category on purchase of electric powered chaff cutters. By using power driven chaff cutter, dairy farmers can reduce wastage of green &dry fodder which is economically important for their profitable dairy farming.",
+    "benefits": "1. Under the scheme, financial assistance up to 75% of the purchase cost of powered chaff cutter or ₹18,000/-, whichever is less, is given to beneficiaries of Scheduled Caste category.  \n\n**Note:** Th",
+    "application_url": "https://www.myscheme.gov.in/schemes/apdccsscspscc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mjpmsky",
+    "title": "Mahatma Jyotiba Phule Mandi shramik kalyaan yojana ",
+    "short_name": "MJPMSKY",
+    "ministry": "Agriculture Department",
+    "description": "The Agriculture Department of Rajasthan runs the Mahatma Jyotiba Phule Mandi Shramik Kalyan Yojana, a program that offers a range of assistance programs to improve the well-being of mandi laborers.",
+    "benefits": "> **Obstetric Support:**\n\n\n- For a maximum of two deliveries, the female license holder Hammal and Palledar are entitled to be paid assistance equivalent to 45 days&#39; wages as per the prevailing wa",
+    "application_url": "https://www.myscheme.gov.in/schemes/mjpmsky",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Rajasthan"
+      ]
+    }
+  },
+  {
+    "id": "scraped-scdicmd",
+    "title": "Scheme for Conservation and Development of Indigenous Cattle and Murrah Development",
+    "short_name": "SCDICMD",
+    "ministry": "Animal Husbandry & Dairying Department",
+    "description": "The scheme is implemented by the Department of Animal Husbandry & Dairying, Government of Haryana with the objective of encouraging the farmers for conservation and development of the indigenous breeds of cows and buffaloes. ",
+    "benefits": "**1. Cash incentives at the following rates in different slabs would be provided to the owners of the recorded Murrah Buffaloes as below:**\n**Sl. No.****Slabs of Lactation yield in Kg  (Peak Yield in ",
+    "application_url": "https://www.myscheme.gov.in/schemes/scdicmd",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sehtmdu",
+    "title": "Scheme for Establishment of Hi-Tech and Mini Dairy Units",
+    "short_name": "SEHTMDU",
+    "ministry": "Animal Husbandry & Dairying Department",
+    "description": "Under this scheme, unemployed persons will be assisted by way of providing financial assistance in form of subsidy for establishing dairy units of 4, 10, 20 & 50 milch animals like buffaloes, indigenous cows (Hariana, Sahiwal, Belahi, Red Sindhi, Tharparkar and Gir breeds only) and crossbred cows.",
+    "benefits": "&gt; **Financial Assistance for Interest Subvention under the Scheme:**\n\n**Dairy units of 4 and 10 milch animals:**\n\n  - 25% subsidy on the cost of milch animals can be availed as a loan for the purch",
+    "application_url": "https://www.myscheme.gov.in/schemes/sehtmdu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-speoscelu",
+    "title": "Scheme for Providing Employment Opportunities to Scheduled Castes by Establishing Livestock Units",
+    "short_name": "SPEOSCELU",
+    "ministry": "Animal Husbandry & Dairying Department",
+    "description": "This is a credit-linked scheme with a primary objective of providing self-employment opportunities to Schedule castes, the unemployed persons will be assisted by way of establishing Dairy units, Piggery units, and Sheep/Goat units.",
+    "benefits": "&gt; **Financial Assistance under the Scheme:**\n\n**Establishment of Dairy units of 2/3 milch animals:** \n\n  - 50% subsidy on the cost of milch animals which has been availed as a loan for the purchase",
+    "application_url": "https://www.myscheme.gov.in/schemes/speoscelu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-speoselummapuy",
+    "title": "Scheme for Providing Employment Opportunities to Scheduled Castes by Establishing Livestock Units under Mukhya Mantri Antyodaya Parivaar Utthan Yojana",
+    "short_name": "SPEOSELUMMAPUY",
+    "ministry": "Animal Husbandry & Dairying Department",
+    "description": "Under the scheme, an unemployed resident of Haryana belonging to the Scheduled Caste category can avail a subsidy for purchasing livestock. This subsidy will be provided after the establishment of the livestock units and can be availed as a loan by the beneficiary. ",
+    "benefits": "&gt; **Financial Assistance under the Scheme:**\n\n**Establishment of Dairy units of 2 milch animals:**\n\n  - 50% subsidy on the cost of milch animals which has been availed as a loan for the purchase of",
+    "application_url": "https://www.myscheme.gov.in/schemes/speoselummapuy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sebpu",
+    "title": "Scheme for Establishment of Backyard Poultry Units",
+    "short_name": "SEBPU",
+    "ministry": "Animal Husbandry & Dairying Department",
+    "description": "The objective of the scheme is to improve the socio-economic and nutritional status of the poor families, small farmers and landless agricultural labourers and other economically weaker section of the society.",
+    "benefits": "1. 50 chicks, 10 day old reared at Government Hatchery along with two feeders and two water drinkers are provided free of cost to each beneficiary family at their doorstep.",
+    "application_url": "https://www.myscheme.gov.in/schemes/sebpu",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Haryana"
+      ]
+    }
+  },
+  {
+    "id": "scraped-jrfry",
+    "title": "Jharkhand Rajya Fasal Rahat Yojana",
+    "short_name": "JRFRY",
+    "ministry": "Department of Agriculture, Animal Husbandry & Co-operative",
+    "description": "The scheme was launched by the Department of Agriculture, Animal Husbandry & Cooperative, Government of Jharkhand. This scheme is mainly to provide financial assistance to the farmers in the event of crop damage due to any natural calamity and natural accidents.",
+    "benefits": "1. Under this scheme, assured financial assistance is provided to eligible farmers in the event of crop loss occurring due to natural calamity.\n   1. In the event of 30-50% loss: ₹3,000/- per acre max",
+    "application_url": "https://www.myscheme.gov.in/schemes/jrfry",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Jharkhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-bdy",
+    "title": "Bhraman - Darshan Yojana",
+    "short_name": "BDY",
+    "ministry": "Animal & Fisheries Resources Department",
+    "description": "The \"Bhraman-Darshan Yojana\" was launched by the Animal and Fisheries Resources Department, Government of Bihar aims to educate fish farmers in Bihar about the latest fisheries techniques through organized excursions, enabling them to adopt and implement these technologies in their water source.....",
+    "benefits": "- Awareness of latest fisheries techniques.\n- Inspiration to adopt modern technologies.\n- Increase in fish production and productivity.\n- Creation of new employment opportunities.\n- Increase in the an",
+    "application_url": "https://www.myscheme.gov.in/schemes/bdy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pofacs",
+    "title": "Production of Foundation and Certified Seeds",
+    "short_name": "POFACS",
+    "ministry": "Agriculture Department",
+    "description": "The \"Production of Foundation and Certified Seeds\" scheme, provides subsidy to farmers who produce and supply Foundation and Certified seeds to the Department of Agriculture.\n",
+    "benefits": "- **Financial Assistance:** ₹1,000/- per quintal.",
+    "application_url": "https://www.myscheme.gov.in/schemes/pofacs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-dorpo",
+    "title": "Distribution of Rhizobium Packets-Oilseeds",
+    "short_name": "DORPO",
+    "ministry": "Agriculture Department",
+    "description": "The “Distribution of Rhizobium Packets-Oilseeds” scheme provides a subsidy on the cost of Rhizobium, to eligible farmers who produce and supply Foundation and Certified Class seeds.\n",
+    "benefits": "- **Quantum of Assistance:** 50% on the cost of Rhizobium or ₹100/- per ha. whichever is less.",
+    "application_url": "https://www.myscheme.gov.in/schemes/dorpo",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-domafoc",
+    "title": "Distribution of Minikits At Free of Cost",
+    "short_name": "DOMAFOC",
+    "ministry": "Agriculture Department",
+    "description": "The \"Distribution of Minikits at Free of Cost\" scheme provides subsidies for minikits to maize-growing farmers in some of the selected districts of Tamil Nadu.\n\n",
+    "benefits": "- **Quantum of Assistance:** Subsidy for Minikits.",
+    "application_url": "https://www.myscheme.gov.in/schemes/domafoc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-vcfrsk",
+    "title": "Visit of Contract Farming Farmers to the Research Stations in Karnataka",
+    "short_name": "VCFRSK",
+    "ministry": "Agriculture Department",
+    "description": "The scheme “Visit of Contract Farming Farmers to the Research Stations in Karnataka” facilitates visits for contract farming farmers to research stations across Karnataka to gain agricultural knowledge. Financial support is provided for a 3-day visit.\n",
+    "benefits": "- **Financial Assistance:** ₹1,12,500/- per batch of 50 farmers for 3 days.- **Learning Program:** Exposure to the latest agricultural research and innovations.",
+    "application_url": "https://www.myscheme.gov.in/schemes/vcfrsk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-tfppt",
+    "title": "Training of Farmers on Pulses Production Technologies",
+    "short_name": "TFPPT",
+    "ministry": "Agriculture Department",
+    "description": "The “Training of Farmers on Pulses Production Technologies” scheme aims to educate farmers on advanced pulses production technologies to enhance crop yield.\n",
+    "benefits": "- **Financial Assistance:** ₹15,000/- per batch for 50 farmers.- **Training Program:** Training on advanced pulse production techniques.",
+    "application_url": "https://www.myscheme.gov.in/schemes/tfppt",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Tamil Nadu"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mbykvy",
+    "title": "Mukhyamantri Bagwani Mission: Kela Vikas Yojana",
+    "short_name": "MBYKVY",
+    "ministry": "Agriculture Department",
+    "description": "The Scheme aims to expand plantain cultivation across 15 districts in Bihar. Farmers can receive subsidies for up to 10 acres and access high-quality tissue-cultured plants for cultivation.\n",
+    "benefits": "&gt; **Financial Support:** \n\n\n  - **First year:** ₹46,875/- per hectare.  - **Second year:** ₹15,625/- per hectare.\n&gt; **Plant Distribution:** \n\n\n  - Supply of high-quality tissue-cultured plants.\n",
+    "application_url": "https://www.myscheme.gov.in/schemes/mbykvy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mbypvy",
+    "title": "Mukhyamantri Bagwani Mission: Papita Vikas Yojana",
+    "short_name": "MBYPVY",
+    "ministry": "Agriculture Department",
+    "description": "The Scheme aims to expand plantain cultivation across all districts in Bihar. Farmers can receive subsidies for up to 10 acres and access high-quality tissue-cultured plants for cultivation.\n",
+    "benefits": "&amp;gt; **Financial Support:** \n\n\n\n    - **First year:** ₹33,750/- per hectare.    - **Second year:** ₹11,250/- per hectare.\n\n&amp;gt; **Plant Distribution:** \n\n\n\n    - Supply of high-quality tissue-",
+    "application_url": "https://www.myscheme.gov.in/schemes/mbypvy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fvy",
+    "title": "Phool Vikash Yojana",
+    "short_name": "PVY",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to provide financial benefits to farmers for the cultivation of marigold flowers. It is available in 15 districts of the state and offers a 50% subsidy for up to 4 hectares.",
+    "benefits": "- **Financial Assistance:** 50% subsidy on ₹80,000/- per hectare for marigold cultivation.\n&lt;br&gt;",
+    "application_url": "https://www.myscheme.gov.in/schemes/fvy",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mbyb",
+    "title": "Makhana Beej Vitaran",
+    "short_name": "MBYB",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to boost farmers' income by improving the production and productivity of Makhana in 11 districts of Bihar through the distribution of high-quality seeds at subsidized rates.",
+    "benefits": "- **Subsidized Seeds:** Seeds of recommended varieties will be made available to farmers at the rate of 30 Kg/Ha.  - **For Swarn Vaidehi variety:** ₹4,950/- will be given as a subsidy (75%).  - **For ",
+    "application_url": "https://www.myscheme.gov.in/schemes/mbyb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cvyb",
+    "title": "Chai Vikas Yojana",
+    "short_name": "CVYB",
+    "ministry": "Agriculture Department",
+    "description": "The scheme aims to offer subsidies for planting materials, horticultural machinery, and related resources to support tea farmers.\n\n",
+    "benefits": "> **Subsidy on Planting Materials:**\n\n\n\n\n\n      - 75% subsidy in the first year, with 25% provided in the second year if plant survival reaches 90%.\n\n\n\n\n> **Subsidy on Machines:**\n\n\n\n\n\n      - Pruning",
+    "application_url": "https://www.myscheme.gov.in/schemes/cvyb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-mnny",
+    "title": "Mukhyamantri Nijee Nalkup Yojana",
+    "short_name": "MNNY",
+    "ministry": "Minor Water Resources Department",
+    "description": "The scheme provides financial assistance to support farmers in ensuring water availability through borewell construction and motor pump installation.\n",
+    "benefits": "> **Subsidy for Borewell Construction:**\n\n\n\n**Category****Subsidy Amount (Per Meter)**\t**Depth Allowed**General ₹600/-15-70 metersBackward/Most Backward Classes\t₹840/-15-70 metersScheduled Caste/Tribe",
+    "application_url": "https://www.myscheme.gov.in/schemes/mnny",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Bihar"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ksyg",
+    "title": "Kisan Suryoday Yojana (KSY)",
+    "short_name": "KSYG",
+    "ministry": "Energy and Petro Chemicals Department",
+    "description": "\"Kisan Suryoday Yojana (KSY)\" is a Gujarat government initiative launched in 2020-2021 to provide daytime electricity for agricultural activities, utilizing solar and non-conventional energy.\n\n",
+    "benefits": "- **Daytime Electricity Supply:** Ensures uninterrupted electricity for agricultural activities during the day from 5:00 am to 9:00 pm.   - **Sustainable Energy:** Promotes the use of solar and non-co",
+    "application_url": "https://www.myscheme.gov.in/schemes/ksyg",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cogfgs",
+    "title": "Construction of Godown for Grain Storage",
+    "short_name": "COGFGS",
+    "ministry": "Panchayat and Rural Development Department",
+    "description": "Launched on 24th December 2013, the scheme \"Construction of Warehouse for Grain Storage\" by the Panchayat and Rural Development Department, Government of Madhya Pradesh aims to provide modern and scientific food grain storage facilities under Food Security Act 13 to applicants in rural areas.",
+    "benefits": "Construction of modern and scientific food grain storage facilities.",
+    "application_url": "https://www.myscheme.gov.in/schemes/cogfgs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-aabssobpmbos",
+    "title": "Advanced Animal Breeding Scheme (Supply of Breedable Pedigree Murrah Bull on Subsidy)",
+    "short_name": "AABSSOBPMBOS",
+    "ministry": "Animal Husbandry Department",
+    "description": "\"Advanced Animal Breeding Scheme (Supply of Breedable Pedigree Murrah Bulls on Subsidy)\" aims to improve cattle breeding by supplying pedigreed breedable Murrah bulls to progressive cattle rearers and trained cow servants. Murrah bulls are provided with a 75% subsidy to animal keepers.",
+    "benefits": "**Subsidized Murrah Bull**\n\n- Total unit cost: ₹62,000\n- Bull cost: ₹60,000\n- Transportation and insurance: ₹2,000\n- Government grant: 75% of total cost\n- Beneficiary contribution: 25% of total cost\n\n",
+    "application_url": "https://www.myscheme.gov.in/schemes/aabssobpmbos",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sfsomgosb",
+    "title": "Scheme for Supply of Male Goat on Subsidy Basis",
+    "short_name": "SFSOMGOSB",
+    "ministry": "Animal Husbandry Department",
+    "description": "\"Male Goat Supply Scheme on Grant Basis\" aims to improve the breed of indigenous/local goats throughout the state. Through this scheme, one male goat of an improved breed (Jamnapari, Barbari, or Sirohi Bakra) is provided to goat farmers of all categories on a grant basis.",
+    "benefits": "**Male Goat Package**\n\n- One improved breed male goat: ₹7,500/-\n- Insurance coverage (2.75% sum insured for one year): ₹206/-\n- Mineral mixture: ₹394/-\n- Training booklet and monitoring card: ₹200/-\n-",
+    "application_url": "https://www.myscheme.gov.in/schemes/sfsomgosb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ksyj",
+    "title": "Kisan Samriddhi Yojana Jharkhand",
+    "short_name": "KSYJ",
+    "ministry": "Department of Agriculture, Animal Husbandry & Co-operative",
+    "description": "The \"Kisan Samriddhi Yojana\" by the Department of Agriculture, Animal Husbandry & Cooperative, Government of Jharkhand, promotes solar-powered irrigation systems to reduce agricultural costs and dependency on fossil fuels. Farmers receive up to 90% subsidy for solar units under this initiative.",
+    "benefits": "1. Farmers receive a 90% subsidy on solar-powered irrigation units, reducing their agricultural costs.\n1. Two types of solar units are available: 5 HP fixed and 2 HP portable, catering to varied irrig",
+    "application_url": "https://www.myscheme.gov.in/schemes/ksyj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Jharkhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-rpcs",
+    "title": "Rearing Pond Construction Scheme",
+    "short_name": "RPCS",
+    "ministry": "Department of Agriculture, Animal Husbandry & Co-operative",
+    "description": "The \"Rearing Pond Construction Scheme\" by the Department of Agriculture, Animal Husbandry, and Cooperation, Government of Jharkhand, aims to promote fish farming by providing financial aid for constructing rearing ponds. Beneficiaries receive up to 80% government assistance for Scheduled Castes (SC)",
+    "benefits": "***Financial Assistance:***\n\n- SC/ST beneficiaries receive up to 80% of the total cost (maximum ₹4,00,000/-).\n- Other categories receive up to 70% (maximum ₹3,50,000/-).\n- Pond Construction Support: A",
+    "application_url": "https://www.myscheme.gov.in/schemes/rpcs",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Jharkhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ppsj",
+    "title": "Paddy Procurement Scheme Jharkhand",
+    "short_name": "PPSJ",
+    "ministry": "Food, Public Distribution and Consumer affairs Department",
+    "description": "The \"Paddy Procurement Scheme\" 2012-13\" by the Food, Public Distribution, and Consumer Affairs Department, Government of Jharkhand, ensures that farmers receive minimum support price for paddy procurement, preventing distress sales and supporting food security.",
+    "benefits": "- MSP is set at ₹1250/- per quintal for the &quot;Common&quot; grade. \n- MSP is set at ₹1280/- per quintal for &quot;Grade A&quot; paddy.\n\n\n\n**NOTE:**\n\n- Direct procurement of paddy from farmers at MS",
+    "application_url": "https://www.myscheme.gov.in/schemes/ppsj",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Jharkhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-caicoloabfabfa",
+    "title": "Compensation Amount Towards Cattle Injury Caused by Forest Animals",
+    "short_name": "CATCICBFA",
+    "ministry": "Forest Department",
+    "description": "Launched on 6th February 2024, the scheme \"Compensation Amount towards Cattle Injury Caused by Forest Animals\" by the Forest Department, Government of Madhya Pradesh, provides compensation in case of death of cattle due to attacks by wild animals.",
+    "benefits": "- ₹1,000/- as immediate assistance for wild animal injury.\n- ₹30,000/- for medical expenses (normal injury).\n- ₹1,00,000/- for permanent disability and full treatment cost.",
+    "application_url": "https://www.myscheme.gov.in/schemes/caicoloabfabfa",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ksas",
+    "title": "Kharmore Sonchidia Award Scheme",
+    "short_name": "KSAS",
+    "ministry": "Forest Department",
+    "description": "In the scheme \"Kharmore Sonchidia Award\" by the Forest Department, Government of Madhya Pradesh, the farmers are rewarded with ₹5,000/- if a Kharmor bird is sighted in the private land of the farmer and ₹10,000/- if a Golden bird is sighted in the private land of the farmer.",
+    "benefits": "**Reward of ₹5,000/- on Sighting of Kharmor Bird**\n\n- Installment 1: ₹1,000/- if sighted in July-August\n- Installment 2: ₹4,000/- if sighted in the same area in September-October\n\n**Reward of ₹10,000/",
+    "application_url": "https://www.myscheme.gov.in/schemes/ksas",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Madhya Pradesh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-pmsch",
+    "title": "Pashudhan Mitra Scheme",
+    "short_name": "PMSCH",
+    "ministry": "Animal Husbandary Department",
+    "description": "Launched on 20th June 2013, the scheme \"Pashudhan Mitra Scheme1\" by the Animal Husbandry Department, Govt of Chhattisgarh, aims to expand veterinary and breeding services, strengthen service delivery, and provide incentive honorariums to Pashudhan Mitras for livelihood support.",
+    "benefits": "- **Castration Work:**  ₹20/- per calf (cow/buffalo) brought to the institution.- **Participation in Medical Camps &amp; Exhibitions:** ₹400/- per event for assisting in medical camps, cattle fairs, a",
+    "application_url": "https://www.myscheme.gov.in/schemes/pmsch",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Chhattisgarh"
+      ]
+    }
+  },
+  {
+    "id": "scraped-wfafcp",
+    "title": "Wire Fencing Around the Farm for Crop Protection",
+    "short_name": "WFAFCP",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Dept., Gujarat. It aims to protect farmers' crops from damage caused by wild and stray animals by providing financial assistance for wire fencing around farms.\n\n",
+    "benefits": "**Name of the Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming Benefits**Wire FencingPer Running Meter ₹200/- or 50% of the actual expenditure incurred, whichever is",
+    "application_url": "https://www.myscheme.gov.in/schemes/wfafcp",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-afphfe",
+    "title": "Assistance to Farmers to Purchase Heavy Farm Equipment (Tractor)",
+    "short_name": "AFPHFE",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat. It aims to provide financial assistance to farmers for purchasing tractors, promoting farm mechanization and increasing farm power availability.\n",
+    "benefits": "- **Subsidy Assistance:** 25% of the cost for:\n\n1. Models up to 40 PTO HP (Max ₹45,000/-).\n1. Models above 40 PTO HP and up to 60 PTO HP (Max ₹60,000/-).\n\n> **Note:**\n\n\n- Minimum Time Limit (in Years)",
+    "application_url": "https://www.myscheme.gov.in/schemes/afphfe",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-cdsg",
+    "title": "Coconut Development Scheme",
+    "short_name": "CDSG",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Coconut Development Scheme\" introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, aims to support farmers by providing quality coconut saplings and financial assistance for coconut cultivation. ",
+    "benefits": "> **Assistance for Coconut Cultivation:**\n\n\n- Financial support of ₹37,500/- per hectare, covering 75% of the total cost (₹50,000/- per hectare).\n\n> **Promotion of Integrated Pest Management (IPM) and",
+    "application_url": "https://www.myscheme.gov.in/schemes/cdsg",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-iaifcpb",
+    "title": "Incentive to Owners of A.I. Born Female Calf through Pure Breeding in Indigenous Cow Across the State",
+    "short_name": "IAIFCPB",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme aims to support livestock owners in maintaining and increasing the population of indigenous cattle breeds like Gir and Kankrej.",
+    "benefits": "**Name of Component**\t**Standard of Assistance**\t**Minimum Time Limit(In Year) for Reclaiming Benefits**\tIncentive to Owners of A.I. Born Female calf through pure breeding in indigenous cow across the",
+    "application_url": "https://www.myscheme.gov.in/schemes/iaifcpb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-bpuk",
+    "title": "Bakri Palan Yojana",
+    "short_name": "BPYUK",
+    "ministry": "Department Of Animal Husbandry",
+    "description": "The scheme aims to promote goat rearing as a source of self-employment and livelihood generation for eligible beneficiaries, particularly from SECC categories, by providing financial support for rearing a goat unit. ",
+    "benefits": "- Self-employment in goat rearing is facilitated by providing beneficiaries with a goat unit comprising 10 female goats and 1 male goat for a period of 10 to 14 months. \n  - The total cost of the unit",
+    "application_url": "https://www.myscheme.gov.in/schemes/bpuk",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Uttarakhand"
+      ]
+    }
+  },
+  {
+    "id": "scraped-ciad",
+    "title": "Compensation in Animal Death",
+    "short_name": "CIAD",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Compensation in Animal Death\" scheme introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, provides financial assistance to animal breeders who suffer livestock losses due to natural disasters, diseases, or poisoning.\n\n",
+    "benefits": "**Details of Animal****Compensation Per Animal****Compensation Limit For One Family**Large Dairy animals (Cow/Buffalo/Camel)₹37,500/-maximum for 3 animalsSmall Dairy animals (Sheep/Goat)₹4,000/-maximu",
+    "application_url": "https://www.myscheme.gov.in/schemes/ciad",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sofmg",
+    "title": "Supply of Fodder Minikit",
+    "short_name": "SOFMG",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The \"Supply of Fodder Minikit\" scheme introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat, aims to provide improved varieties of fodder seeds to farmers.",
+    "benefits": "**Name of Component**\t**Standard of Assistance**\t**Minimum Time Limit(In Year) for Reclaiming Benefits**\tSupply of Fodder Minikit under General People, Schedule Caste People and Schedule Tribe People.",
+    "application_url": "https://www.myscheme.gov.in/schemes/sofmg",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-afcgwtb",
+    "title": "Assistance for Cattleshed, Gaman, Water Tank and Bucket",
+    "short_name": "AFCGWTB",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Assistance for Cattleshed, Gaman, Water Tank and Bucket\" introduced by the Agriculture, Farmers Welfare and Cooperation Dept., Gujarat, aims to support livestock farmers by offering financial assistance for essential infrastructure such as cattle sheds, gaman, water tanks, and buckets.",
+    "benefits": "**Name of Component****Standard of Assistance****Minimum Time Limit(In Year) for Reclaiming Benefits**Assistance for Schedule Caste People of Cattleshed, Gaman, Water tank and Bucket (2 Animal)\tAssist",
+    "application_url": "https://www.myscheme.gov.in/schemes/afcgwtb",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-sskpf",
+    "title": "Subsidy Scheme on Establishment of 25 R.I.R./Kadaknath & 1000 Broiler Bird’s Unit and Stipend for Poultry Farming Training for Scheduled Tribes People of the State",
+    "short_name": "SSKPF",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme has been introduced by the Agriculture, Farmers Welfare and Cooperation Department, Gujarat. It aims to provide financial assistance and training stipends to Scheduled Tribe (ST) individuals in Gujarat for poultry farming.\n\n",
+    "benefits": "**Name of the Component****Standard of Assistance****Minimum Time Limit (in Years) for Reclaiming  Benefits**Subsidy Scheme on establishment of - 25 Kadaknath / RIR birds Unit to Scheduled Tribes\t75% ",
+    "application_url": "https://www.myscheme.gov.in/schemes/sskpf",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-acfapst",
+    "title": "Assistance of Concentrate Feed After Parturition (Scheduled Tribe Category)",
+    "short_name": "ACFAPST",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "The scheme \"Assistance of Concentrate Feed After Parturition (Scheduled Tribe Category)\" provides 150 kg of BIS Type II concentrate feed to Scheduled Tribe Category livestock owners after parturition to support cattle health, increase milk production, and enhance calf development.\n\n",
+    "benefits": "**Name of Component****Standard of assistance****Remarks****Minimum Time Limit (in Years) for Reclaiming Benefits**Concentrate Feed 150 kg BIS type II Concentrate feed per beneficiary100% assistanceEv",
+    "application_url": "https://www.myscheme.gov.in/schemes/acfapst",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-acfpasc",
+    "title": "Assistance of Concentrate Feed for Pregnant Animals (Scheduled Caste Category)",
+    "short_name": "ACFPASC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "This scheme provides free BIS type II concentrate feed to pregnant cattle owned by Scheduled Caste Category livestock owners in Gujarat to ensure their good health, boost immunity, prevent metabolic diseases, and enhance milk production.\n\n",
+    "benefits": "**Name of Component****Standard of assistance****Remarks****Minimum Time Limit (in Years) for Reclaiming Benefits**Concentrate Feed 250 kg BIS type II Concentrate feed per beneficiary100% assistanceEv",
+    "application_url": "https://www.myscheme.gov.in/schemes/acfpasc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  },
+  {
+    "id": "scraped-fafiskc",
+    "title": "COP-34 Financial Assistance to Farmer for Interest Subvention (Kishan Credit Card Interest Asst.)",
+    "short_name": "FAFISKC",
+    "ministry": "Agriculture, Farmers Welfare and Cooperation Department",
+    "description": "Under this scheme, financial assistance in the form of interest subvention is provided to farmers who repay their crop loans on time, helping them improve their agricultural productivity and economic well-being.\n\n",
+    "benefits": "**Name of Component**\t**Standard of Assistance****Minimum Time Limit (in Year) for Reclaiming Benefits**COP-34, Financial assistance to farmer for Interest Subvention4% interest subvention on timely r",
+    "application_url": "https://www.myscheme.gov.in/schemes/fafiskc",
+    "documents_required": [
+      "Aadhaar Card",
+      "Land/Identity Verification",
+      "Bank Account Passbook"
+    ],
+    "category_tag": "Direct Benefit",
+    "filter_rule": {
+      "states": [
+        "Gujarat"
+      ]
+    }
+  }
+]
