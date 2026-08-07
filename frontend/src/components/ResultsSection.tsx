@@ -64,20 +64,40 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
       {activeTab === 'matched' && (
         <div className="tab-content">
           {matchedList.length === 0 ? (
-            <div className="empty-state">
-              <XCircle size={48} className="empty-icon" />
-              <h3>No Eligible Schemes Found for Exact Filter Rules</h3>
-              <p>Try adjusting your land holding size or state in the profile calculator above.</p>
+            <div className="not-found-card animate-mascot" style={{ margin: '30px auto' }}>
+              <div className="not-found-mascot">
+                <span style={{ fontSize: '2.5rem' }}>🌱</span>
+              </div>
+              <span className="not-found-badge">0 Direct Matches</span>
+              <h3 className="not-found-title">No Exact Matches Found Yet</h3>
+              <p className="not-found-desc">
+                No schemes matched your exact criteria for <strong>{profile.state}</strong> with <strong>{profile.land_size_ha} {profile.unit || 'ha'}</strong>. Try switching state or setting land size to 2 ha to explore national schemes!
+              </p>
+              <button
+                type="button"
+                className="not-found-btn"
+                onClick={() => {
+                  const el = document.getElementById('eligibility-form-section');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Adjust Farmer Profile
+              </button>
             </div>
           ) : (
             <>
               <div className="schemes-grid">
-                {displayedMatched.map((res) => (
-                  <SchemeCard 
-                    key={res.scheme.id} 
-                    result={res} 
-                    onViewDetails={onViewDetails} 
-                  />
+                {displayedMatched.map((res, index) => (
+                  <div
+                    key={res.scheme.id}
+                    className="staggered-card-entry"
+                    style={{ '--card-index': index } as React.CSSProperties}
+                  >
+                    <SchemeCard 
+                      result={res} 
+                      onViewDetails={onViewDetails} 
+                    />
+                  </div>
                 ))}
               </div>
 

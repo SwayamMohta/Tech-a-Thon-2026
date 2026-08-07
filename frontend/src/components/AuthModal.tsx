@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { User } from '../utils/auth';
 import { loginUser, registerUser } from '../utils/auth';
-import { X, Sprout, User as UserIcon, KeyRound, AlertCircle, Eye, EyeOff, ShieldCheck, UserCheck } from 'lucide-react';
+import { X, Sprout, User as UserIcon, KeyRound, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -59,20 +59,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         setErrorMsg(res.error || 'Registration failed.');
       }
     }
-  };
-
-  const handleQuickFillAdmin = () => {
-    setTab('login');
-    setUsername('admin');
-    setPassword('admin123');
-    setErrorMsg('');
-  };
-
-  const handleQuickFillFarmer = () => {
-    setTab('login');
-    setUsername('farmer');
-    setPassword('farmer123');
-    setErrorMsg('');
   };
 
   return (

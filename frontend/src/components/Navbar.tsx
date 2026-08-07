@@ -1,6 +1,6 @@
 import React from 'react';
 import type { User } from '../utils/auth';
-import { LogIn, LogOut, UserCheck, ShieldCheck, Sparkles } from 'lucide-react';
+import { LogOut, UserCheck, ShieldCheck, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   onCheckEligibilityClick: () => void;
@@ -37,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="navbar-container">
       <div className="navbar-inner">
 
-        {/* 1. Brand Logo: Return to Top / Home */}
+        {/* Left Side: Brand Name Only */}
         <button
           type="button"
           className="navbar-brand"
@@ -47,32 +47,23 @@ export const Navbar: React.FC<NavbarProps> = ({
           <span className="brand-name">Krishi Match</span>
         </button>
 
-        {/* Right group: Nav links + CTA + Divider + Auth */}
+        {/* Right Side: All Nav Links + Sign In + Black Pill CTA Button */}
         <div className="navbar-right-group">
-
           <nav className="navbar-links" aria-label="Main Navigation">
-            {/* Browse Schemes Nav Link: View full scheme directory */}
             <button
               className={`nav-link ${activeSection === 'eligibility' ? 'active' : ''}`}
               onClick={handleBrowseClick}
             >
               Browse Schemes
             </button>
+            <button
+              className={`nav-link ${activeSection === 'explainer' ? 'active' : ''}`}
+              onClick={onExplainerClick}
+            >
+              Matching Engine
+            </button>
           </nav>
 
-          {/* 5. Check Eligibility: Primary Green CTA Button */}
-          <button
-            type="button"
-            className="btn-nav-cta"
-            onClick={onCheckEligibilityClick}
-          >
-            <Sparkles size={14} />
-            <span>Check Eligibility</span>
-          </button>
-
-          <div className="nav-divider" aria-hidden="true" />
-
-          {/* 6. Sign In / Profile: Secondary Button / Badge */}
           {currentUser ? (
             <div className="user-profile-badge">
               <div className={`role-avatar-dot ${currentUser.role === 'admin' ? 'dot-admin' : 'dot-user'}`}>
@@ -108,13 +99,22 @@ export const Navbar: React.FC<NavbarProps> = ({
           ) : (
             <button
               type="button"
-              className="btn-nav-signin"
+              className="nav-link-text-only"
               onClick={onOpenAuthModal}
             >
-              <LogIn size={14} />
-              <span>Sign In</span>
+              Sign In
             </button>
           )}
+
+          {/* Primary Black Pill CTA Button */}
+          <button
+            type="button"
+            className="btn-nav-pill-black"
+            onClick={onCheckEligibilityClick}
+          >
+            <Sparkles size={14} />
+            <span>Check Eligibility</span>
+          </button>
         </div>
 
       </div>

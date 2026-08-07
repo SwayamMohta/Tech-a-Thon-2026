@@ -7,6 +7,7 @@ import { SchemeModal } from './components/SchemeModal';
 import { AdminPanel } from './components/AdminPanel';
 import { EngineExplainer } from './components/EngineExplainer';
 import { AuthModal } from './components/AuthModal';
+import { NotFound } from './components/NotFound';
 import type { FarmerProfile, Scheme, MatchResult } from './types/scheme';
 import type { User } from './utils/auth';
 import { getCurrentUser, getStoredToken, logoutUser } from './utils/auth';
@@ -168,6 +169,14 @@ export function App() {
           <div className="page-section-container">
             <EngineExplainer />
           </div>
+        )}
+
+        {/* Fallback 404 Edge State (Design.md Section 4) */}
+        {!['hero', 'eligibility', 'admin', 'explainer'].includes(activeSection) && (
+          <NotFound
+            onGoHome={() => navigateToSection('hero')}
+            onGoMatcher={() => navigateToSection('eligibility')}
+          />
         )}
       </main>
 

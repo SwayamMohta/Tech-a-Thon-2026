@@ -15,7 +15,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ result, onViewDetails })
     : Math.round(tfidf_similarity * 60);
 
   return (
-    <div className={`scheme-card ${passed_filter ? 'card-matched' : 'card-excluded'}`}>
+    <div className={`scheme-card tactile-card ${passed_filter ? 'card-matched' : 'card-excluded'}`}>
       <div className="card-top-header">
         <div className="category-and-ministry">
           <span className="category-badge">{scheme.category_tag}</span>

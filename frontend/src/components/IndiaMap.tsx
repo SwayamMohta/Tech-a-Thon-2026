@@ -5,6 +5,7 @@ interface IndiaMapProps {
   selectedState: string;
   hoveredState?: string | null;
   onSelectState?: (state: string) => void;
+  onHoverState?: (state: string | null) => void;
 }
 
 // Map our display names -> svg-maps/india location IDs
@@ -49,7 +50,7 @@ Object.entries(DISPLAY_TO_ID).forEach(([display, id]) => {
   if (!ID_TO_DISPLAY[id]) ID_TO_DISPLAY[id] = display;
 });
 
-export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState, onSelectState }) => {
+export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState, onSelectState, onHoverState }) => {
   const selectedId = selectedState ? DISPLAY_TO_ID[selectedState] : null;
   const hoveredId  = hoveredState  ? DISPLAY_TO_ID[hoveredState]  : null;
 
@@ -69,7 +70,7 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
         className="india-map-svg"
         aria-label="Map of India — click a state to select"
       >
-        {india.locations.map((loc) => {
+        {india.locations.map((loc: any) => {
           const isActive = loc.id === activeId;
           const displayName = ID_TO_DISPLAY[loc.id] || loc.name;
           const cls = `india-state-path${isActive ? " highlighted" : ""}`;
@@ -84,11 +85,21 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
                   onSelectState(displayName);
                 }
               }}
-              aria-label={loc.name}
+              onMouseEnter={() => {
+                if (displayName && onHoverState) {
+                  onHoverState(displayName);
+                }
+              }}
+              onMouseLeave={() => {
+                if (onHoverState) {
+                  onHoverState(null);
+                }
+              }}
+              aria-label={displayName}
               role="button"
-              tabIndex={-1}
+              tabIndex={0}
             >
-              <title>{loc.name}</title>
+              <title>{displayName}</title>
             </path>
           );
         })}
@@ -97,10 +108,10 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
         {labelState ? (
           <>
             <span className="india-map-label-dot" />
-            {labelState}
+            {labelState} (Click map to select)
           </>
         ) : (
-          <span className="india-map-label-hint">Click a state on the map</span>
+          <span className="india-map-label-hint">Click any state on the map to select</span>
         )}
       </div>
     </div>
