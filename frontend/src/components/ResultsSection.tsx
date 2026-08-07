@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { MatchResult, FarmerProfile } from '../types/scheme';
 import { SchemeCard } from './SchemeCard';
-import { CheckCircle, XCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { CheckCircle, XCircle, ChevronDown, ChevronUp, Info } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface ResultsSectionProps {
@@ -110,7 +110,8 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
         <div className="tab-content">
           <div className="excluded-intro-banner">
             <p>
-              💡 <strong>Transparency Guarantee:</strong> These schemes failed one or more hard eligibility rules (state, crop, land size, or category). They are ranked by TF-IDF similarity so you can see schemes you almost qualify for.
+              <Info size={16} style={{ display: 'inline-block', verticalAlign: '-2px', marginRight: '6px', color: '#16a34a' }} />
+              <strong>Transparency Guarantee:</strong> These schemes failed one or more hard eligibility rules (state, crop, land size, or category). They are ranked by TF-IDF similarity so you can see schemes you almost qualify for.
             </p>
           </div>
 

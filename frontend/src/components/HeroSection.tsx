@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, ChevronDown, Check } from 'lucide-react';
+import { createPortal } from 'react-dom';
+import { Search, ChevronDown, Check, X } from 'lucide-react';
 import { INDIA_STATES } from '../data/schemes';
+import { IndiaMap } from './IndiaMap';
 
 interface HeroSectionProps {
   onSearch: (quickSearchState: string) => void;
@@ -11,7 +13,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch }) => {
   const [searchState, setSearchState] = useState('Maharashtra');
   const [isOpen, setIsOpen] = useState(false);
   const [filterText, setFilterText] = useState('');
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [hoveredState, setHoveredState] = useState<string | null>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   const filteredStates = INDIA_STATES.filter(st =>
     st.toLowerCase().includes(filterText.toLowerCase())
@@ -25,23 +28,45 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch }) => {
   const handleSelectState = (st: string) => {
     setSearchState(st);
     setIsOpen(false);
+    setFilterText('');
+  };
+
+  const handleOpen = () => {
+    setFilterText('');
+    setIsOpen(true);
   };
 
   useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setIsOpen(false);
-      }
+    if (!isOpen) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsOpen(false);
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
+  }, [isOpen]);
 
   return (
     <section className="hero-section">
-      {/* Background Soft Glow Blobs */}
+      {/* Aesthetic Background Layer */}
       <div className="bg-glow-yellow" />
       <div className="bg-glow-green" />
+      <div className="bg-glow-emerald-center" />
+      <div className="bg-sunbeam" />
+
+      {/* Topographic Terrain Pattern Overlay */}
+      <div className="bg-topographic-grid" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="topoGrid" width="120" height="120" patternUnits="userSpaceOnUse">
+              <path d="M 0 60 Q 30 10, 60 60 T 120 60" fill="none" stroke="rgba(34, 197, 94, 0.05)" strokeWidth="1.5" />
+              <path d="M 0 30 Q 45 90, 90 30 T 180 30" fill="none" stroke="rgba(245, 158, 11, 0.04)" strokeWidth="1.2" strokeDasharray="4 4" />
+              <path d="M 0 100 Q 60 40, 120 100" fill="none" stroke="rgba(34, 197, 94, 0.04)" strokeWidth="1" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#topoGrid)" />
+        </svg>
+      </div>
+
 
       <div className="hero-container">
         {/* Left Hero Column */}
@@ -52,18 +77,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch }) => {
           </h1>
 
           <p className="hero-subtitle">
-            we believe Future of Food & Welfare is here
           </p>
 
-          {/* Curved Search Bar with Custom Downward Dropdown */}
+          {/* Curved Search Bar with Custom Floating State Picker */}
           <form className="hero-search-bar" onSubmit={handleQuickSubmit}>
-            <div className="search-input-wrapper" ref={dropdownRef}>
+            <div className="search-input-wrapper">
               <Search className="search-icon" size={20} />
-              
-              <div 
-                className="custom-dropdown-trigger" 
-                onClick={() => setIsOpen(!isOpen)}
+
+              <div
+                className="custom-dropdown-trigger"
+                onClick={handleOpen}
                 tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && handleOpen()}
                 role="combobox"
                 aria-expanded={isOpen}
                 aria-haspopup="listbox"
@@ -72,27 +97,51 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch }) => {
                 <span className="selected-state-text">{searchState || 'Select your state...'}</span>
                 <ChevronDown size={18} className={`dropdown-arrow ${isOpen ? 'open' : ''}`} />
               </div>
+            </div>
 
-              {isOpen && (
-                <div className="custom-dropdown-menu">
-                  <div className="dropdown-search-header">
+            <button type="submit" className="hero-search-btn">
+              Search
+            </button>
+          </form>
+
+          {/* Floating State Picker — portal rendered, fixed centered */}
+          {isOpen && createPortal(
+            <div className="state-picker-backdrop" onClick={() => setIsOpen(false)}>
+              <div
+                className="state-picker-panel"
+                ref={panelRef}
+                onClick={(e) => e.stopPropagation()}
+                role="dialog"
+                aria-modal="true"
+                aria-label="Select your state"
+              >
+                {/* Left column: search + list */}
+                <div className="state-picker-left">
+                  <div className="state-picker-header">
+                    <span className="state-picker-title">Select State</span>
+                    <button className="state-picker-close" onClick={() => setIsOpen(false)} aria-label="Close">
+                      <X size={18} />
+                    </button>
+                  </div>
+                  <div className="state-picker-search-wrap">
                     <input
                       type="text"
-                      placeholder="Type state name..."
+                      placeholder="Search state..."
                       value={filterText}
                       onChange={(e) => setFilterText(e.target.value)}
-                      className="dropdown-search-input"
+                      className="state-picker-search-input"
                       autoFocus
-                      onClick={(e) => e.stopPropagation()}
                     />
                   </div>
-                  <div className="dropdown-options-list" role="listbox">
+                  <div className="state-picker-list" role="listbox">
                     {filteredStates.length > 0 ? (
                       filteredStates.map(st => (
                         <div
                           key={st}
-                          className={`dropdown-option-item ${st === searchState ? 'selected' : ''}`}
+                          className={`state-picker-option ${st === searchState ? 'selected' : ''}`}
                           onClick={() => handleSelectState(st)}
+                          onMouseEnter={() => setHoveredState(st)}
+                          onMouseLeave={() => setHoveredState(null)}
                           role="option"
                           aria-selected={st === searchState}
                         >
@@ -105,13 +154,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch }) => {
                     )}
                   </div>
                 </div>
-              )}
-            </div>
-            
-            <button type="submit" className="hero-search-btn">
-              Search
-            </button>
-          </form>
+
+                {/* Right column: India map */}
+                <div className="state-picker-right">
+                  <IndiaMap
+                    selectedState={searchState}
+                    hoveredState={hoveredState}
+                    onSelectState={handleSelectState}
+                  />
+                </div>
+              </div>
+            </div>,
+            document.body
+          )}
+
 
           {/* Social Proof matching reference image lower left */}
           <div className="hero-social-proof">
