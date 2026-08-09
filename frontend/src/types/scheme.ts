@@ -20,11 +20,32 @@ export interface Scheme {
 }
 
 export interface FarmerProfile {
+  // Step 1: Location & Address
   state: string;
+  district?: string;
+  taluka?: string;
+  pincode?: string;
+  khasra_no?: string;
+
+  // Step 2: Land Holding & Assets
   land_size_ha: number;
+  unit?: 'ha' | 'acre' | 'bigha';
+  ownership_status?: 'Owner Farmer' | 'Tenant / Sharecropper' | 'Leased Land' | 'Forest / Community Land';
+  irrigation_type?: 'Rainfed / Un-irrigated' | 'Canal / Borewell Irrigated' | 'Drip / Micro-Irrigated' | 'Solar Pumped';
+
+  // Step 3: Farming Operations
   crop: string;
+  farming_season?: 'Kharif (Monsoon)' | 'Rabi (Winter)' | 'Zaid (Summer)' | 'Whole Year';
+  annual_income?: 'Below ₹1 Lakh' | '₹1 Lakh - ₹2.5 Lakhs' | '₹2.5 Lakhs - ₹5 Lakhs' | 'Above ₹5 Lakhs';
+  farming_type?: 'Conventional Farming' | 'Certified Organic Farming' | 'Natural Farming (ZBNF)' | 'Polyhouse / Protected';
+
+  // Step 4: Demographics & Identity
+  farmer_name?: string;
+  mobile_number?: string;
+  aadhaar_last4?: string;
+  gender?: 'Male' | 'Female' | 'Other';
   category: string;
-  unit?: 'ha' | 'acre';
+  special_category?: 'Small & Marginal Farmer' | 'Women Farmer' | 'Differently Abled (Divyang)' | 'Ex-Serviceman' | 'None';
 }
 
 export interface HardFilterResult {

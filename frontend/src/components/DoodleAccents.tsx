@@ -94,3 +94,21 @@ export const SunBurst: React.FC<DoodleProps> = ({ className = '', style }) => (
     <path d="m19.07 4.93-1.41 1.41" />
   </svg>
 );
+
+export const LeafAccentDoodle: React.FC<DoodleProps> = ({ className = '', style }) => (
+  <svg
+    className={`doodle-leaf ${className}`}
+    style={style}
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#16A34A"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 7 0 6-4.5 11-10 11Z" />
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+  </svg>
+);

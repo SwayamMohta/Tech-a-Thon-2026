@@ -24,8 +24,13 @@ function tokenize(text: string): string[] {
 export function profileToQuery(profile: FarmerProfile): string {
   const parts = [
     profile.state,
+    profile.district,
     profile.crop,
-    profile.category
+    profile.category,
+    profile.irrigation_type,
+    profile.farming_type,
+    profile.ownership_status,
+    profile.special_category
   ];
   return parts.filter(Boolean).join(' ').toLowerCase();
 }

@@ -3,6 +3,7 @@ import type { MatchResult, FarmerProfile } from '../types/scheme';
 import { SchemeCard } from './SchemeCard';
 import { CheckCircle, XCircle, ChevronDown, ChevronUp, Info } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { useLanguage } from '../context/LanguageContext';
 
 interface ResultsSectionProps {
   results: MatchResult[];
@@ -15,6 +16,8 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
   profile,
   onViewDetails
 }) => {
+  const { t } = useLanguage();
+  const resT = t.results || {};
   const [activeTab, setActiveTab] = useState<'matched' | 'excluded'>('matched');
   const [showAllMatched, setShowAllMatched] = useState(false);
 
@@ -37,7 +40,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
     <section className="results-section" id="results-section">
       <div className="results-header">
         <div className="results-title-group">
-          <h2>Scheme Matching Results</h2>
+          <h2>{resT.matchingSchemesTitle || 'Scheme Matching Results'}</h2>
           <p className="results-meta">
             Ranked for profile: <strong>{profile.state}</strong> • <strong>{profile.land_size_ha} {profile.unit || 'ha'}</strong> • <strong>{profile.crop.toUpperCase()}</strong> • <strong>{profile.category}</strong>
           </p>
@@ -49,14 +52,14 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
             onClick={() => setActiveTab('matched')}
           >
             <CheckCircle size={16} />
-            <span>Eligible Schemes ({matchedList.length})</span>
+            <span>{resT.eligibleOnly || 'Eligible Schemes'} ({matchedList.length})</span>
           </button>
           <button
             className={`tab-btn ${activeTab === 'excluded' ? 'active' : ''}`}
             onClick={() => setActiveTab('excluded')}
           >
             <XCircle size={16} />
-            <span>Excluded ({excludedList.length})</span>
+            <span>{resT.exclusionReason || 'Excluded'} ({excludedList.length})</span>
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ interface SchemeCardProps {
 }
 
 export const SchemeCard: React.FC<SchemeCardProps> = ({ result, onViewDetails }) => {
-  const { scheme, passed_filter, exclusion_reasons, tfidf_similarity, final_score, matched_keywords, missing_keywords } = result;
+  const { scheme, passed_filter, exclusion_reasons, tfidf_similarity, matched_keywords, missing_keywords } = result;
 
   const matchPercent = passed_filter
     ? Math.round(75 + tfidf_similarity * 25)
@@ -92,11 +92,8 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ result, onViewDetails })
 
       <div className="card-footer">
         <div className="score-detail">
-          <span className="score-label">TF-IDF Sim:</span>
-          <span className="score-val">{(tfidf_similarity * 100).toFixed(1)}%</span>
-          <span className="score-divider">|</span>
-          <span className="score-label">Final Score:</span>
-          <span className="score-val bold">{final_score.toFixed(2)}</span>
+          <span className="score-label">Relevance:</span>
+          <span className="score-val bold">{matchPercent}%</span>
         </div>
 
         <button 

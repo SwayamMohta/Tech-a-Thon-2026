@@ -1,12 +1,13 @@
 import React from 'react';
 import type { User } from '../utils/auth';
-import { LogOut, UserCheck, ShieldCheck, Sparkles } from 'lucide-react';
+import { LogOut, UserCheck, ShieldCheck, LogIn } from 'lucide-react';
+import { LanguageSelector } from './LanguageSelector';
+import { useLanguage } from '../context/LanguageContext';
 
 interface NavbarProps {
   onCheckEligibilityClick: () => void;
   onBrowseSchemesClick?: () => void;
   onAdminClick: () => void;
-  onExplainerClick: () => void;
   activeSection: string;
   setActiveSection: (section: string) => void;
   currentUser: User | null;
@@ -18,13 +19,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   onCheckEligibilityClick,
   onBrowseSchemesClick,
   onAdminClick,
-  onExplainerClick,
   activeSection,
   setActiveSection,
   currentUser,
   onOpenAuthModal,
   onLogout
 }) => {
+  const { t } = useLanguage();
+
   const handleBrowseClick = () => {
     if (onBrowseSchemesClick) {
       onBrowseSchemesClick();
@@ -47,22 +49,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           <span className="brand-name">Krishi Match</span>
         </button>
 
-        {/* Right Side: All Nav Links + Sign In + Black Pill CTA Button */}
+        {/* Right Side: All Nav Links + Language Selector + Sign In Black Pill CTA Button */}
         <div className="navbar-right-group">
           <nav className="navbar-links" aria-label="Main Navigation">
             <button
-              className={`nav-link ${activeSection === 'eligibility' ? 'active' : ''}`}
+              className={`nav-link ${activeSection === 'browse' ? 'active' : ''}`}
               onClick={handleBrowseClick}
             >
-              Browse Schemes
-            </button>
-            <button
-              className={`nav-link ${activeSection === 'explainer' ? 'active' : ''}`}
-              onClick={onExplainerClick}
-            >
-              Matching Engine
+              {t.nav.browseSchemes}
             </button>
           </nav>
+
+          <LanguageSelector />
 
           {currentUser ? (
             <div className="user-profile-badge">
@@ -82,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   title="Open Admin Console"
                 >
                   <ShieldCheck size={13} />
-                  <span>Admin</span>
+                  <span>{t.nav.admin}</span>
                 </button>
               )}
 
@@ -90,8 +88,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 type="button"
                 className="btn-nav-logout"
                 onClick={onLogout}
-                title="Sign out"
-                aria-label="Sign out"
+                title={t.nav.signOut}
+                aria-label={t.nav.signOut}
               >
                 <LogOut size={14} />
               </button>
@@ -99,26 +97,18 @@ export const Navbar: React.FC<NavbarProps> = ({
           ) : (
             <button
               type="button"
-              className="nav-link-text-only"
+              className="btn-nav-pill-black"
               onClick={onOpenAuthModal}
             >
-              Sign In
+              <LogIn size={14} />
+              <span>{t.nav.signIn}</span>
             </button>
           )}
-
-          {/* Primary Black Pill CTA Button */}
-          <button
-            type="button"
-            className="btn-nav-pill-black"
-            onClick={onCheckEligibilityClick}
-          >
-            <Sparkles size={14} />
-            <span>Check Eligibility</span>
-          </button>
         </div>
 
       </div>
     </header>
   );
 };
+
 

@@ -1,5 +1,7 @@
 import React from "react";
 import india from "@svg-maps/india";
+import { useLanguage } from "../context/LanguageContext";
+import { getLocalizedStateName } from "../i18n/stateTranslations";
 
 interface IndiaMapProps {
   selectedState: string;
@@ -51,6 +53,7 @@ Object.entries(DISPLAY_TO_ID).forEach(([display, id]) => {
 });
 
 export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState, onSelectState, onHoverState }) => {
+  const { language, t } = useLanguage();
   const selectedId = selectedState ? DISPLAY_TO_ID[selectedState] : null;
   const hoveredId  = hoveredState  ? DISPLAY_TO_ID[hoveredState]  : null;
 
@@ -72,7 +75,8 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
       >
         {india.locations.map((loc: any) => {
           const isActive = loc.id === activeId;
-          const displayName = ID_TO_DISPLAY[loc.id] || loc.name;
+          const canonicalName = ID_TO_DISPLAY[loc.id] || loc.name;
+          const localizedName = getLocalizedStateName(canonicalName, language);
           const cls = `india-state-path${isActive ? " highlighted" : ""}`;
           return (
             <path
@@ -81,13 +85,13 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
               d={loc.path}
               className={cls}
               onClick={() => {
-                if (displayName && onSelectState) {
-                  onSelectState(displayName);
+                if (canonicalName && onSelectState) {
+                  onSelectState(canonicalName);
                 }
               }}
               onMouseEnter={() => {
-                if (displayName && onHoverState) {
-                  onHoverState(displayName);
+                if (canonicalName && onHoverState) {
+                  onHoverState(canonicalName);
                 }
               }}
               onMouseLeave={() => {
@@ -95,11 +99,11 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
                   onHoverState(null);
                 }
               }}
-              aria-label={displayName}
+              aria-label={localizedName}
               role="button"
               tabIndex={0}
             >
-              <title>{displayName}</title>
+              <title>{localizedName}</title>
             </path>
           );
         })}
@@ -108,12 +112,13 @@ export const IndiaMap: React.FC<IndiaMapProps> = ({ selectedState, hoveredState,
         {labelState ? (
           <>
             <span className="india-map-label-dot" />
-            {labelState} (Click map to select)
+            {getLocalizedStateName(labelState, language)} {t.hero.clickMapToSelect}
           </>
         ) : (
-          <span className="india-map-label-hint">Click any state on the map to select</span>
+          <span className="india-map-label-hint">{t.hero.clickAnyStateHint}</span>
         )}
       </div>
     </div>
   );
 };
+
