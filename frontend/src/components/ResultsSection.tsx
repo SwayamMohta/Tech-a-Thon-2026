@@ -4,6 +4,7 @@ import { SchemeCard } from './SchemeCard';
 import { CheckCircle, XCircle, ChevronDown, ChevronUp, Info } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { useLanguage } from '../context/LanguageContext';
+import { getLocalizedStateName } from '../i18n/stateTranslations';
 
 interface ResultsSectionProps {
   results: MatchResult[];
@@ -16,7 +17,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
   profile,
   onViewDetails
 }) => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const resT = t.results || {};
   const [activeTab, setActiveTab] = useState<'matched' | 'excluded'>('matched');
   const [showAllMatched, setShowAllMatched] = useState(false);
@@ -35,6 +36,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
   }, [results, matchedList.length]);
 
   const displayedMatched = showAllMatched ? matchedList : matchedList.slice(0, 10);
+  const localizedState = getLocalizedStateName(profile.state, language) || profile.state;
 
   return (
     <section className="results-section" id="results-section">
@@ -42,7 +44,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
         <div className="results-title-group">
           <h2>{resT.matchingSchemesTitle || 'Scheme Matching Results'}</h2>
           <p className="results-meta">
-            Ranked for profile: <strong>{profile.state}</strong> • <strong>{profile.land_size_ha} {profile.unit || 'ha'}</strong> • <strong>{profile.crop.toUpperCase()}</strong> • <strong>{profile.category}</strong>
+            Ranked for profile: <strong>{localizedState}</strong> • <strong>{profile.land_size_ha} {profile.unit || 'ha'}</strong> • <strong>{profile.crop.toUpperCase()}</strong> • <strong>{profile.category}</strong>
           </p>
         </div>
 
@@ -72,9 +74,9 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                 <span style={{ fontSize: '2.5rem' }}>🌱</span>
               </div>
               <span className="not-found-badge">0 Direct Matches</span>
-              <h3 className="not-found-title">No Exact Matches Found Yet</h3>
+              <h3 className="not-found-title">{resT.noMatchesTitle || 'No Exact Matches Found Yet'}</h3>
               <p className="not-found-desc">
-                No schemes matched your exact criteria for <strong>{profile.state}</strong> with <strong>{profile.land_size_ha} {profile.unit || 'ha'}</strong>. Try switching state or setting land size to 2 ha to explore national schemes!
+                {resT.noMatchesDesc || 'No schemes matched your exact criteria. Try adjusting your profile or explore national schemes!'}
               </p>
               <button
                 type="button"
@@ -84,7 +86,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Adjust Farmer Profile
+                {resT.adjustProfile || 'Adjust Farmer Profile'}
               </button>
             </div>
           ) : (
@@ -112,12 +114,12 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                   >
                     {showAllMatched ? (
                       <>
-                        <span>Show Top 10 Only</span>
+                        <span>{resT.showTop10 || 'Show Top 10 Only'}</span>
                         <ChevronUp size={18} />
                       </>
                     ) : (
                       <>
-                        <span>Show All ({matchedList.length}) Schemes</span>
+                        <span>{resT.showAll || 'Show All Schemes'} ({matchedList.length})</span>
                         <ChevronDown size={18} />
                       </>
                     )}
@@ -134,7 +136,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
           <div className="excluded-intro-banner">
             <p>
               <Info size={16} style={{ display: 'inline-block', verticalAlign: '-2px', marginRight: '6px', color: '#16a34a' }} />
-              <strong>Transparency Guarantee:</strong> These schemes failed one or more hard eligibility rules (state, crop, land size, or category). They are ranked by TF-IDF similarity so you can see schemes you almost qualify for.
+              <strong>{resT.transparencyTitle || 'Transparency Guarantee:'}</strong> {resT.transparencyDesc || 'These schemes failed one or more hard eligibility rules.'}
             </p>
           </div>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import type { User } from '../utils/auth';
 import { loginUser, registerUser } from '../utils/auth';
 import { X, Sprout, User as UserIcon, KeyRound, AlertCircle, Eye, EyeOff } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -18,6 +19,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   initialMessage,
   defaultRole = 'user'
 }) => {
+  const { t } = useLanguage();
+  const authT = t.auth || {};
   const [tab, setTab] = useState<'login' | 'register'>('login');
   const [username, setUsername] = useState('');
   const [name, setName] = useState('');
@@ -81,10 +84,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <Sprout size={22} />
           </div>
           <h2 className="google-auth-title">
-            {tab === 'login' ? 'Sign in' : 'Create account'}
+            {tab === 'login' ? (authT.titleSignIn || 'Sign in') : (authT.titleRegister || 'Create account')}
           </h2>
           <p className="google-auth-sub">
-            to continue to Krishi Match Platform
+            {authT.subtitle || 'to continue to Krishi Match Platform'}
           </p>
         </div>
 
@@ -102,17 +105,16 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           </div>
         )}
 
-        {/* Form Fields - Compact Non-Scrollable Layout */}
+        {/* Form Fields */}
         <form onSubmit={handleSubmit} className="google-auth-form">
           {tab === 'register' ? (
-            /* 2-Column Grid for Create Account to fit with 0 scrollbar */
             <div className="google-form-grid-2">
               <div className="google-form-group">
-                <label htmlFor="auth-full-name" className="google-input-label">Full name</label>
+                <label htmlFor="auth-full-name" className="google-input-label">{authT.fullName || 'Full name'}</label>
                 <input
                   id="auth-full-name"
                   type="text"
-                  placeholder="Rajesh Kumar"
+                  placeholder={authT.fullNamePlaceholder || 'Rajesh Kumar'}
                   value={name}
                   onChange={e => setName(e.target.value)}
                   className="google-input-field"
@@ -121,11 +123,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="google-form-group">
-                <label htmlFor="auth-username" className="google-input-label">Username</label>
+                <label htmlFor="auth-username" className="google-input-label">{authT.username || 'Username'}</label>
                 <input
                   id="auth-username"
                   type="text"
-                  placeholder="Username"
+                  placeholder={authT.usernamePlaceholder || 'Username'}
                   value={username}
                   onChange={e => setUsername(e.target.value)}
                   className="google-input-field"
@@ -134,12 +136,12 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="google-form-group">
-                <label htmlFor="auth-password" className="google-input-label">Password</label>
+                <label htmlFor="auth-password" className="google-input-label">{authT.password || 'Password'}</label>
                 <div className="google-input-wrapper">
                   <input
                     id="auth-password"
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="Password"
+                    placeholder={authT.passwordPlaceholder || 'Password'}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     className="google-input-field with-eye-sm"
@@ -149,7 +151,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     type="button" 
                     className="google-btn-eye-sm" 
                     onClick={() => setShowPassword(!showPassword)}
-                    aria-label={showPassword ? "Hide password" : "Show password"}
+                    aria-label={showPassword ? (authT.hidePassword || "Hide password") : (authT.showPassword || "Show password")}
                   >
                     {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
                   </button>
@@ -157,29 +159,28 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="google-form-group">
-                <label htmlFor="auth-role" className="google-input-label">Account role</label>
+                <label htmlFor="auth-role" className="google-input-label">{authT.accountRole || 'Account role'}</label>
                 <select
                   id="auth-role"
                   value={role}
                   onChange={e => setRole(e.target.value as any)}
                   className="google-input-field select-field"
                 >
-                  <option value="user">Farmer User</option>
-                  <option value="admin">Administrator</option>
+                  <option value="user">{authT.farmerUser || 'Farmer User'}</option>
+                  <option value="admin">{authT.administrator || 'Administrator'}</option>
                 </select>
               </div>
             </div>
           ) : (
-            /* Sign In Single Column */
             <div className="google-form-single">
               <div className="google-form-group">
-                <label htmlFor="auth-username" className="google-input-label">Username</label>
+                <label htmlFor="auth-username" className="google-input-label">{authT.username || 'Username'}</label>
                 <div className="google-input-wrapper">
                   <UserIcon size={16} className="google-field-icon" />
                   <input
                     id="auth-username"
                     type="text"
-                    placeholder="e.g. admin or farmer"
+                    placeholder={authT.usernamePlaceholder || 'e.g. admin or farmer'}
                     value={username}
                     onChange={e => setUsername(e.target.value)}
                     className="google-input-field with-icon"
@@ -190,13 +191,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="google-form-group">
-                <label htmlFor="auth-password" className="google-input-label">Password</label>
+                <label htmlFor="auth-password" className="google-input-label">{authT.password || 'Password'}</label>
                 <div className="google-input-wrapper">
                   <KeyRound size={16} className="google-field-icon" />
                   <input
                     id="auth-password"
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="Enter your password"
+                    placeholder={authT.passwordPlaceholder || 'Enter your password'}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     className="google-input-field with-icon with-eye"
@@ -206,7 +207,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     type="button" 
                     className="google-btn-eye" 
                     onClick={() => setShowPassword(!showPassword)}
-                    aria-label={showPassword ? "Hide password" : "Show password"}
+                    aria-label={showPassword ? (authT.hidePassword || "Hide password") : (authT.showPassword || "Show password")}
                   >
                     {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                   </button>
@@ -216,7 +217,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           )}
 
           <button type="submit" className="google-primary-btn">
-            {tab === 'login' ? 'Sign in' : 'Create account'}
+            {tab === 'login' ? (authT.btnSignIn || 'Sign in') : (authT.btnRegister || 'Create account')}
           </button>
         </form>
 
@@ -224,24 +225,24 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         <div className="google-auth-footer">
           {tab === 'login' ? (
             <p>
-              Don't have an account?{' '}
+              {authT.dontHaveAccount || "Don't have an account?"}{' '}
               <button 
                 type="button" 
                 className="google-link-btn"
                 onClick={() => { setTab('register'); setErrorMsg(''); }}
               >
-                Create account
+                {authT.createAccountLink || 'Create account'}
               </button>
             </p>
           ) : (
             <p>
-              Already have an account?{' '}
+              {authT.alreadyHaveAccount || 'Already have an account?'}{' '}
               <button 
                 type="button" 
                 className="google-link-btn"
                 onClick={() => { setTab('login'); setErrorMsg(''); }}
               >
-                Sign in
+                {authT.signInLink || 'Sign in'}
               </button>
             </p>
           )}

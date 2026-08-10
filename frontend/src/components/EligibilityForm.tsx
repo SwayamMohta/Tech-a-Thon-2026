@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { SunBurst, WheatDoodle } from './DoodleAccents';
 import { useLanguage } from '../context/LanguageContext';
+import { getLocalizedStateName } from '../i18n/stateTranslations';
 
 interface EligibilityFormProps {
   initialProfile: FarmerProfile;
@@ -20,7 +21,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
   onSubmit,
   isCalculating
 }) => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const formT = t.form || {};
 
   const STEPS = [
@@ -231,7 +232,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 </div>
                 <div className="node-text">
                   <span className="node-label">{step.label}</span>
-                  <span className="node-step">Step {step.id} {formT.steps?.stepOf || 'of 4'}</span>
+                  <span className="node-step">{formT.steps?.step1 ? `Step ${step.id}` : `Step ${step.id}`} {formT.steps?.stepOf || 'of 4'}</span>
                 </div>
               </button>
             );
@@ -262,7 +263,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                   >
                     <option value="" disabled>{formT.labels?.selectStatePlaceholder || 'Select State...'}</option>
                     {INDIA_STATES.map(st => (
-                      <option key={st} value={st}>{st}</option>
+                      <option key={st} value={st}>{getLocalizedStateName(st, language)}</option>
                     ))}
                   </select>
                   {fieldErrors.state && <span className="inline-field-error">{fieldErrors.state}</span>}
@@ -424,7 +425,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 )}
               </div>
 
-              {/* Land Ownership Visual Cards (Compact Single-line) */}
+              {/* Land Ownership Visual Cards */}
               <div className="form-group">
                 <label className="form-label">
                   <ShieldCheck size={16} className="input-icon" />
@@ -459,7 +460,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 </div>
               </div>
 
-              {/* Irrigation Source Visual Cards (Compact Single-line) */}
+              {/* Irrigation Source Visual Cards */}
               <div className="form-group">
                 <label className="form-label">
                   <CloudSun size={16} className="input-icon" />
@@ -541,7 +542,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 </div>
               </div>
 
-              {/* Farming Season Visual Cards (Compact Single-line) */}
+              {/* Farming Season Visual Cards */}
               <div className="form-group">
                 <label className="form-label">
                   <Calendar size={16} className="input-icon" />
@@ -576,7 +577,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 </div>
               </div>
 
-              {/* Farming Practice Visual Cards (Compact Single-line) */}
+              {/* Farming Practice Visual Cards */}
               <div className="form-group">
                 <label className="form-label">
                   <Tractor size={16} className="input-icon" />
@@ -692,7 +693,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 </div>
               </div>
 
-              {/* Special Beneficiary Classification Cards (Compact Single-line) */}
+              {/* Special Beneficiary Classification Cards */}
               <div className="form-group">
                 <label className="form-label">
                   <Tag size={16} className="input-icon" />
