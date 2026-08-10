@@ -16,6 +16,7 @@ from db import DB_PATH, SCHEMA_PATH, scheme_to_row  # noqa: E402
 from models import Scheme  # noqa: E402
 
 CURATED_PATH = BACKEND_DIR / "data" / "curated_schemes.json"
+HAND_CURATED_PATH = BACKEND_DIR / "data" / "hand_curated_schemes.json"
 
 
 def main() -> None:
@@ -28,7 +29,8 @@ def main() -> None:
     conn = sqlite3.connect(DB_PATH)
     conn.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
 
-    raw = json.loads(CURATED_PATH.read_text(encoding="utf-8"))
+    raw = json.loads(HAND_CURATED_PATH.read_text(encoding="utf-8"))
+    raw += json.loads(CURATED_PATH.read_text(encoding="utf-8"))
     schemes = [Scheme(**s) for s in raw]
 
     rows = [scheme_to_row(s) for s in schemes]
