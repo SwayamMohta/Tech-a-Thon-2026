@@ -12,7 +12,17 @@ import type { User } from './utils/auth';
 import { getCurrentUser, getStoredToken, logoutUser } from './utils/auth';
 import { CURATED_SCHEMES } from './data/schemes';
 import { runMatchingEngine } from './engine/matchingEngine';
+import { fetchSchemes, matchProfile, addSchemeApi } from './api/client';
 import './index.css';
+
+async function getMatches(schemes: Scheme[], profile: FarmerProfile): Promise<MatchResult[]> {
+  try {
+    return await matchProfile(profile);
+  } catch {
+    // Backend unreachable — fall back to the client-side TF-IDF engine.
+    return runMatchingEngine(schemes, profile);
+  }
+}
 
 export function App() {
   const [schemes, setSchemes] = useState<Scheme[]>(CURATED_SCHEMES);
@@ -36,8 +46,15 @@ export function App() {
   const [authDefaultRole, setAuthDefaultRole] = useState<'admin' | 'user'>('user');
 
   useEffect(() => {
-    const initialRes = runMatchingEngine(schemes, profile);
-    setResults(initialRes);
+    fetchSchemes().then(setSchemes).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    getMatches(schemes, profile).then(res => {
+      if (!cancelled) setResults(res);
+    });
+    return () => { cancelled = true; };
   }, [schemes, profile]);
 
   const navigateToSection = (section: 'hero' | 'eligibility' | 'admin' | 'explainer') => {
@@ -81,8 +98,8 @@ export function App() {
     setIsCalculating(true);
     setProfile(newProfile);
 
-    setTimeout(() => {
-      const updatedResults = runMatchingEngine(schemes, newProfile);
+    setTimeout(async () => {
+      const updatedResults = await getMatches(schemes, newProfile);
       setResults(updatedResults);
       setIsCalculating(false);
 
@@ -96,15 +113,19 @@ export function App() {
   const handleQuickHeroSearch = (searchState: string) => {
     const updatedProf = { ...profile, state: searchState };
     setProfile(updatedProf);
-    const updatedResults = runMatchingEngine(schemes, updatedProf);
-    setResults(updatedResults);
+    getMatches(schemes, updatedProf).then(setResults);
     navigateToSection('eligibility');
   };
 
-  const handleAddCustomScheme = (newScheme: Scheme) => {
+  const handleAddCustomScheme = async (newScheme: Scheme) => {
     const updatedSchemes = [newScheme, ...schemes];
     setSchemes(updatedSchemes);
-    const updatedResults = runMatchingEngine(updatedSchemes, profile);
+    try {
+      await addSchemeApi(newScheme);
+    } catch {
+      // Backend unreachable — scheme still shows up via the local fallback below.
+    }
+    const updatedResults = await getMatches(updatedSchemes, profile);
     setResults(updatedResults);
   };
 
