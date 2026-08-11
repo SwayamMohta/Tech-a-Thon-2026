@@ -53,10 +53,16 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="navbar-right-group">
           <nav className="navbar-links" aria-label="Main Navigation">
             <button
+              className={`nav-link ${activeSection === 'eligibility' ? 'active' : ''}`}
+              onClick={onCheckEligibilityClick}
+            >
+              {t.nav.checkEligibility || 'Check Eligibility'}
+            </button>
+            <button
               className={`nav-link ${activeSection === 'browse' ? 'active' : ''}`}
               onClick={handleBrowseClick}
             >
-              {t.nav.browseSchemes}
+              {t.nav.browseSchemes || 'Browse Schemes'}
             </button>
           </nav>
 

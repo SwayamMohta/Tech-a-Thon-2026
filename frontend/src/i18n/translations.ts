@@ -23,6 +23,7 @@ export interface TranslationSchema {
   nav: {
     browseSchemes: string;
     checkEligibility: string;
+    myResults?: string;
     signIn: string;
     admin: string;
     signOut: string;
@@ -131,6 +132,8 @@ export interface TranslationSchema {
       prevStep: string;
       nextStep: string;
       resetForm: string;
+      autoFill: string;
+      autofilledSuccess: string;
       findSchemes: string;
       searching: string;
     };
@@ -376,6 +379,8 @@ const defaultEnForm: TranslationSchema['form'] = {
     prevStep: 'Back',
     nextStep: 'Next Step',
     resetForm: 'Reset Form',
+    autoFill: 'Autofill Form',
+    autofilledSuccess: 'Form Filled! ✨',
     findSchemes: 'Find Eligible Subsidies & Schemes',
     searching: 'Searching 45+ Govt Schemes...'
   }
@@ -676,6 +681,8 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         prevStep: 'पीछे',
         nextStep: 'आगे बढ़ें',
         resetForm: 'रीसेट करें',
+        autoFill: 'ऑटो-फिल फॉर्म',
+        autofilledSuccess: 'फॉर्म भरा गया! ✨',
         findSchemes: 'पात्र योजनाएं खोजें',
         searching: '45+ योजनाएं खोजी जा रही हैं...'
       }
@@ -910,6 +917,8 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         prevStep: 'मागे',
         nextStep: 'पुढे',
         resetForm: 'रीसेट',
+        autoFill: 'ऑटो-फिल करा',
+        autofilledSuccess: 'फॉर्म भरला! ✨',
         findSchemes: 'पात्र योजना शोधा',
         searching: 'योजना शोधत आहे...'
       }
@@ -1120,6 +1129,8 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
         prevStep: 'వెనుకకు',
         nextStep: 'తరువాతి దశ',
         resetForm: 'రీసెట్',
+        autoFill: 'ఆటోఫిల్ ఫారమ్',
+        autofilledSuccess: 'ఫారమ్ పూర్తయింది! ✨',
         findSchemes: 'సబ్సిడీలు కనుగొనండి',
         searching: 'పథకాలు శోధిస్తోంది...'
       }

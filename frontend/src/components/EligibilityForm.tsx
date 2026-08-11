@@ -4,7 +4,7 @@ import { INDIA_STATES, INDIA_CROPS, SOCIAL_CATEGORIES } from '../data/schemes';
 import { 
   MapPin, Sprout, Users, Ruler, Sparkles, RefreshCw, ArrowRight, ArrowLeft, 
   Check, ShieldCheck, FileText, Phone, UserCheck, DollarSign, CloudSun, 
-  Tractor, Droplets, Sun, Calendar, Tag, Shield
+  Tractor, Droplets, Sun, Calendar, Tag, Shield, Wand2
 } from 'lucide-react';
 import { SunBurst, WheatDoodle } from './DoodleAccents';
 import { useLanguage } from '../context/LanguageContext';
@@ -60,6 +60,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
   const [slideDirection, setSlideDirection] = useState<'next' | 'prev'>('next');
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [shakingField, setShakingField] = useState<string | null>(null);
+  const [isAutofilled, setIsAutofilled] = useState<boolean>(false);
 
   // Dynamic Land Calculation (Acres / Bigha / Ha)
   const getCalculatedHectares = (): number => {
@@ -196,6 +197,35 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
     setProfile(defaultProf);
     setSlideDirection('prev');
     setCurrentStep(1);
+  };
+
+  const handleAutofill = () => {
+    setProfile({
+      state: 'Maharashtra',
+      district: 'Nashik',
+      taluka: 'Niphad',
+      pincode: '422303',
+      khasra_no: 'Survey 108/A',
+      land_size_ha: 2.5,
+      unit: 'acre',
+      ownership_status: 'Owner Farmer',
+      irrigation_type: 'Canal / Borewell Irrigated',
+      crop: 'wheat',
+      farming_season: 'Kharif (Monsoon)',
+      annual_income: 'Below ₹1 Lakh',
+      farming_type: 'Conventional Farming',
+      farmer_name: 'Ramesh Kumar Patil',
+      mobile_number: '9876543210',
+      aadhaar_last4: '8492',
+      gender: 'Male',
+      category: 'OBC',
+      special_category: 'Small & Marginal Farmer'
+    });
+    setFieldErrors({});
+    setIsAutofilled(true);
+    setTimeout(() => {
+      setIsAutofilled(false);
+    }, 2500);
   };
 
   return (
@@ -752,6 +782,24 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
             >
               <RefreshCw size={14} />
               <span>{formT.buttons?.resetForm || 'Reset Form'}</span>
+            </button>
+            <button
+              type="button"
+              className={`btn-secondary-autofill ${isAutofilled ? 'autofilled-active' : ''}`}
+              onClick={handleAutofill}
+              title="Autofill form with sample data"
+            >
+              {isAutofilled ? (
+                <>
+                  <Check size={14} />
+                  <span>{formT.buttons?.autofilledSuccess || 'Form Filled! ✨'}</span>
+                </>
+              ) : (
+                <>
+                  <Wand2 size={14} />
+                  <span>{formT.buttons?.autoFill || 'Autofill Form'}</span>
+                </>
+              )}
             </button>
           </div>
 

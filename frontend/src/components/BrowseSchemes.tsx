@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import type { Scheme, MatchResult, FarmerProfile } from '../types/scheme';
+import type { Scheme, FarmerProfile } from '../types/scheme';
 import { INDIA_STATES } from '../data/schemes';
 import {
   Search, Filter, Sparkles, ArrowRight, ArrowUpRight, ArrowLeft,
@@ -13,10 +13,9 @@ import { cleanBenefitsText } from '../utils/formatBenefits';
 
 interface BrowseSchemesProps {
   schemes: Scheme[];
-  results: MatchResult[];
   farmerProfile?: FarmerProfile;
   initialStateFilter?: string;
-  onViewDetails: (result: MatchResult) => void;
+  onViewDetails: (scheme: Scheme) => void;
   onCheckEligibility: () => void;
 }
 
@@ -137,7 +136,6 @@ const INITIAL_VISIBLE_COUNT = 12;
 
 export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
   schemes,
-  results,
   farmerProfile,
   initialStateFilter = '',
   onViewDetails,
@@ -178,12 +176,6 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
     schemes.forEach(s => { if (s.category_tag) set.add(s.category_tag); });
     return ['All', ...Array.from(set)];
   }, [schemes]);
-
-  const resultMap = useMemo(() => {
-    const map = new Map<string, MatchResult>();
-    results.forEach(r => map.set(r.scheme.id, r));
-    return map;
-  }, [results]);
 
   const filteredSchemes = useMemo(() => {
     return schemes.filter(scheme => {
@@ -231,20 +223,6 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
     setSelectedState('');
     setSelectedCategory(null);
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  };
-
-  const getResultForScheme = (scheme: Scheme): MatchResult => {
-    const match = resultMap.get(scheme.id);
-    if (match) return match;
-    return {
-      scheme,
-      passed_filter: true,
-      exclusion_reasons: [],
-      tfidf_similarity: 0.8,
-      final_score: 80,
-      matched_keywords: ['government', 'subsidy'],
-      missing_keywords: []
-    };
   };
 
   const isCategorySelected = selectedCategory !== null || searchTerm.trim() !== '';
@@ -457,7 +435,6 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
                   <SchemeCard
                     key={scheme.id}
                     scheme={scheme}
-                    result={getResultForScheme(scheme)}
                     index={index}
                     selectedCategory={selectedCategory}
                     onViewDetails={onViewDetails}
@@ -516,14 +493,13 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
 /* ── Scheme Card sub-component ───────────────────────────────────── */
 interface CardProps {
   scheme: Scheme;
-  result: MatchResult;
   index: number;
   selectedCategory?: string | null;
-  onViewDetails: (r: MatchResult) => void;
+  onViewDetails: (s: Scheme) => void;
   onCheckEligibility: () => void;
 }
 
-const SchemeCard: React.FC<CardProps> = ({ scheme, result, index, selectedCategory, onViewDetails, onCheckEligibility }) => {
+const SchemeCard: React.FC<CardProps> = ({ scheme, index, selectedCategory, onViewDetails, onCheckEligibility }) => {
   const { language, t } = useLanguage();
   const browseT = t.browse || {};
   const cardRef = useRef<HTMLDivElement>(null);
@@ -565,7 +541,7 @@ const SchemeCard: React.FC<CardProps> = ({ scheme, result, index, selectedCatego
                   borderColor: tint.border
                 }}
               >
-                {getLocalizedCategory(scheme.category_tag, language)}
+                  {getLocalizedCategory(scheme.category_tag, language)}
               </span>
             )}
             <span className="ministry-name">{scheme.ministry}</span>
@@ -599,7 +575,7 @@ const SchemeCard: React.FC<CardProps> = ({ scheme, result, index, selectedCatego
           <button
             type="button"
             className="btn-view-scheme"
-            onClick={() => onViewDetails(result)}
+            onClick={() => onViewDetails(scheme)}
             aria-label={`View details and apply for ${scheme.title}`}
           >
             <span>{browseT.viewDetails || 'View Details'}</span>

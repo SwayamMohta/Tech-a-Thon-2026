@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { BrowseSchemes } from './components/BrowseSchemes';
 import { EligibilityForm } from './components/EligibilityForm';
+import { ResultsSection } from './components/ResultsSection';
 import { SchemeModal } from './components/SchemeModal';
 import { AdminPanel } from './components/AdminPanel';
 import { AuthModal } from './components/AuthModal';
@@ -15,6 +16,7 @@ import { CURATED_SCHEMES } from './data/schemes';
 import { runMatchingEngine } from './engine/matchingEngine';
 import './index.css';
 
+type AppSection = 'hero' | 'browse' | 'eligibility' | 'results' | 'admin';
 
 export function App() {
   const [schemes, setSchemes] = useState<Scheme[]>(CURATED_SCHEMES);
@@ -32,17 +34,19 @@ export function App() {
   const [results, setResults] = useState<MatchResult[]>([]);
   const [selectedResult, setSelectedResult] = useState<MatchResult | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
-  const getSectionFromPath = (): 'hero' | 'browse' | 'eligibility' | 'admin' => {
+
+  const getSectionFromPath = (): AppSection => {
     const path = window.location.pathname.replace(/\/$/, '').toLowerCase();
     const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
 
     if (path === '/browse' || hash === 'browse') return 'browse';
     if (path === '/eligibility' || hash === 'eligibility') return 'eligibility';
+    if (path === '/results' || hash === 'results') return 'results';
     if (path === '/admin' || hash === 'admin') return 'admin';
     return 'hero';
   };
 
-  const [activeSection, setActiveSection] = useState<'hero' | 'browse' | 'eligibility' | 'admin'>(getSectionFromPath);
+  const [activeSection, setActiveSection] = useState<AppSection>(getSectionFromPath);
   const [browseStateFilter, setBrowseStateFilter] = useState('');
 
   // JWT Auth state
@@ -67,7 +71,7 @@ export function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  const navigateToSection = (section: 'hero' | 'browse' | 'eligibility' | 'admin', pushHistory = true) => {
+  const navigateToSection = (section: AppSection, pushHistory = true) => {
     if (section === 'admin') {
       if (!currentUser) {
         setAuthNotice('Administrator authentication required to access Admin Portal.');
@@ -120,7 +124,7 @@ export function App() {
       const updatedResults = runMatchingEngine(schemes, newProfile);
       setResults(updatedResults);
       setIsCalculating(false);
-      navigateToSection('browse');
+      navigateToSection('results');
     }, 400);
   };
 
@@ -148,7 +152,7 @@ export function App() {
           onCheckEligibilityClick={() => navigateToSection('eligibility')}
           onAdminClick={() => navigateToSection('admin')}
           activeSection={activeSection}
-          setActiveSection={(sec) => navigateToSection(sec as any)}
+          setActiveSection={(sec) => navigateToSection(sec as AppSection)}
           currentUser={currentUser}
           onOpenAuthModal={() => {
             setAuthNotice(undefined);
@@ -171,15 +175,25 @@ export function App() {
           {activeSection === 'browse' && (
             <BrowseSchemes
               schemes={schemes}
-              results={results}
               farmerProfile={profile}
               initialStateFilter={browseStateFilter}
-              onViewDetails={(res) => setSelectedResult(res)}
+              onViewDetails={(scheme) => {
+                const match = results.find(r => r.scheme.id === scheme.id) || {
+                  scheme,
+                  passed_filter: true,
+                  exclusion_reasons: [],
+                  tfidf_similarity: 0.8,
+                  final_score: 80,
+                  matched_keywords: ['government', 'subsidy'],
+                  missing_keywords: []
+                };
+                setSelectedResult(match);
+              }}
               onCheckEligibility={() => navigateToSection('eligibility')}
             />
           )}
 
-          {/* Page 3: Check Eligibility Page */}
+          {/* Page 3: Check Eligibility Form Page */}
           {activeSection === 'eligibility' && (
             <div className="page-section-container eligibility-page-only">
               <EligibilityForm
@@ -190,7 +204,20 @@ export function App() {
             </div>
           )}
 
-          {/* Page 4: Admin Portal Page (Protected) */}
+          {/* Page 4: Personalized Eligibility Results Page */}
+          {activeSection === 'results' && (
+            <div className="page-section-container results-page-only">
+              <ResultsSection
+                results={results}
+                profile={profile}
+                onViewDetails={(res) => setSelectedResult(res)}
+                onAdjustProfile={() => navigateToSection('eligibility')}
+                onBrowseAll={() => navigateToSection('browse')}
+              />
+            </div>
+          )}
+
+          {/* Page 5: Admin Portal Page (Protected) */}
           {activeSection === 'admin' && currentUser?.role === 'admin' && (
             <div className="page-section-container">
               <AdminPanel
@@ -202,8 +229,8 @@ export function App() {
             </div>
           )}
 
-          {/* Fallback 404 Edge State (Design.md Section 4) */}
-          {!['hero', 'browse', 'eligibility', 'admin'].includes(activeSection) && (
+          {/* Fallback 404 Edge State */}
+          {!['hero', 'browse', 'eligibility', 'results', 'admin'].includes(activeSection) && (
             <NotFound
               onGoHome={() => navigateToSection('hero')}
               onGoMatcher={() => navigateToSection('eligibility')}
