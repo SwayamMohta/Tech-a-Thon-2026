@@ -1,12 +1,13 @@
 import React from 'react';
 import type { User } from '../utils/auth';
-import { LogIn, LogOut, UserCheck, ShieldCheck, Sparkles } from 'lucide-react';
+import { LogOut, UserCheck, ShieldCheck, LogIn } from 'lucide-react';
+import { LanguageSelector } from './LanguageSelector';
+import { useLanguage } from '../context/LanguageContext';
 
 interface NavbarProps {
   onCheckEligibilityClick: () => void;
   onBrowseSchemesClick?: () => void;
   onAdminClick: () => void;
-  onExplainerClick: () => void;
   activeSection: string;
   setActiveSection: (section: string) => void;
   currentUser: User | null;
@@ -18,13 +19,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   onCheckEligibilityClick,
   onBrowseSchemesClick,
   onAdminClick,
-  onExplainerClick,
   activeSection,
   setActiveSection,
   currentUser,
   onOpenAuthModal,
   onLogout
 }) => {
+  const { t } = useLanguage();
+
   const handleBrowseClick = () => {
     if (onBrowseSchemesClick) {
       onBrowseSchemesClick();
@@ -37,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="navbar-container">
       <div className="navbar-inner">
 
-        {/* 1. Brand Logo: Return to Top / Home */}
+        {/* Left Side: Brand Name Only */}
         <button
           type="button"
           className="navbar-brand"
@@ -47,32 +49,25 @@ export const Navbar: React.FC<NavbarProps> = ({
           <span className="brand-name">Krishi Match</span>
         </button>
 
-        {/* Right group: Nav links + CTA + Divider + Auth */}
+        {/* Right Side: All Nav Links + Language Selector + Sign In Black Pill CTA Button */}
         <div className="navbar-right-group">
-
           <nav className="navbar-links" aria-label="Main Navigation">
-            {/* Browse Schemes Nav Link: View full scheme directory */}
             <button
               className={`nav-link ${activeSection === 'eligibility' ? 'active' : ''}`}
+              onClick={onCheckEligibilityClick}
+            >
+              {t.nav.checkEligibility || 'Check Eligibility'}
+            </button>
+            <button
+              className={`nav-link ${activeSection === 'browse' ? 'active' : ''}`}
               onClick={handleBrowseClick}
             >
-              Browse Schemes
+              {t.nav.browseSchemes || 'Browse Schemes'}
             </button>
           </nav>
 
-          {/* 5. Check Eligibility: Primary Green CTA Button */}
-          <button
-            type="button"
-            className="btn-nav-cta"
-            onClick={onCheckEligibilityClick}
-          >
-            <Sparkles size={14} />
-            <span>Check Eligibility</span>
-          </button>
+          <LanguageSelector />
 
-          <div className="nav-divider" aria-hidden="true" />
-
-          {/* 6. Sign In / Profile: Secondary Button / Badge */}
           {currentUser ? (
             <div className="user-profile-badge">
               <div className={`role-avatar-dot ${currentUser.role === 'admin' ? 'dot-admin' : 'dot-user'}`}>
@@ -91,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   title="Open Admin Console"
                 >
                   <ShieldCheck size={13} />
-                  <span>Admin</span>
+                  <span>{t.nav.admin}</span>
                 </button>
               )}
 
@@ -99,8 +94,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 type="button"
                 className="btn-nav-logout"
                 onClick={onLogout}
-                title="Sign out"
-                aria-label="Sign out"
+                title={t.nav.signOut}
+                aria-label={t.nav.signOut}
               >
                 <LogOut size={14} />
               </button>
@@ -108,11 +103,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           ) : (
             <button
               type="button"
-              className="btn-nav-signin"
+              className="btn-nav-pill-black"
               onClick={onOpenAuthModal}
             >
               <LogIn size={14} />
-              <span>Sign In</span>
+              <span>{t.nav.signIn}</span>
             </button>
           )}
         </div>
@@ -121,4 +116,5 @@ export const Navbar: React.FC<NavbarProps> = ({
     </header>
   );
 };
+
 

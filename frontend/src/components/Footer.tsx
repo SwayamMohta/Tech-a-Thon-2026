@@ -1,7 +1,10 @@
 import React from 'react';
 import { Sprout } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export const Footer: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer-container">
       <div className="footer-inner">
@@ -13,13 +16,14 @@ export const Footer: React.FC = () => {
         </div>
 
         <p className="footer-copy">
-          Farmer-to-Scheme Eligibility Matcher • Built for Tech-a-Thon 2026. Empowering small & marginal Indian farmers with transparent scheme matching.
+          {t.footer.tagline}
         </p>
 
         <div className="footer-meta">
-          <span>TF-IDF + Hard-Filter Pure Python/TS Engine</span>
+          <span>{t.footer.meta}</span>
         </div>
       </div>
     </footer>
   );
 };
+

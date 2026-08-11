@@ -3,6 +3,8 @@ import type { Scheme } from '../types/scheme';
 import type { User } from '../utils/auth';
 import { INDIA_STATES, INDIA_CROPS } from '../data/schemes';
 import { PlusCircle, Database, CheckCircle, ShieldCheck, Key } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { getLocalizedStateName } from '../i18n/stateTranslations';
 
 interface AdminPanelProps {
   onAddScheme: (newScheme: Scheme) => void;
@@ -12,6 +14,8 @@ interface AdminPanelProps {
 }
 
 export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCount, currentUser, authToken }) => {
+  const { language, t } = useLanguage();
+  const adminT = t.admin || {};
   const [rawText, setRawText] = useState('');
   const [title, setTitle] = useState('');
   const [shortName, setShortName] = useState('');
@@ -63,7 +67,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
     };
 
     onAddScheme(newScheme);
-    setSuccessMsg(`Scheme "${title}" successfully ingested into Corpus! Real-time TF-IDF vectors updated.`);
+    setSuccessMsg(adminT.successIngested || `Scheme "${title}" successfully ingested into Corpus! Real-time TF-IDF vectors updated.`);
     
     setTitle('');
     setShortName('');
@@ -84,14 +88,14 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
           <div className="session-left">
             <ShieldCheck size={18} className="jwt-icon" />
             <div>
-              <span className="jwt-session-title">Verified JWT Admin Session</span>
-              <span className="jwt-session-sub">Signed in as <strong>{currentUser.name}</strong> ({currentUser.email})</span>
+              <span className="jwt-session-title">{adminT.sessionTitle || 'Verified JWT Admin Session'}</span>
+              <span className="jwt-session-sub">{adminT.sessionSub || 'Signed in as'} <strong>{currentUser.name}</strong> ({currentUser.email})</span>
             </div>
           </div>
           <div className="session-right">
             <span className="jwt-token-badge">
               <Key size={12} />
-              Bearer Token: {authToken ? `${authToken.slice(0, 18)}...` : 'Active (HS256)'}
+              {adminT.bearerToken || 'Bearer Token:'} {authToken ? `${authToken.slice(0, 18)}...` : 'Active (HS256)'}
             </span>
           </div>
         </div>
@@ -100,11 +104,11 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
       <div className="admin-header">
         <div className="admin-badge">
           <Database size={15} />
-          <span>Admin Data Operator Console</span>
+          <span>{adminT.consoleTitle || 'Admin Data Operator Console'}</span>
         </div>
-        <h2>Paste Plain Text Scheme Ingestion</h2>
+        <h2>{adminT.headerTitle || 'Paste Plain Text Scheme Ingestion'}</h2>
         <p>
-          Paste official government scheme description text below. The system automatically creates TF-IDF unigram indices and links structured hard-filter criteria into the scheme corpus ({existingCount} schemes active).
+          {adminT.headerDesc || 'Paste official government scheme description text below.'} ({existingCount} active schemes)
         </p>
       </div>
 
@@ -118,10 +122,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
       <form onSubmit={handleSubmit} className="admin-form">
         <div className="admin-form-row grid-2">
           <div className="form-group">
-            <label className="form-label">Scheme Full Title *</label>
+            <label className="form-label">{adminT.fullTitleLabel || 'Scheme Full Title *'}</label>
             <input
               type="text"
-              placeholder="e.g. Chief Minister Krishi Solar Pump Subsidy Scheme"
+              placeholder={adminT.fullTitlePlaceholder || 'e.g. Chief Minister Krishi Solar Pump Subsidy Scheme'}
               value={title}
               onChange={e => setTitle(e.target.value)}
               className="form-control"
@@ -130,10 +134,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
           </div>
 
           <div className="form-group">
-            <label className="form-label">Ministry / Department</label>
+            <label className="form-label">{adminT.ministryLabel || 'Ministry / Department'}</label>
             <input
               type="text"
-              placeholder="e.g. Ministry of Agriculture & Farmers Welfare"
+              placeholder={adminT.ministryPlaceholder || 'e.g. Ministry of Agriculture & Farmers Welfare'}
               value={ministry}
               onChange={e => setMinistry(e.target.value)}
               className="form-control"
@@ -142,10 +146,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
         </div>
 
         <div className="form-group">
-          <label className="form-label">Raw Scheme Description Text (TF-IDF Vector Corpus) *</label>
+          <label className="form-label">{adminT.rawDescLabel || 'Raw Scheme Description Text (TF-IDF Vector Corpus) *'}</label>
           <textarea
             rows={5}
-            placeholder="Paste plain text scheme description from rules.myscheme.gov.in or official notification. No structured parsing required on input..."
+            placeholder={adminT.rawDescPlaceholder || 'Paste plain text scheme description from rules.myscheme.gov.in...'}
             value={rawText}
             onChange={e => setRawText(e.target.value)}
             className="form-control textarea-code"
@@ -155,10 +159,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
 
         <div className="admin-form-row grid-2">
           <div className="form-group">
-            <label className="form-label">Key Benefit Summary</label>
+            <label className="form-label">{adminT.benefitSummaryLabel || 'Key Benefit Summary'}</label>
             <input
               type="text"
-              placeholder="e.g. ₹50,000 subsidy per hectare over 3 years"
+              placeholder={adminT.benefitSummaryPlaceholder || 'e.g. ₹50,000 subsidy per hectare over 3 years'}
               value={benefits}
               onChange={e => setBenefits(e.target.value)}
               className="form-control"
@@ -166,7 +170,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
           </div>
 
           <div className="form-group">
-            <label className="form-label">Official Application Portal URL</label>
+            <label className="form-label">{adminT.urlLabel || 'Official Application Portal URL'}</label>
             <input
               type="url"
               placeholder="https://myscheme.gov.in"
@@ -178,10 +182,10 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
         </div>
 
         <div className="admin-rules-box">
-          <h3>Structured Hard-Rule Eligibility Constraints</h3>
+          <h3>{adminT.rulesHeader || 'Structured Hard-Rule Eligibility Constraints'}</h3>
 
           <div className="rules-section">
-            <label className="rules-label">Applicable States (Leave empty for All India / National):</label>
+            <label className="rules-label">{adminT.statesLabel || 'Applicable States (Leave empty for All India / National):'}</label>
             <div className="pills-selectable-grid">
               {INDIA_STATES.slice(0, 15).map(st => (
                 <button
@@ -190,14 +194,14 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
                   className={`pill-toggle ${selectedStates.includes(st) ? 'selected' : ''}`}
                   onClick={() => handleStateToggle(st)}
                 >
-                  {st}
+                  {getLocalizedStateName(st, language)}
                 </button>
               ))}
             </div>
           </div>
 
           <div className="rules-section">
-            <label className="rules-label">Target Crops (Leave empty for All Crops):</label>
+            <label className="rules-label">{adminT.cropsLabel || 'Target Crops (Leave empty for All Crops):'}</label>
             <div className="pills-selectable-grid">
               {INDIA_CROPS.map(c => (
                 <button
@@ -214,22 +218,22 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
 
           <div className="rules-section grid-2">
             <div className="form-group">
-              <label className="rules-label">Min Land Size (ha):</label>
+              <label className="rules-label">{adminT.minLandLabel || 'Min Land Size (ha):'}</label>
               <input
                 type="number"
                 step="0.1"
-                placeholder="e.g. 0.5 (Leave blank if no min)"
+                placeholder={adminT.minLandPlaceholder || 'e.g. 0.5'}
                 value={landMin}
                 onChange={e => setLandMin(e.target.value)}
                 className="form-control"
               />
             </div>
             <div className="form-group">
-              <label className="rules-label">Max Land Size (ha):</label>
+              <label className="rules-label">{adminT.maxLandLabel || 'Max Land Size (ha):'}</label>
               <input
                 type="number"
                 step="0.1"
-                placeholder="e.g. 2.0 (Leave blank if no max)"
+                placeholder={adminT.maxLandPlaceholder || 'e.g. 2.0'}
                 value={landMax}
                 onChange={e => setLandMax(e.target.value)}
                 className="form-control"
@@ -240,7 +244,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ onAddScheme, existingCou
 
         <button type="submit" className="btn-admin-submit">
           <PlusCircle size={18} />
-          <span>Persist Scheme & Re-Index TF-IDF Corpus</span>
+          <span>{adminT.submitBtn || 'Persist Scheme & Re-Index TF-IDF Corpus'}</span>
         </button>
       </form>
     </div>

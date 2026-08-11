@@ -1,15 +1,15 @@
-"""Structural eligibility gate. This is a line-for-line port of
-frontend/src/engine/matchingEngine.ts's checkHardFilter — same four checks,
-same order, same reason strings — so a farmer sees identical exclusion
-reasons whether the client-side engine or this backend produced them."""
+"""Structural eligibility gate: four hard checks (state, crop, land size
+bounds, category) that a scheme's filter_rule applies before TF-IDF ranking."""
 
-from constants import ACRE_TO_HECTARE
+from constants import ACRE_TO_HECTARE, BIGHA_TO_HECTARE
 from models import FarmerProfile, HardFilterResult, Scheme
 
 
 def _land_size_ha(profile: FarmerProfile) -> float:
     if profile.unit == "acre":
         return profile.land_size_ha * ACRE_TO_HECTARE
+    if profile.unit == "bigha":
+        return profile.land_size_ha * BIGHA_TO_HECTARE
     return profile.land_size_ha
 
 

@@ -37,7 +37,12 @@ class FarmerProfile(BaseModel):
     land_size_ha: float
     crop: str
     category: str
-    unit: Optional[Literal["ha", "acre"]] = "ha"
+    unit: Optional[Literal["ha", "acre", "bigha"]] = "ha"
+    district: Optional[str] = None
+    irrigation_type: Optional[str] = None
+    farming_type: Optional[str] = None
+    ownership_status: Optional[str] = None
+    special_category: Optional[str] = None
 
 
 class HardFilterResult(BaseModel):

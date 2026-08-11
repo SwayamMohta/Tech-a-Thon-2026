@@ -1,11 +1,9 @@
-"""TF-IDF + cosine similarity ranking. Ported term-for-term from
-frontend/src/engine/matchingEngine.ts so a given (schemes, profile) pair
-produces the same similarity scores and keyword chips server-side as it
-does in the browser: same stopword list, same tokenizer, same raw-tf /
-smoothed-idf / L2-norm weighting (which is exactly scikit-learn's
-TfidfVectorizer defaults — smooth_idf=True, sublinear_tf=False, norm='l2' —
-so we reuse it rather than hand-rolling the math), same top-8/top-4
-keyword split.
+"""TF-IDF + cosine similarity ranking — the sole matching engine (the
+frontend has no client-side fallback; every match request hits this code).
+Uses scikit-learn's TfidfVectorizer defaults (smooth_idf=True,
+sublinear_tf=False, norm='l2') plus unigrams+bigrams (ngram_range=(1, 2))
+so multi-word concepts like "solar pump" or "crop insurance" match as a
+unit instead of two independently-weighted tokens.
 """
 import re
 
@@ -38,7 +36,16 @@ def tokenize(text: str) -> list[str]:
 
 
 def profile_to_query(profile: FarmerProfile) -> str:
-    parts = [profile.state, profile.crop, profile.category]
+    parts = [
+        profile.state,
+        profile.district,
+        profile.crop,
+        profile.category,
+        profile.irrigation_type,
+        profile.farming_type,
+        profile.ownership_status,
+        profile.special_category,
+    ]
     return " ".join(p for p in parts if p).lower()
 
 
@@ -64,7 +71,9 @@ def tfidf_rank(schemes: list[Scheme], profile: FarmerProfile):
     query_str = profile_to_query(profile)
     docs = [_scheme_doc(s) for s in schemes] + [query_str]
 
-    vectorizer = TfidfVectorizer(tokenizer=tokenize, preprocessor=lambda x: x, lowercase=False, token_pattern=None)
+    vectorizer = TfidfVectorizer(
+        tokenizer=tokenize, preprocessor=lambda x: x, lowercase=False, token_pattern=None, ngram_range=(1, 2)
+    )
     matrix = vectorizer.fit_transform(docs)  # rows are L2-normalized by default
     feature_names = vectorizer.get_feature_names_out()
 

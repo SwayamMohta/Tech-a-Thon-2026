@@ -48,6 +48,22 @@ def test_profile_to_query_excludes_land_size():
     assert "1.5" not in query
 
 
+def test_profile_to_query_includes_optional_signals():
+    profile = make_profile(
+        district="Ludhiana",
+        irrigation_type="Drip / Micro-Irrigated",
+        farming_type="Certified Organic Farming",
+        ownership_status="Owner Farmer",
+        special_category="Women Farmer",
+    )
+    query = profile_to_query(profile)
+    assert "ludhiana" in query
+    assert "drip" in query and "micro-irrigated" in query
+    assert "organic" in query
+    assert "owner farmer" in query
+    assert "women farmer" in query
+
+
 def test_state_filter_excludes_with_reason():
     scheme = make_scheme(filter_rule=FilterRule(states=["Maharashtra"]))
     result = check_hard_filter(scheme, make_profile(state="Punjab"))
