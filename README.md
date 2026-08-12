@@ -1,8 +1,8 @@
-# Krishi Match — Farmer-to-Scheme Eligibility Matcher
+# Krishi Match - Farmer-to-Scheme Eligibility Matcher
 
 > Built for **Tech-a-Thon 2026**
 
-Krishi Match helps Indian farmers discover government welfare schemes they are actually eligible for. A farmer fills in their location, land size, crop, and social category. The system runs a two-stage pipeline — hard eligibility rules first, then TF-IDF cosine similarity ranking — and returns a ranked list of schemes with explicit pass/fail explanations.
+Krishi Match helps Indian farmers discover government welfare schemes they are actually eligible for. A farmer fills in their location, land size, crop, and social category. The system runs a two-stage pipeline - hard eligibility rules first, then TF-IDF cosine similarity ranking - and returns a ranked list of schemes with explicit pass/fail explanations.
 
 ---
 
@@ -14,19 +14,19 @@ India runs hundreds of central and state agricultural welfare schemes (PM-KISAN,
 
 ## What It Does
 
-1. **Farmer profile form** — 4-step form collecting state, district, land size (ha / acre / bigha), crop, irrigation type, ownership status, social category, and special category (women farmer, SC/ST, ex-serviceman, etc.).
+1. **Farmer profile form** - 4-step form collecting state, district, land size (ha / acre / bigha), crop, irrigation type, ownership status, social category, and special category (women farmer, SC/ST, ex-serviceman, etc.).
 
-2. **Hard filtering** — Deterministic gate: state match, crop match, land size bounds, and social category constraints. Any scheme that fails a hard rule is excluded from the eligible set with a human-readable reason ("Wrong state — you selected Punjab, but this scheme applies to Telangana only.").
+2. **Hard filtering** - Deterministic gate: state match, crop match, land size bounds, and social category constraints. Any scheme that fails a hard rule is excluded from the eligible set with a human-readable reason ("Wrong state - you selected Punjab, but this scheme applies to Telangana only.").
 
-3. **TF-IDF ranking** — Remaining schemes (and excluded ones, separately) are ranked by cosine similarity between the farmer's profile string and each scheme's document (title + description + benefits + category tag). Uses scikit-learn `TfidfVectorizer` with `ngram_range=(1, 2)`, `smooth_idf=True`, `norm="l2"`. Bigrams let multi-word concepts ("solar pump", "crop insurance") match as a unit.
+3. **TF-IDF ranking** - Remaining schemes (and excluded ones, separately) are ranked by cosine similarity between the farmer's profile string and each scheme's document (title + description + benefits + category tag). Uses scikit-learn `TfidfVectorizer` with `ngram_range=(1, 2)`, `smooth_idf=True`, `norm="l2"`. Bigrams let multi-word concepts ("solar pump", "crop insurance") match as a unit.
 
-4. **Final score** — `1.0 (if hard filter passed) + tfidf_similarity`. Eligible schemes always outrank ineligible ones regardless of similarity score.
+4. **Final score** - `1.0 (if hard filter passed) + tfidf_similarity`. Eligible schemes always outrank ineligible ones regardless of similarity score.
 
-5. **Results page** — Shows matched keywords, missing keywords, exclusion reasons, document checklist, and a direct link to the official application portal for every scheme.
+5. **Results page** - Shows matched keywords, missing keywords, exclusion reasons, document checklist, and a direct link to the official application portal for every scheme.
 
-6. **Browse directory** — Full scheme catalog filterable by state, crop, and category. Paginated in sets of 12.
+6. **Browse directory** - Full scheme catalog filterable by state, crop, and category. Paginated in sets of 12.
 
-7. **Admin panel** (JWT-protected, role=`admin`) — Paste plain-text scheme descriptions to add new schemes to the corpus. Schemes are persisted to SQLite and immediately reflected in match results.
+7. **Admin panel** (JWT-protected, role=`admin`) - Paste plain-text scheme descriptions to add new schemes to the corpus. Schemes are persisted to SQLite and immediately reflected in match results.
 
 ---
 
@@ -284,14 +284,14 @@ Open that URL. The frontend automatically hits `http://localhost:8000` for match
 
 ### 4. Running both at once (two terminals)
 
-**Terminal 1 — backend:**
+**Terminal 1 - backend:**
 ```bash
 cd backend
 .venv\Scripts\Activate.ps1   # or source .venv/bin/activate
 uvicorn main:app --reload --port 8000
 ```
 
-**Terminal 2 — frontend:**
+**Terminal 2 - frontend:**
 ```bash
 cd frontend
 npm run dev
