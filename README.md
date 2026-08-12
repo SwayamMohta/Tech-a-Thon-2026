@@ -1,6 +1,8 @@
 # Krishi Match - Farmer-to-Scheme Eligibility Matcher
 
 > Built for **Tech-a-Thon 2026**
+Demo Video Link : [https://drive.google.com/file/d/1qewxrrh28DaJoOzPVyt3OAaottgGHyTR/view?usp=sharing ](https://drive.google.com/file/d/1qewxrrh28DaJoOzPVyt3OAaottgGHyTR/view?usp=sharing)
+
 
 Krishi Match helps Indian farmers discover government welfare schemes they are actually eligible for. A farmer fills in their location, land size, crop, and social category. The system runs a two-stage pipeline - hard eligibility rules first, then TF-IDF cosine similarity ranking - and returns a ranked list of schemes with explicit pass/fail explanations.
 
