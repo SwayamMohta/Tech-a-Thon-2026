@@ -57,3 +57,18 @@ vite.config.ts.timestamp-*
 # ─── Testing ──────────────────────────────────────────────────────────────────
 coverage/
 .nyc_output/
+.pytest_cache/
+**/.pytest_cache/
+
+# ─── Python / Backend ─────────────────────────────────────────────────────────
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+**/.venv/
+venv/
+*.db
+*.sqlite
+*.sqlite3
+
