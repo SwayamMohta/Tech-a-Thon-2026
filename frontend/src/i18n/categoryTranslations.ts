@@ -4,146 +4,143 @@ export const CATEGORY_TRANSLATIONS: Record<string, Record<LanguageCode, string>>
   'Direct Benefit': {
     en: 'Direct Benefit',
     hi: 'प्रत्यक्ष लाभ (DBT)',
-    mr: 'प्रत्यक्ष लाभ (DBT)',
     te: 'నేరుగా లబ్ధి (DBT)',
-    ta: 'நேரடி பயன் (DBT)',
-    kn: 'ನೇರ ಲಾಭ (DBT)',
-    ml: 'നേരിട്ടുള്ള ആനുകൂല്യം (DBT)',
-    gu: 'પ્રત્યક્ષ લાભ (DBT)',
-    bn: 'সরাসরি সুবিধা (DBT)',
     pa: 'ਸਿੱਧਾ ਲਾਭ (DBT)'
   },
   'Crop Insurance': {
     en: 'Crop Insurance',
     hi: 'फसल बीमा',
-    mr: 'पीक विमा',
     te: 'పంట భీమా',
-    ta: 'பயிர் காப்பீடு',
-    kn: 'ಬೆಳೆ ವಿಮೆ',
-    ml: 'വിള ഇൻഷുറൻസ്',
-    gu: 'પાક વીમો',
-    bn: 'ফসল বিমা',
     pa: 'ਫਸਲ ਬੀਮਾ'
   },
   'Insurance': {
     en: 'Crop Insurance',
     hi: 'फसल बीमा',
-    mr: 'पीक विमा',
     te: 'పంట భీమా',
-    ta: 'பயிர் காப்பீடு',
-    kn: 'ಬೆಳೆ ವಿಮೆ',
-    ml: 'വിള ഇൻഷുറൻസ്',
-    gu: 'પાક વીમો',
-    bn: 'ফসল বিমা',
     pa: 'ਫਸਲ ਬੀਮਾ'
   },
   'Credit & Loan': {
     en: 'Credit & Loan',
     hi: 'ऋण व क्रेडिट',
-    mr: 'कर्ज व क्रेडिट',
     te: 'రుణం & క్రెడిట్',
-    ta: 'கடன் & கடன் உதவி',
-    kn: 'ಸಾಲ ಮತ್ತು ಕ್ರೆಡಿಟ್',
-    ml: 'വായ്പയും ക്രെഡിറ്റും',
-    gu: 'લોન અને ક્રેડિટ',
-    bn: 'ঋণ ও ক্রেডিট',
     pa: 'ਕਰਜ਼ਾ ਅਤੇ ਕ੍ਰੈਡਿਟ'
   },
   'Input Subsidy': {
     en: 'Input Subsidy',
     hi: 'कृषि इनपुट सब्सिडी',
-    mr: 'कृषी इनपुट अनुदान',
     te: 'ఇన్‌పుట్ సబ్సిడీ',
-    ta: 'உள்ளீட்டு மானியம்',
-    kn: 'ಇನ್‌ಪುಟ್ ಸಬ್ಸಿಡಿ',
-    ml: 'ഇൻപുട്ട് സബ്‌സിഡി',
-    gu: 'ઇનપુટ સબસિડી',
-    bn: 'ইনপুট ভর্তুকি',
     pa: 'ਇਨਪੁਟ ਸਬਸਿਡੀ'
   },
   'Equipment Subsidy': {
     en: 'Equipment Subsidy',
     hi: 'उपकरण सब्सिडी',
-    mr: 'यंत्रसामग्री अनुदान',
     te: 'పరికరాల సబ్సిడీ',
-    ta: 'கருவிகள் மானியம்',
-    kn: 'ಉಪಕರಣ ಸಬ್ಸಿಡಿ',
-    ml: 'ഉപകരണ സബ്‌സിഡി',
-    gu: 'સાધન સબસિડી',
-    bn: 'সরঞ্জাম ভর্তুকি',
     pa: 'ਉਪਕਰਣ ਸਬਸਿਡੀ'
   },
   'Infrastructure': {
     en: 'Infrastructure',
     hi: 'अवसंरचना व सिंचाई',
-    mr: 'पायाभूत सुविधा',
     te: 'మౌలిక సదుపాయాలు',
-    ta: 'உள்கட்டமைப்பு',
-    kn: 'ಮೂಲಸೌಕರ್ಯ',
-    ml: 'അടിസ്ഥാന സൗകര്യം',
-    gu: 'માળખાકીય સુવિધા',
-    bn: 'অবকাঠামো',
     pa: 'ਬੁਨਿਆਦੀ ਢਾਂਚਾ'
   },
   'Irrigation': {
     en: 'Irrigation & Solar',
     hi: 'सिंचाई व सोलर',
-    mr: 'सिंचन व सौर',
     te: 'సాగునీరు & సోలార్',
-    ta: 'நீர்ப்பாசனம் & சோலார்',
-    kn: 'ನೀರಾವರಿ ಮತ್ತು ಸೋಲಾರ್',
-    ml: 'ജലസേചനവും സോളാറും',
-    gu: 'સિંચાઈ અને સોલર',
-    bn: 'সেচ ও সোলার',
     pa: 'ਸਿੰਚਾਈ ਅਤੇ ਸੋਲਰ'
   },
   'Irrigation & Solar': {
     en: 'Irrigation & Solar',
     hi: 'सिंचाई व सोलर',
-    mr: 'सिंचन व सौर',
     te: 'సాగునీరు & సోలార్',
-    ta: 'நீர்ப்பாசனம் & சோலார்',
-    kn: 'ನೀರಾವರಿ ಮತ್ತು ಸೋಲಾರ್',
-    ml: 'ജലസേചനവും സോളാറും',
-    gu: 'સિંચાઈ અને સોલર',
-    bn: 'সেચ ও সোলার',
     pa: 'ਸਿੰਚਾਈ ਅਤੇ ਸੋਲਰ'
   },
   'Organic & Tech': {
     en: 'Organic & Tech',
     hi: 'जैविक व तकनीक',
-    mr: 'सेंद्रिय व तंत्रज्ञान',
     te: 'సేంద్రీయ & సాంకేతికత',
-    ta: 'இயற்கை & තාක්ෂණය',
-    kn: 'ಸಾವಯವ ಮತ್ತು ತಂತ್ರಜ್ಞಾನ',
-    ml: 'ജൈവവും സാങ്കേതികവിദ്യയും',
-    gu: 'ઓર્ગેનિક અને ટેક',
-    bn: 'জৈব ও প্রযুক্তি',
     pa: 'ਜੈਵਿਕ ਅਤੇ ਤਕਨਾਲੋਜੀ'
   },
   'Climate Resilience': {
     en: 'Climate Resilience',
     hi: 'जलवायु सहनशीलता',
-    mr: 'हवामान अनुकूल शेती',
     te: 'వాతావరణ స్థితిస్థాపకత',
-    ta: 'காலநிலை மீள்தன்மை',
-    kn: 'ಹವಾಮಾನ ಸ್ಥಿತಿಸ್ಥಾಪಕತ್ವ',
-    ml: 'കാലാവസ്ഥാ പ്രതിരോധം',
-    gu: 'હવામાન અનુકૂળ',
-    bn: 'জলবায়ু সহনশীলতা',
     pa: 'ਜਲਵਾਯੂ ਅਨੁਕੂਲਤਾ'
   },
   'All': {
     en: 'All Categories',
     hi: 'सभी श्रेणियां',
-    mr: 'सर्व वर्ग',
     te: 'అన్ని వర్గాలు',
-    ta: 'அனைத்து பிரிவுகள்',
-    kn: 'ಎಲ್ಲಾ ವರ್ಗಗಳು',
-    ml: 'എല്ലാ വിഭാഗങ്ങളും',
-    gu: 'તમામ શ્રેણીઓ',
-    bn: 'সকল বিভাগ',
     pa: 'ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ'
+  }
+};
+
+export const CATEGORY_DESC_TRANSLATIONS: Record<string, Record<LanguageCode, string>> = {
+  'Direct Benefit': {
+    en: 'Direct cash transfers & income support deposited straight to farmer bank accounts.',
+    hi: 'किसानों के बैंक खातों में सीधे जमा की जाने वाली प्रत्यक्ष नकद सहायता और आय प्रोत्साहन।',
+    te: 'రైతుల బ్యాంక్ ఖాతాల్లో నేరుగా జమ అయ్యే నగదు రవాణా & ఆదాయ మద్దతు.',
+    pa: 'ਕਿਸਾਨਾਂ ਦੇ ਬੈਂਕ ਖਾਤਿਆਂ ਵਿੱਚ ਸਿੱਧੇ ਜਮ੍ਹਾਂ ਹੋਣ ਵਾਲੀ ਨਕਦ ਸਹਾਇਤਾ ਅਤੇ ਆਮਦਨ ਸਹਾਇਤਾ।'
+  },
+  'Crop Insurance': {
+    en: 'Financial protection against crop failure, drought, flood, pests & post-harvest loss.',
+    hi: 'फसल नुकसान, सूखा, बाढ़, कीटों और कटाई के बाद के नुकसान के खिलाफ वित्तीय सुरक्षा।',
+    te: 'పంట నష్టం, కరువు, వరదలు, పురుగులు మరియు కోత అనంతర నష్టాలకు ఆర్థిక రక్షణ.',
+    pa: 'ਫਸਲ ਦੇ ਨੁਕਸਾਨ, ਸੋਕੇ, ਹੜ੍ਹ, ਕੀੜਿਆਂ ਅਤੇ ਕਟਾਈ ਤੋਂ ਬਾਅਦ ਦੇ ਨੁਕਸਾਨ ਤੋਂ ਵਿੱਤੀ ਸੁਰੱਖਿਆ।'
+  },
+  'Insurance': {
+    en: 'Financial protection against crop failure, drought, flood, pests & post-harvest loss.',
+    hi: 'फसल नुकसान, सूखा, बाढ़, कीटों और कटाई के बाद के नुकसान के खिलाफ वित्तीय सुरक्षा।',
+    te: 'పంట నష్టం, కరువు, వరదలు, పురుగులు మరియు కోత అనంతర నష్టాలకు ఆర్థిక రక్షణ.',
+    pa: 'ਫਸਲ ਦੇ ਨੁਕਸਾਨ, ਸੋਕੇ, ਹੜ੍ਹ, ਕੀੜਿਆਂ ਅਤੇ ਕਟਾਈ ਤੋਂ ਬਾਅਦ ਦੇ ਨੁਕਸਾਨ ਤੋਂ ਵਿੱਤੀ ਸੁਰੱਖਿਆ।'
+  },
+  'Credit & Loan': {
+    en: 'Kisan Credit Cards (KCC), low-interest loans, collateral-free credit & interest subvention.',
+    hi: 'किसान क्रेडिट कार्ड (KCC), कम ब्याज वाले ऋण, बिना गारंटी के क्रेडिट और ब्याज छूट।',
+    te: 'కిసాన్ క్రెడిట్ కార్డ్‌లు (KCC), తక్కువ వడ్డీ రుణాలు మరియు వడ్డీ రాయితీ.',
+    pa: 'ਕਿਸਾਨ ਕ੍ਰੈਡਿਟ ਕਾਰਡ (KCC), ਘੱਟ ਵਿਆਜ ਵਾਲੇ ਕਰਜ਼ੇ ਅਤੇ ਵਿਆਜ ਵਿੱਚ ਛੋਟ।'
+  },
+  'Input Subsidy': {
+    en: 'Subsidies for certified seeds, fertilizers, farm machinery & equipment purchasing.',
+    hi: 'प्रमाणित बीज, उर्वरक, कृषि मशीनरी और उपकरण खरीद पर सब्सिडी।',
+    te: 'ధృవీకరించబడిన విత్తనాలు, ఎరువులు మరియు వ్యవసాయ యంత్రాల కొనుగోలుపై సబ్సిడీలు.',
+    pa: 'ਪ੍ਰਮਾਣਿਤ ਬੀਜਾਂ, ਖਾਦਾਂ ਅਤੇ ਖੇਤੀਬਾੜੀ ਮਸ਼ੀਨਰੀ ਦੀ ਖਰੀਦ \'ਤੇ ਸਬਸਿਡੀ।'
+  },
+  'Equipment Subsidy': {
+    en: 'Financial aid for buying modern tractors, power tillers, rotavators & implements.',
+    hi: 'आधुनिक ट्रैक्टर, पावर टिलर, रोटावेटर और कृषि यंत्र खरीदने के लिए वित्तीय सहायता।',
+    te: 'ఆధునిక ట్రాక్టర్లు, పవర్ టిల్లర్లు మరియు పరికరాల కొనుగోలుకు ఆర్థిక సాయం.',
+    pa: 'ਆਧੁਨਿਕ ਟਰੈਕਟਰ, ਪਾਵਰ ਟਿਲਰ ਅਤੇ ਖੇਤੀ ਸੰਦ ਖਰੀਦਣ ਲਈ ਵਿੱਤੀ ਸਹਾਇਤਾ।'
+  },
+  'Infrastructure': {
+    en: 'Grants for cold chains, warehouses, post-harvest processing & farm gate infrastructure.',
+    hi: 'कोल्ड चेन, गोदाम, कटाई के बाद के प्रसंस्करण और कृषि इंफ्रास्ट्रक्चर के लिए अनुदान।',
+    te: 'కోల్డ్ చైన్‌లు, గిడ్డంగులు మరియు వ్యవసాయ మౌలిక సదుపాయాల కొనుగోలు సాయం.',
+    pa: 'ਕੋਲਡ ਚੇਨਾਂ, ਗੋਦਾਮਾਂ ਅਤੇ ਖੇਤੀਬਾੜੀ ਬੁਨਿਆਦੀ ਢਾਂਚੇ ਲਈ ਗ੍ਰਾਂਟਾਂ।'
+  },
+  'Irrigation': {
+    en: 'Subsidies for drip/sprinkler micro-irrigation systems & PM-KUSUM solar water pumps.',
+    hi: 'ड्रिप/स्प्रिंकलर सूक्ष्म सिंचाई प्रणालियों और पीएम-कुसुम सोलर पंपों पर सब्सिडी।',
+    te: 'డ్రిప్/స్ప్రింక్లర్ సూక్ష్మ సేద్యం మరియు పీఎం-కుసుమ్ సోలార్ పంపులపై సబ్సిడీ.',
+    pa: 'ਡ੍ਰਿਪ/ਸਪ੍ਰਿੰਕਲਰ ਸਿੰਚਾਈ ਅਤੇ ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਕੁਸੁਮ ਸੋਲਰ ਪੰਪਾਂ \'ਤੇ ਸਬਸਿਡੀ।'
+  },
+  'Irrigation & Solar': {
+    en: 'Subsidies for drip/sprinkler micro-irrigation systems & PM-KUSUM solar water pumps.',
+    hi: 'ड्रिप/स्प्रिंकलर सूक्ष्म सिंचाई प्रणालियों और पीएम-कुसुम सोलर पंपों पर सब्सिडी।',
+    te: 'డ్రిప్/స్ప్రింక్లర్ సూక్ష్మ సేద్యం మరియు పీఎం-కుసుమ్ సోలార్ పంపులపై సబ్సిడీ.',
+    pa: 'ਡ੍ਰਿਪ/ਸਪ੍ਰਿੰਕਲਰ ਸਿੰਚਾਈ ਅਤੇ ਪ੍ਰਧਾਨ ਮੰਤਰੀ ਕੁਸੁਮ ਸੋਲਰ ਪੰਪਾਂ \'ਤੇ ਸਬਸਿਡੀ।'
+  },
+  'Organic & Tech': {
+    en: 'Support for certified organic farming, bio-inputs, drones & precision agritech.',
+    hi: 'प्रमाणित जैविक खेती, जैव-इनपुट, ड्रोन और सटीक कृषि तकनीक के लिए सहायता।',
+    te: 'సేంద్రీయ వ్యవసాయం, బయో-ఇన్‌పుట్‌లు మరియు డ్రోన్ సాంకేతికతకు మద్దతు.',
+    pa: 'ਜੈਵਿਕ ਖੇਤੀ, ਜੈਵਿਕ ਖਾਦਾਂ ਅਤੇ ਡਰੋਨ ਤਕਨਾਲੋਜੀ ਲਈ ਸਹਾਇਤਾ।'
+  },
+  'Climate Resilience': {
+    en: 'Climate-resilient crop varieties, soil health conservation & watershed management.',
+    hi: 'जलवायु-अनुकूल फसल किस्में, मृदा स्वास्थ्य संरक्षण और जलसम्भर प्रबंधन।',
+    te: 'వాతావరణ అనుకూల పంట రకాలు మరియు నేల ఆరోగ్య పరిరక్షణ.',
+    pa: 'ਜਲਵਾਯੂ ਅਨੁਕੂਲ ਫਸਲਾਂ ਦੀਆਂ ਕਿਸਮਾਂ ਅਤੇ ਮਿੱਟੀ ਦੀ ਸਿਹਤ ਸੰਭਾਲ।'
   }
 };
 
@@ -154,4 +151,13 @@ export function getLocalizedCategory(cat: string, lang: LanguageCode): string {
     return match[lang];
   }
   return cat;
+}
+
+export function getLocalizedCategoryDesc(cat: string, lang: LanguageCode): string {
+  if (!cat) return '';
+  const match = CATEGORY_DESC_TRANSLATIONS[cat];
+  if (match && match[lang]) {
+    return match[lang];
+  }
+  return CATEGORY_DESC_TRANSLATIONS[cat]?.en || '';
 }

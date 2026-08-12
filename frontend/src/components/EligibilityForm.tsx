@@ -62,20 +62,6 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
   const [shakingField, setShakingField] = useState<string | null>(null);
   const [isAutofilled, setIsAutofilled] = useState<boolean>(false);
 
-  // Dynamic Land Calculation (Acres / Bigha / Ha)
-  const getCalculatedHectares = (): number => {
-    const rawVal = profile.land_size_ha || 0;
-    if (profile.unit === 'acre') {
-      return parseFloat((rawVal * 0.404686).toFixed(2));
-    }
-    if (profile.unit === 'bigha') {
-      return parseFloat((rawVal * 0.2529).toFixed(2));
-    }
-    return rawVal;
-  };
-
-  const calculatedHectares = getCalculatedHectares();
-
   const handleChange = (field: keyof FarmerProfile, value: any) => {
     setFieldErrors(prev => {
       const copy = { ...prev };
@@ -431,27 +417,9 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
                 {fieldErrors.land_size_ha ? (
                   <span className="inline-field-error">{fieldErrors.land_size_ha}</span>
                 ) : (
-                  <div className="unit-converter-callout">
-                    {profile.land_size_ha > 0 ? (
-                      <div className={`subsidy-status-badge ${calculatedHectares <= 2.0 ? 'marginal-eligible' : 'large-eligible'}`}>
-                        {calculatedHectares <= 2.0 ? (
-                          <>
-                            <Check size={14} />
-                            <span>🌾 {calculatedHectares} Ha • {formT.labels?.smallMarginalEligible || 'Qualifies for Small & Marginal Subsidy (Up to 2.0 Ha)'}</span>
-                          </>
-                        ) : (
-                          <>
-                            <Tractor size={14} />
-                            <span>🌾 {calculatedHectares} Ha • {formT.labels?.largeEligible || 'Qualifies for Infrastructure Grant (> 2.0 Ha)'}</span>
-                          </>
-                        )}
-                      </div>
-                    ) : (
-                      <span className="field-hint">
-                        {formT.labels?.landHint || 'Small & Marginal farmers (under 2.0 Ha / ~4.9 Acres) get highest subsidy priority.'}
-                      </span>
-                    )}
-                  </div>
+                  <span className="field-hint">
+                    {formT.labels?.landHint || 'Small & Marginal farmers (under 2.0 Ha / ~4.9 Acres) get highest subsidy priority.'}
+                  </span>
                 )}
               </div>
 
@@ -792,7 +760,7 @@ export const EligibilityForm: React.FC<EligibilityFormProps> = ({
               {isAutofilled ? (
                 <>
                   <Check size={14} />
-                  <span>{formT.buttons?.autofilledSuccess || 'Form Filled! ✨'}</span>
+                  <span>{formT.buttons?.autofilledSuccess || 'Form Filled!'}</span>
                 </>
               ) : (
                 <>

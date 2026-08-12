@@ -10,6 +10,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { getLocalizedStateName } from '../i18n/stateTranslations';
 import { getLocalizedCategory } from '../i18n/categoryTranslations';
 import { cleanBenefitsText } from '../utils/formatBenefits';
+import { CustomSelect } from './CustomSelect';
 
 interface BrowseSchemesProps {
   schemes: Scheme[];
@@ -302,7 +303,7 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
                   <div className="hub-card-body">
                     <div className="hub-card-title-row">
                       <span className="hub-card-title">{title}</span>
-                      <span className="hub-count-chip">{count} {catT.schemesCount || 'Schemes'}</span>
+                      <span className="hub-count-chip">{count} {language === 'hi' ? 'योजनाएं' : (catT.schemesCount || 'Schemes')}</span>
                     </div>
 
                     <p className="hub-card-desc">{desc}</p>
@@ -311,7 +312,7 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
                       className="hub-card-footer"
                       style={{ color: card.color }}
                     >
-                      <span>{catT.viewSchemes || 'View Schemes'}</span>
+                      <span>{catT.viewSchemes || (language === 'hi' ? 'योजनाएं देखें' : 'View Schemes')}</span>
                       <ArrowRight size={14} />
                     </div>
                   </div>
@@ -350,36 +351,30 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
           <div className="browse-single-line-toolbar">
             {/* Left Section: Category & State Dropdowns */}
             <div className="toolbar-left-filters">
-              <div className="dropdown-pill-sub">
-                <LayoutGrid size={15} className="sub-icon" />
-                <select
-                  id="browse-category-select"
-                  className="sub-select"
-                  value={selectedCategory || 'All'}
-                  onChange={(e) => setSelectedCategory(e.target.value)}
-                >
-                  {categories.map(cat => (
-                    <option key={cat} value={cat}>
-                      {getLocalizedCategory(cat, language)}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <CustomSelect
+                id="browse-category-select"
+                value={selectedCategory || 'All'}
+                onChange={(val) => setSelectedCategory(val === 'All' ? 'All' : val)}
+                icon={<LayoutGrid size={15} />}
+                options={categories.map(cat => ({
+                  value: cat,
+                  label: getLocalizedCategory(cat, language)
+                }))}
+              />
 
-              <div className="dropdown-pill-sub">
-                <Filter size={15} className="sub-icon" />
-                <select
-                  id="browse-state-select"
-                  className="sub-select"
-                  value={selectedState}
-                  onChange={(e) => setSelectedState(e.target.value)}
-                >
-                  <option value="">{browseT.allStates || 'All States'}</option>
-                  {INDIA_STATES.map(st => (
-                    <option key={st} value={st}>{getLocalizedStateName(st, language)}</option>
-                  ))}
-                </select>
-              </div>
+              <CustomSelect
+                id="browse-state-select"
+                value={selectedState}
+                onChange={(val) => setSelectedState(val)}
+                icon={<Filter size={15} />}
+                options={[
+                  { value: '', label: browseT.allStates || 'All States' },
+                  ...INDIA_STATES.map(st => ({
+                    value: st,
+                    label: getLocalizedStateName(st, language)
+                  }))
+                ]}
+              />
             </div>
 
             {/* Center Section: Primary Centered Search Bar */}
@@ -410,7 +405,9 @@ export const BrowseSchemes: React.FC<BrowseSchemesProps> = ({
             {/* Right Section: Metadata Counter & Reset Link */}
             <div className="toolbar-right-meta">
               <span className="subbar-counter">
-                {browseT.showingSchemes || 'Showing'} <strong>{visibleSchemes.length}</strong> {browseT.of || 'of'} <strong>{filteredSchemes.length}</strong> {browseT.categories?.schemesCount?.toLowerCase() || 'schemes'}
+                {language === 'hi'
+                  ? <><strong>{filteredSchemes.length}</strong> में से <strong>{visibleSchemes.length}</strong> योजनाएं प्रदर्शित</>
+                  : <>{browseT.showingSchemes || 'Showing'} <strong>{visibleSchemes.length}</strong> {browseT.of || 'of'} <strong>{filteredSchemes.length}</strong> schemes</>}
               </span>
 
               {(searchTerm || selectedState || (selectedCategory && selectedCategory !== 'All')) && (

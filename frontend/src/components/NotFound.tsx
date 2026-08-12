@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Compass } from 'lucide-react';
+import { Home, Compass, Tractor } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface NotFoundProps {
@@ -15,7 +15,7 @@ export const NotFound: React.FC<NotFoundProps> = ({ onGoHome, onGoMatcher }) => 
     <div className="not-found-container">
       <div className="not-found-card animate-mascot">
         <div className="not-found-mascot">
-          <span style={{ fontSize: '3rem' }}>🚜</span>
+          <Tractor size={48} style={{ color: 'var(--brand-green)' }} />
         </div>
 
         <span className="not-found-badge">{nfT.badge || 'Error 404 — Page Not Found'}</span>
