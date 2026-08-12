@@ -14,28 +14,34 @@ import type { User } from './utils/auth';
 import { getCurrentUser, getStoredToken, logoutUser } from './utils/auth';
 import { CURATED_SCHEMES } from './data/schemes';
 import { fetchSchemes, matchProfile, addSchemeApi } from './api/client';
+import { matchAllClient } from './engine/matchingEngine';
 import './index.css';
 
-async function getMatches(profile: FarmerProfile): Promise<MatchResult[]> {
+async function getMatches(profile: FarmerProfile, currentSchemes: Scheme[]): Promise<MatchResult[]> {
   try {
-    return await matchProfile(profile);
+    const backendMatches = await matchProfile(profile);
+    if (backendMatches && backendMatches.length > 0) {
+      return backendMatches;
+    }
+    return matchAllClient(currentSchemes, profile);
   } catch {
-    // Backend unreachable — no matches rather than a crashed UI.
-    return [];
+    // Backend unreachable — seamless client-side matching engine fallback
+    return matchAllClient(currentSchemes, profile);
   }
 }
 
-type AppSection = 'hero' | 'browse' | 'eligibility' | 'results' | 'admin';
+type AppSection = 'hero' | 'browse' | 'eligibility' | 'results' | 'admin' | '404';
 
 function getSectionFromPath(): AppSection {
   const path = window.location.pathname.replace(/\/$/, '').toLowerCase();
   const hash = window.location.hash.replace(/^#\/?/, '').toLowerCase();
 
+  if (path === '' || path === '/' || hash === '') return 'hero';
   if (path === '/browse' || hash === 'browse') return 'browse';
   if (path === '/eligibility' || hash === 'eligibility') return 'eligibility';
   if (path === '/results' || hash === 'results') return 'results';
   if (path === '/admin' || hash === 'admin') return 'admin';
-  return 'hero';
+  return '404';
 }
 
 function requiresAdminAndLacksAccess(section: AppSection, user: User | null): boolean {
@@ -134,7 +140,7 @@ export function App() {
     setProfile(newProfile);
 
     setTimeout(async () => {
-      const updatedResults = await getMatches(newProfile);
+      const updatedResults = await getMatches(newProfile, schemes);
       setResults(updatedResults);
       setIsCalculating(false);
       navigateToSection('results');
@@ -144,18 +150,19 @@ export function App() {
   const handleQuickHeroSearch = (searchState: string) => {
     const updatedProf = { ...profile, state: searchState };
     setProfile(updatedProf);
-    getMatches(updatedProf).then(setResults);
+    getMatches(updatedProf, schemes).then(setResults);
     navigateToSection('eligibility');
   };
 
   const handleAddCustomScheme = async (newScheme: Scheme) => {
-    setSchemes(prev => [newScheme, ...prev]);
+    const updatedSchemes = [newScheme, ...schemes];
+    setSchemes(updatedSchemes);
     try {
       await addSchemeApi(newScheme);
     } catch {
-      // Backend unreachable — scheme still shows in the list locally, but won't affect matching until it persists.
+      // Backend unreachable — scheme still shows in the list locally and matches client-side
     }
-    const updatedResults = await getMatches(profile);
+    const updatedResults = await getMatches(profile, updatedSchemes);
     setResults(updatedResults);
   };
 

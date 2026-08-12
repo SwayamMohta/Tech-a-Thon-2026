@@ -10,7 +10,7 @@ import {
 import confetti from 'canvas-confetti';
 import { useLanguage } from '../context/LanguageContext';
 import { getLocalizedStateName } from '../i18n/stateTranslations';
-import { getLocalizedCategory } from '../i18n/categoryTranslations';
+import { getLocalizedCategory, getLocalizedCategoryDesc } from '../i18n/categoryTranslations';
 
 interface ResultsSectionProps {
   results: MatchResult[];
@@ -202,7 +202,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
               onClick={() => setIsProfileModalOpen(true)}
             >
               <User size={15} />
-              <span>Farmer Profile</span>
+              <span>{resT.profileModalTitle || 'Farmer Profile'}</span>
               <ChevronRight size={14} />
             </button>
           </div>
@@ -212,70 +212,77 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
       {/* ── FARMER PROFILE VIEW/EDIT MODAL ───────────────────────── */}
       {isProfileModalOpen && (
         <div className="modal-backdrop" onClick={() => setIsProfileModalOpen(false)}>
-          <div className="modal-content profile-summary-modal" onClick={e => e.stopPropagation()}>
-            <div className="modal-header">
-              <div className="modal-title-with-icon" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <User size={22} className="modal-title-icon" style={{ color: '#16A34A' }} />
+          <div className="profile-modal-panel" onClick={e => e.stopPropagation()}>
+
+            {/* Header */}
+            <div className="profile-modal-header">
+              <div className="profile-modal-header-left">
+                <div className="profile-modal-avatar">
+                  <User size={20} />
+                </div>
                 <div>
-                  <h3 className="modal-title" style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800 }}>Farmer Profile Details</h3>
-                  <p className="modal-subtitle" style={{ margin: 0, fontSize: '0.84rem', color: '#64748B' }}>Your active parameters for scheme matching</p>
+                  <h3 className="profile-modal-title">{resT.profileModalTitle || 'Farmer Profile'}</h3>
+                  <p className="profile-modal-subtitle">{resT.profileModalSubtitle || 'Active parameters for scheme matching'}</p>
                 </div>
               </div>
               <button
                 type="button"
-                className="modal-close-btn"
+                className="profile-modal-close"
                 onClick={() => setIsProfileModalOpen(false)}
+                aria-label="Close"
               >
-                <X size={18} />
+                <X size={16} />
               </button>
             </div>
 
-            <div className="modal-body profile-details-grid" style={{ marginTop: '16px' }}>
-              <div className="profile-detail-card">
-                <span className="detail-label">State</span>
-                <strong className="detail-value">{localizedState || 'All India'}</strong>
+            {/* Fields grid */}
+            <div className="profile-modal-fields">
+              <div className="profile-field-row">
+                <span className="profile-field-label">{resT.stateLabel || 'State'}</span>
+                <span className="profile-field-value">{localizedState || (language === 'hi' ? 'समस्त भारत' : 'All India')}</span>
               </div>
-              <div className="profile-detail-card">
-                <span className="detail-label">District</span>
-                <strong className="detail-value">{profile.district || 'Not Specified'}</strong>
+              <div className="profile-field-row">
+                <span className="profile-field-label">{resT.districtLabel || 'District'}</span>
+                <span className="profile-field-value">{profile.district || (language === 'hi' ? 'निर्दिष्ट नहीं' : 'Not specified')}</span>
               </div>
-              <div className="profile-detail-card">
-                <span className="detail-label">Land Size</span>
-                <strong className="detail-value">{profile.land_size_ha || 0} {profile.unit || 'ha'}</strong>
+              <div className="profile-field-row">
+                <span className="profile-field-label">{resT.landSizeLabel || 'Land Size'}</span>
+                <span className="profile-field-value profile-field-value--accent">
+                  {profile.land_size_ha || 0}&thinsp;
+                  {profile.unit === 'acre' ? (language === 'hi' ? 'एकड़' : 'acres') : profile.unit === 'bigha' ? (language === 'hi' ? 'बीघा' : 'bigha') : (language === 'hi' ? 'हेक्टेयर' : 'ha')}
+                </span>
               </div>
-              <div className="profile-detail-card">
-                <span className="detail-label">Primary Crop</span>
-                <strong className="detail-value">{(profile.crop || 'All Crops').toUpperCase()}</strong>
+              <div className="profile-field-row">
+                <span className="profile-field-label">{resT.cropLabel || 'Primary Crop'}</span>
+                <span className="profile-field-value">{(profile.crop || (language === 'hi' ? 'सभी फसलें' : 'All crops')).toUpperCase()}</span>
               </div>
-              <div className="profile-detail-card">
-                <span className="detail-label">Category</span>
-                <strong className="detail-value">{profile.category || 'General'}</strong>
+              <div className="profile-field-row">
+                <span className="profile-field-label">{resT.categoryLabel || 'Social Category'}</span>
+                <span className="profile-field-value">{profile.category || 'General'}</span>
               </div>
-              <div className="profile-detail-card">
-                <span className="detail-label">Water Source</span>
-                <strong className="detail-value">{profile.irrigation_type || 'Rainfed / Canal / Default'}</strong>
+              <div className="profile-field-row" style={{ borderBottom: 'none' }}>
+                <span className="profile-field-label">{resT.waterSourceLabel || 'Water Source'}</span>
+                <span className="profile-field-value">{profile.irrigation_type || 'Rainfed / Canal'}</span>
               </div>
             </div>
 
-            <div className="modal-footer" style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px' }}>
+            {/* Footer */}
+            <div className="profile-modal-footer">
               <button
                 type="button"
-                className="btn-wizard-back"
+                className="profile-modal-btn-close"
                 onClick={() => setIsProfileModalOpen(false)}
               >
-                <span>Close</span>
+                {resT.closeBtn || 'Close'}
               </button>
               {onAdjustProfile && (
                 <button
                   type="button"
-                  className="btn-wizard-next"
-                  onClick={() => {
-                    setIsProfileModalOpen(false);
-                    onAdjustProfile();
-                  }}
+                  className="profile-modal-btn-edit"
+                  onClick={() => { setIsProfileModalOpen(false); onAdjustProfile(); }}
                 >
-                  <Edit3 size={15} />
-                  <span>Edit Profile</span>
+                  <Edit3 size={14} />
+                  <span>{resT.editProfileBtn || 'Edit Profile'}</span>
                 </button>
               )}
             </div>
@@ -299,7 +306,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
           {currentTabList.length === 0 ? (
             <div className="not-found-card animate-mascot" style={{ margin: '30px auto' }}>
               <div className="not-found-mascot">
-                <span style={{ fontSize: '2.5rem' }}>🌱</span>
+                <Sprout size={40} style={{ color: 'var(--brand-green)' }} />
               </div>
               <span className="not-found-badge">0 Matches</span>
               <h3 className="not-found-title">{resT.noMatchesTitle || 'No Schemes Found'}</h3>
@@ -315,7 +322,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
           ) : (
             <div className="results-category-hub-wrapper">
               <div className="results-category-hub-header">
-                <h3>Select a Scheme Category to View {activeTab === 'matched' ? 'Eligible' : 'Excluded'} Schemes</h3>
+                <h3>{activeTab === 'matched' ? (resT.selectCategoryToViewMatched || 'Select a Scheme Category to View Eligible Schemes') : (resT.selectCategoryToViewExcluded || 'Select a Scheme Category to View Excluded Schemes')}</h3>
                 <div className="tab-switcher">
                   <button
                     className={`tab-btn ${activeTab === 'matched' ? 'active' : ''}`}
@@ -346,22 +353,20 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                     '--hub-card-border': '#E2E8F0'
                   } as React.CSSProperties}
                 >
-                  <div className="hub-card-top-row">
-                    <div className="hub-card-icon-box">
-                      <LayoutGrid size={22} />
-                    </div>
+                  <div className="hub-card-title-count-row">
+                    <h4 className="hub-card-title-text">{resT.allCategories || 'All Categories'}</h4>
                     <span className="hub-card-count-badge">
-                      {currentTabList.length} Schemes
+                      {currentTabList.length} {language === 'hi' ? 'योजनाएं' : 'Schemes'}
                     </span>
                   </div>
-
-                  <h4 className="hub-card-title-text">All Categories</h4>
                   <p className="hub-card-desc-text">
-                    Browse all {currentTabList.length} {activeTab === 'matched' ? 'eligible' : 'excluded'} schemes across all agricultural categories.
+                    {language === 'hi' 
+                      ? `सभी कृषि श्रेणियों में उपलब्ध कुल ${currentTabList.length} ${activeTab === 'matched' ? 'पात्र' : 'अपात्र'} योजनाएं देखें।`
+                      : `Browse all ${currentTabList.length} ${activeTab === 'matched' ? 'eligible' : 'excluded'} schemes across all agricultural categories.`}
                   </p>
 
                   <div className="hub-card-action-btn">
-                    <span>View All Schemes</span>
+                    <span>{resT.viewAllSchemesBtn || 'View All Schemes'}</span>
                     <ArrowRight size={16} />
                   </div>
                 </button>
@@ -369,8 +374,8 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                 {/* Per-Category Hub Cards */}
                 {availableCategories.map(catTag => {
                   const meta = getCategoryMeta(catTag);
-                  const IconComp = meta.icon;
                   const count = currentCategoryMap[catTag]?.length || 0;
+                  const localizedDesc = getLocalizedCategoryDesc(catTag, language) || meta.description;
 
                   return (
                     <button
@@ -384,22 +389,18 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                         '--hub-card-border': meta.borderColor
                       } as React.CSSProperties}
                     >
-                      <div className="hub-card-top-row">
-                        <div className="hub-card-icon-box">
-                          <IconComp size={22} />
-                        </div>
+                      <div className="hub-card-title-count-row">
+                        <h4 className="hub-card-title-text">
+                          {getLocalizedCategory(catTag, language)}
+                        </h4>
                         <span className="hub-card-count-badge">
-                          {count} {count === 1 ? 'Scheme' : 'Schemes'}
+                          {count} {language === 'hi' ? 'योजनाएं' : (count === 1 ? 'Scheme' : 'Schemes')}
                         </span>
                       </div>
-
-                      <h4 className="hub-card-title-text">
-                        {getLocalizedCategory(catTag, language)}
-                      </h4>
-                      <p className="hub-card-desc-text">{meta.description}</p>
+                      <p className="hub-card-desc-text">{localizedDesc}</p>
 
                       <div className="hub-card-action-btn">
-                        <span>Explore {getLocalizedCategory(catTag, language)}</span>
+                        <span>{resT.exploreCategoryPrefix || 'Explore'} {getLocalizedCategory(catTag, language)}</span>
                         <ArrowRight size={16} />
                       </div>
                     </button>
@@ -421,13 +422,13 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({
                 onClick={() => setSelectedCategory(null)}
               >
                 <ArrowLeft size={16} />
-                <span>Back to Categories</span>
+                <span>{resT.backToCategoriesBtn || 'Back to Categories'}</span>
               </button>
 
               <div className="category-header-title-wrap">
                 <h3 className="category-section-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   {selectedCategory === 'All'
-                    ? 'All Categories'
+                    ? (resT.allCategories || 'All Categories')
                     : getLocalizedCategory(selectedCategory, language)}
                 </h3>
               </div>

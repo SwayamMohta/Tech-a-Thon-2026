@@ -6,6 +6,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { getLocalizedCategory } from '../i18n/categoryTranslations';
 import { cleanBenefitsText } from '../utils/formatBenefits';
 
+import { formatLocalizedExclusionReason } from '../i18n/docTranslations';
+
 interface SchemeCardProps {
   result: MatchResult;
   onViewDetails: (result: MatchResult) => void;
@@ -71,7 +73,7 @@ export const SchemeCard: React.FC<SchemeCardProps> = ({ result, onViewDetails })
           <div className="reason-chips-list">
             {exclusion_reasons.map((reason, i) => (
               <span key={i} className="chip-reason">
-                {reason}
+                {formatLocalizedExclusionReason(reason, language)}
               </span>
             ))}
           </div>

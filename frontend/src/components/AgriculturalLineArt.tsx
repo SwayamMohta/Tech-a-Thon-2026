@@ -1,5 +1,6 @@
 import React from 'react';
 import { SproutSparkle } from './DoodleAccents';
+import { Sprout, Zap } from 'lucide-react';
 
 export const AgriculturalLineArt: React.FC = () => {
   return (
@@ -145,7 +146,7 @@ export const AgriculturalLineArt: React.FC = () => {
           gap: '6px',
           boxShadow: 'var(--nm-raised-sm)'
         }}>
-          <span style={{ color: '#16A34A' }}>🌾</span> 45+ Govt Schemes
+          <Sprout size={16} style={{ color: '#16A34A' }} /> 45+ Govt Schemes
         </div>
 
         <div className="animate-pop" style={{
@@ -162,7 +163,7 @@ export const AgriculturalLineArt: React.FC = () => {
           boxShadow: 'var(--nm-raised-sm)',
           animationDelay: '0.15s'
         }}>
-          <span style={{ color: '#D97706' }}>⚡</span> Direct Bank Credit
+          <Zap size={16} style={{ color: '#D97706' }} /> Direct Bank Credit
         </div>
       </div>
     </div>

@@ -1,154 +1,134 @@
 import React, { useEffect } from 'react';
 import type { MatchResult } from '../types/scheme';
-import { X, ExternalLink, FileText, CheckCircle2, AlertCircle, Building2, Tag } from 'lucide-react';
+import { X, ExternalLink, FileText, CheckCircle2, XCircle, Building2 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { getLocalizedCategory } from '../i18n/categoryTranslations';
+import { getLocalizedDocument, formatLocalizedExclusionReason } from '../i18n/docTranslations';
 
 interface SchemeModalProps {
   result: MatchResult | null;
   onClose: () => void;
 }
 
-export const SchemeModal: React.FC<SchemeModalProps> = ({
-  result,
-  onClose
-}) => {
+export const SchemeModal: React.FC<SchemeModalProps> = ({ result, onClose }) => {
   const { language, t } = useLanguage();
   const modalT = t.modal || {};
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    if (result) {
-      window.addEventListener('keydown', handleKeyDown);
-    }
+    const handleKeyDown = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    if (result) window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [result, onClose]);
 
   if (!result) return null;
 
-  const { scheme, passed_filter, exclusion_reasons, tfidf_similarity, final_score, matched_keywords, missing_keywords } = result;
+  const { scheme, passed_filter, exclusion_reasons, tfidf_similarity, matched_keywords, missing_keywords } = result;
+  const matchPct = passed_filter ? Math.round(75 + tfidf_similarity * 25) : Math.round(tfidf_similarity * 60);
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="presentation">
-      <div 
-        className="modal-card" 
+      <div
+        className="modal-card"
         onClick={e => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-label={scheme.title}
       >
+        {/* ── Header ── */}
         <div className="modal-header">
           <div className="modal-title-group">
-            <span className="modal-category">{getLocalizedCategory(scheme.category_tag, language)}</span>
+            <div className="modal-header-meta">
+              <span className="modal-category">{getLocalizedCategory(scheme.category_tag, language)}</span>
+              <span className={`modal-eligibility-pill ${passed_filter ? 'pill-eligible' : 'pill-excluded'}`}>
+                {passed_filter
+                  ? <><CheckCircle2 size={13} /> {matchPct}% {modalT.matchScore || 'match'}</>
+                  : <><XCircle size={13} /> {modalT.profileExcluded || 'Not eligible'}</>}
+              </span>
+            </div>
             <h2>{scheme.title}</h2>
             <div className="ministry-sub">
-              <Building2 size={15} />
+              <Building2 size={14} />
               <span>{scheme.ministry}</span>
             </div>
           </div>
           <button className="btn-modal-close" onClick={onClose} aria-label="Close modal">
-            <X size={20} />
+            <X size={18} />
           </button>
         </div>
 
         <div className="modal-body">
-          <div className={`modal-status-banner ${passed_filter ? 'banner-passed' : 'banner-failed'}`}>
-            <div className="banner-left">
-              {passed_filter ? (
-                <>
-                  <CheckCircle2 size={24} className="banner-icon-success" />
-                  <div>
-                    <h4>{modalT.profileEligible || 'Profile Eligible for Scheme'}</h4>
-                    <p>{modalT.hardFilterPassed || 'Hard-rule filters passed.'} TF-IDF: {(tfidf_similarity * 100).toFixed(1)}%</p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <AlertCircle size={24} className="banner-icon-fail" />
-                  <div>
-                    <h4>{modalT.profileExcluded || 'Profile Excluded from Scheme'}</h4>
-                    <p>{modalT.failedRules || 'Failed hard filter rule(s).'}</p>
-                  </div>
-                </>
-              )}
-            </div>
-            <div className="banner-score">
-              <span className="score-num">{final_score.toFixed(2)}</span>
-              <span className="score-tag">{modalT.finalScore || 'Final Score'}</span>
-            </div>
-          </div>
 
+          {/* Exclusion reasons — only when failed */}
           {!passed_filter && exclusion_reasons.length > 0 && (
             <div className="modal-exclusion-box">
-              <h4>{modalT.reasonForExclusion || 'Reason for Exclusion:'}</h4>
-              <ul>
+              <p className="exclusion-box-label">{modalT.reasonForExclusion || 'Why excluded'}</p>
+              <ul className="exclusion-list">
                 {exclusion_reasons.map((reason, idx) => (
-                  <li key={idx}>{reason}</li>
+                  <li key={idx}>{formatLocalizedExclusionReason(reason, language)}</li>
                 ))}
               </ul>
             </div>
           )}
 
+          {/* Description */}
           <div className="modal-section">
-            <h3>{modalT.descriptionAndGuidelines || 'Scheme Description & Guidelines'}</h3>
+            <h3>{modalT.descriptionAndGuidelines || 'About this scheme'}</h3>
             <p className="modal-desc-text">{scheme.description}</p>
           </div>
 
-          <div className="modal-section benefits-highlight-card">
-            <h3>{modalT.financialBenefit || 'Financial Benefit & Subsidy Package'}</h3>
-            <p>{scheme.benefits}</p>
-          </div>
-
+          {/* Benefits */}
           <div className="modal-section">
-            <h3>{modalT.documentChecklist || 'Required Document Checklist'}</h3>
-            <div className="doc-checklist-grid">
-              {scheme.documents_required.map((doc, idx) => (
-                <div key={idx} className="doc-item">
-                  <FileText size={16} className="doc-icon" />
-                  <span>{doc}</span>
-                </div>
-              ))}
-            </div>
+            <h3>{modalT.financialBenefit || 'What you get'}</h3>
+            <p className="modal-benefits-text">{scheme.benefits}</p>
           </div>
 
-          <div className="modal-section">
-            <h3>{modalT.keywordAnalysis || 'Relevance Keyword Analysis'}</h3>
-            <div className="kw-analysis-grid">
-              <div className="kw-col kw-matched">
-                <h4>
-                  <CheckCircle2 size={14} />
-                  {modalT.matchedKeywords || 'Matched Profile Keywords'}
-                </h4>
-                <div className="kw-chips">
-                  {matched_keywords.length > 0 ? (
-                    matched_keywords.map(kw => (
-                      <span key={kw} className="chip chip-matched-lg">#{kw}</span>
-                    ))
-                  ) : (
-                    <span className="no-kw">{modalT.noKeywordOverlap || 'No direct keyword overlap'}</span>
-                  )}
-                </div>
-              </div>
+          {/* Documents */}
+          {scheme.documents_required.length > 0 && (
+            <div className="modal-section">
+              <h3>{modalT.documentChecklist || 'Documents needed'}</h3>
+              <ul className="modal-doc-list">
+                {scheme.documents_required.map((doc, idx) => (
+                  <li key={idx} className="modal-doc-item">
+                    <FileText size={14} className="doc-icon" />
+                    <span>{getLocalizedDocument(doc, language)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-              <div className="kw-col kw-missing">
-                <h4>
-                  <Tag size={14} />
-                  {modalT.schemeKeywords || 'Top Scheme Feature Keywords'}
-                </h4>
-                <div className="kw-chips">
-                  {missing_keywords.map(kw => (
-                    <span key={kw} className="chip chip-missing-lg">{kw}</span>
-                  ))}
-                </div>
+          {/* Keywords */}
+          {(matched_keywords.length > 0 || missing_keywords.length > 0) && (
+            <div className="modal-section">
+              <h3>{modalT.keywordAnalysis || 'Relevance signals'}</h3>
+              <div className="modal-kw-section">
+                {matched_keywords.length > 0 && (
+                  <div className="modal-kw-group">
+                    <span className="kw-group-label kw-label-matched">{modalT.matchedKeywords || 'Matched'}</span>
+                    <div className="kw-chips">
+                      {matched_keywords.map(kw => (
+                        <span key={kw} className="chip chip-matched-lg">#{kw}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {missing_keywords.length > 0 && (
+                  <div className="modal-kw-group">
+                    <span className="kw-group-label kw-label-scheme">{modalT.schemeKeywords || 'Scheme features'}</span>
+                    <div className="kw-chips">
+                      {missing_keywords.map(kw => (
+                        <span key={kw} className="chip chip-missing-lg">{kw}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
-          </div>
+          )}
+
         </div>
 
+        {/* ── Footer ── */}
         <div className="modal-footer">
           <button className="btn-modal-secondary" onClick={onClose}>
             {modalT.close || 'Close'}
@@ -159,11 +139,12 @@ export const SchemeModal: React.FC<SchemeModalProps> = ({
             rel="noopener noreferrer"
             className="btn-modal-primary-apply"
           >
-            <span>{modalT.applyOfficial || 'Apply on Official Portal'}</span>
-            <ExternalLink size={18} />
+            <span>{modalT.applyOfficial || 'Apply on official portal'}</span>
+            <ExternalLink size={16} />
           </a>
         </div>
       </div>
     </div>
   );
 };
+

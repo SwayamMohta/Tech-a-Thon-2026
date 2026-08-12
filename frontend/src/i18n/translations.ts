@@ -1,4 +1,4 @@
-export type LanguageCode = 'en' | 'hi' | 'mr' | 'te' | 'ta' | 'kn' | 'ml' | 'gu' | 'bn' | 'pa';
+export type LanguageCode = 'en' | 'hi' | 'te' | 'pa';
 
 export interface LanguageInfo {
   code: LanguageCode;
@@ -9,13 +9,7 @@ export interface LanguageInfo {
 export const SUPPORTED_LANGUAGES: LanguageInfo[] = [
   { code: 'en', name: 'English', nativeName: 'English' },
   { code: 'hi', name: 'Hindi', nativeName: 'हिंदी' },
-  { code: 'mr', name: 'Marathi', nativeName: 'मराठी' },
   { code: 'te', name: 'Telugu', nativeName: 'తెలుగు' },
-  { code: 'ta', name: 'Tamil', nativeName: 'தமிழ்' },
-  { code: 'kn', name: 'Kannada', nativeName: 'ಕನ್ನಡ' },
-  { code: 'ml', name: 'Malayalam', nativeName: 'മലയാളം' },
-  { code: 'gu', name: 'Gujarati', nativeName: 'ગુજરાતી' },
-  { code: 'bn', name: 'Bengali', nativeName: 'বাংলা' },
   { code: 'pa', name: 'Punjabi', nativeName: 'ਪੰਜਾਬੀ' }
 ];
 
@@ -159,6 +153,22 @@ export interface TranslationSchema {
     additionalKeywords: string;
     showTop10: string;
     showAll: string;
+    selectCategoryToViewMatched: string;
+    selectCategoryToViewExcluded: string;
+    viewAllSchemesBtn: string;
+    exploreCategoryPrefix: string;
+    backToCategoriesBtn: string;
+    showMoreSchemesBtn: string;
+    profileModalTitle: string;
+    profileModalSubtitle: string;
+    stateLabel: string;
+    districtLabel: string;
+    landSizeLabel: string;
+    cropLabel: string;
+    categoryLabel: string;
+    waterSourceLabel: string;
+    editProfileBtn: string;
+    closeBtn: string;
   };
   browse: {
     browseTitle: string;
@@ -406,7 +416,23 @@ const defaultEnResults: TranslationSchema['results'] = {
   profileKeywordsMatched: 'Profile Keywords Matched:',
   additionalKeywords: 'Additional Scheme Keywords:',
   showTop10: 'Show Top 10 Only',
-  showAll: 'Show All Schemes'
+  showAll: 'Show All Schemes',
+  selectCategoryToViewMatched: 'Select a Scheme Category to View Eligible Schemes',
+  selectCategoryToViewExcluded: 'Select a Scheme Category to View Excluded Schemes',
+  viewAllSchemesBtn: 'View All Schemes',
+  exploreCategoryPrefix: 'Explore',
+  backToCategoriesBtn: 'Back to Categories',
+  showMoreSchemesBtn: 'Show More Schemes',
+  profileModalTitle: 'Farmer Profile Details',
+  profileModalSubtitle: 'Your active parameters for scheme matching',
+  stateLabel: 'State',
+  districtLabel: 'District',
+  landSizeLabel: 'Land Size',
+  cropLabel: 'Primary Crop',
+  categoryLabel: 'Social Category',
+  waterSourceLabel: 'Water Source / Irrigation',
+  editProfileBtn: 'Edit Profile',
+  closeBtn: 'Close'
 };
 
 const defaultEnBrowse: TranslationSchema['browse'] = {
@@ -536,6 +562,7 @@ const defaultEnNotFound: TranslationSchema['notFound'] = {
 };
 
 export const translations: Record<LanguageCode, TranslationSchema> = {
+
   en: {
     nav: {
       browseSchemes: 'Browse Schemes',
@@ -688,20 +715,42 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
       }
     },
     results: {
-      ...defaultEnResults,
       matchingSchemesTitle: 'पात्र योजनाएं व सब्सिडी मैच',
       matchedSubsidiesFound: 'आपकी प्रोफाइल के लिए मिलीं सरकारी सब्सिडी',
-      eligibleOnly: 'केवल पात्र योजनाएं',
-      exclusionReason: 'अपात्रता का कारण',
+      allCategories: 'सभी श्रेणियां',
+      eligibleOnly: 'पात्र योजनाएं',
+      matchScore: 'पात्रता स्कोर',
       viewDetails: 'विवरण देखें',
       applyNow: 'आवेदन करें',
+      exclusionReason: 'अपात्रता का कारण',
+      noMatchesTitle: 'कोई सटीक मैच नहीं मिला',
+      noMatchesDesc: 'आपकी राज्य व भूमि के आकार के अनुसार कोई योजना नहीं मिली। कृपया अपनी प्रोफाइल बदलें!',
+      adjustProfile: 'किसान प्रोफाइल बदलें',
+      transparencyTitle: 'पारदर्शिता गारंटी:',
+      transparencyDesc: 'ये योजनाएं एक या अधिक हार्ड नियमों को पूरा नहीं करती हैं। वे टीएफ-आईडीएफ समानता द्वारा क्रमबद्ध हैं।',
       relevance: 'प्रासंगिकता:',
       viewDetailsApply: 'विवरण देखें व आवेदन करें',
-      whyExcluded: 'अपात्रता का कारण (नियम विफल):',
-      profileKeywordsMatched: 'मैच हुए कीवर्ड:',
+      whyExcluded: 'अपात्रता का कारण (हार्ड नियम विफल):',
+      profileKeywordsMatched: 'मैच हुए प्रोफाइल कीवर्ड:',
       additionalKeywords: 'अतिरिक्त योजना कीवर्ड:',
       showTop10: 'केवल शीर्ष 10 देखें',
-      showAll: 'सभी योजनाएं देखें'
+      showAll: 'सभी योजनाएं देखें',
+      selectCategoryToViewMatched: 'पात्र योजनाएं देखने के लिए एक श्रेणी चुनें',
+      selectCategoryToViewExcluded: 'अपात्र योजनाएं देखने के लिए एक श्रेणी चुनें',
+      viewAllSchemesBtn: 'सभी योजनाएं देखें',
+      exploreCategoryPrefix: 'देखें',
+      backToCategoriesBtn: 'श्रेणियों पर वापस जाएं',
+      showMoreSchemesBtn: 'और योजनाएं देखें',
+      profileModalTitle: 'किसान प्रोफाइल विवरण',
+      profileModalSubtitle: 'योजना मिलान के लिए आपके सक्रिय मानदंड',
+      stateLabel: 'राज्य',
+      districtLabel: 'ज़िला',
+      landSizeLabel: 'भूमि का आकार',
+      cropLabel: 'मुख्य फसल',
+      categoryLabel: 'सामाजिक श्रेणी',
+      waterSourceLabel: 'सिंचाई / जल स्रोत',
+      editProfileBtn: 'प्रोफाइल बदलें',
+      closeBtn: 'बंद करें'
     },
     browse: {
       ...defaultEnBrowse,
@@ -802,218 +851,6 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
     footer: {
       tagline: 'किसान-योजना पात्रता मैचर • टेक-अ-थॉन 2026 के लिए निर्मित।',
       meta: 'TF-IDF + हार्ड-फ़िल्टर प्यूर पायथन/टीएस इंजन'
-    }
-  },
-
-  mr: {
-    nav: {
-      browseSchemes: 'योजना पहा',
-      checkEligibility: 'पात्रता तपासा',
-      signIn: 'साइन इन करा',
-      admin: 'ॲडमिन',
-      signOut: 'साइन आउट'
-    },
-    hero: {
-      headingPart1: 'तुमच्या शेतासाठी मिळणारी ',
-      headingHighlight: 'सरकारी मदत मिळवा.',
-      description: 'बियाणे, यंत्रसामग्री, सौर पंप आणि पीक विमा योजना शोधा.',
-      selectState: 'राज्य निवडा...',
-      searchSchemes: 'योजना शोधा',
-      modalTitle: 'राज्य निवडा',
-      searchStatePlaceholder: 'राज्य शोधा...',
-      noStateFound: 'कोणतेही राज्य सापडले नाही',
-      clickMapToSelect: '(निवडण्यासाठी नकाशावर क्लिक करा)',
-      clickAnyStateHint: 'नकाशावरील कोणत्याही राज्यावर क्लिक करा'
-    },
-    form: {
-      steps: {
-        step1: 'स्थान व 7/12 नोंदी',
-        step2: 'जमीन व पाणी',
-        step3: 'पिके व हंगाम',
-        step4: 'शेतकरी प्रोफाइल',
-        stepOf: 'पैकी'
-      },
-      banners: {
-        step1Title: 'शेताचे स्थान व 7/12 नोंद',
-        step1Desc: 'महाभूलेख नोंदी तपासण्यासाठी आवश्यक.',
-        step2Title: 'शेतजमीन व सिंचन',
-        step2Desc: 'अल्पभूधारक अनुदान कोटा तपासण्यासाठी.',
-        step3Title: 'मुख्य पिके व हंगाम',
-        step3Desc: 'पीक विमा व बियाणे अनुदान तपासण्यासाठी.',
-        step4Title: 'शेतकरी वर्ग व सवलती',
-        step4Desc: 'महिला व अल्पभूधारकांसाठी 10-25% अतिरिक्त अनुदान.'
-      },
-      labels: {
-        state: 'राज्य / केंद्रशासित प्रदेश *',
-        selectStatePlaceholder: 'राज्य निवडा...',
-        district: 'जिल्हा *',
-        districtPlaceholder: 'उदा. नाशिक, पुणे, कोल्हापूर',
-        taluka: 'तालुका (ऐच्छिक)',
-        talukaPlaceholder: 'उदा. निफाड, हवेली',
-        pincode: 'पिन कोड (6 अंक) *',
-        pincodePlaceholder: 'उदा. 422303',
-        khasra: '7/12 / गट नंबर *',
-        khasraPlaceholder: 'उदा. गट नंबर 108/अ, 7/12 नोंद',
-        khasraHint: '7/12 उताऱ्यावर उपलब्ध.',
-
-        landArea: 'एकूण शेतजमीन क्षेत्र *',
-        ha: 'हेक्टर (ha)',
-        acres: 'एकर',
-        bigha: 'बिघा',
-        equivalent: 'समान:',
-        smallMarginalEligible: 'अल्पभूधारक अनुदानास पात्र (2 हेक्टरपर्यंत)',
-        largeEligible: 'पायाभूत सुविधा अनुदानास पात्र (> 2 हेक्टर)',
-        landHint: 'अल्पभूधारक शेतकऱ्यांना (2 हेक्टरपेक्षा कमी) प्रथम प्राधान्य.',
-
-        ownershipType: 'मालकीचा प्रकार',
-        ownerFarmer: 'स्वतःची जमीन (7/12 मालक)',
-        tenantFarmer: 'बटईदार / कसतकरी',
-        leasedLand: 'भाडेतत्त्वावरील जमीन',
-        forestLand: 'वनहक्क (FRA) पट्टा',
-
-        waterSource: 'सिंचन स्त्रोत',
-        rainfed: 'जिरायती (पावसावर आधारित)',
-        canal: 'कालवा / विहीर / कूपनलिका',
-        drip: 'ठिबक / तुषार सिंचन',
-        solar: 'सौर पंप (कुसुम)',
-
-        primaryCrop: 'मुख्य पीक *',
-        selectCropPlaceholder: 'पीक निवडा...',
-        annualIncome: 'वार्षिक उत्पन्न',
-        incomeBelow1L: '₹1 लाखापेक्षा कमी (प्रथम प्राधान्य)',
-        income1to25L: '₹1 लाख - ₹2.5 लाख',
-        income25to5L: '₹2.5 लाख - ₹5 लाख',
-        incomeAbove5L: '₹5 लाखापेक्षा जास्त',
-
-        farmingSeason: 'मुख्य हंगाम',
-        kharif: 'खरीप (मानसून: जून-ऑक्टोबर)',
-        rabi: 'रब्बी (हिवाळा: नोव्हेंबर-एप्रिल)',
-        zaid: 'उन्हाळी (झायद: एप्रिल-जून)',
-        wholeYear: 'बारमाही / वर्षभर',
-
-        farmingMethod: 'शेती पद्धत',
-        conventional: 'पारंपरिक शेती',
-        organic: 'सेंद्रिय शेती (PKVY)',
-        natural: 'नैसर्गिक शेती (ZBNF)',
-        polyhouse: 'संरक्षित शेती / पॉलीहाउस',
-
-        farmerName: 'शेतकऱ्याचे नाव (7/12 उताऱ्यानुसार)',
-        farmerNamePlaceholder: 'उदा. रमेश पाटील',
-        mobile: 'मोबाईल नंबर',
-        mobilePlaceholder: 'उदा. 9876543210',
-        aadhaar: 'आधार नंबर (शेवटचे 4 अंक)',
-        aadhaarPlaceholder: 'उदा. 8492',
-        socialCategory: 'सामाजिक वर्ग *',
-        selectCategoryPlaceholder: 'वर्ग निवडा...',
-        categoryHint: 'आरक्षित अनुदानासाठी.',
-
-        specialCategory: 'विशेष सवलत वर्ग',
-        smallMarginal: 'अल्पभूधारक शेतकरी (2 हेक्टरपर्यंत)',
-        womenFarmer: 'महिला शेतकरी',
-        divyang: 'दिव्यांग शेतकरी',
-        exServiceman: 'माजी सैनिक कोटा'
-      },
-      buttons: {
-        prevStep: 'मागे',
-        nextStep: 'पुढे',
-        resetForm: 'रीसेट',
-        autoFill: 'ऑटो-फिल करा',
-        autofilledSuccess: 'फॉर्म भरला! ✨',
-        findSchemes: 'पात्र योजना शोधा',
-        searching: 'योजना शोधत आहे...'
-      }
-    },
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'पात्र योजना व अनुदान जुळणी',
-      eligibleOnly: 'फक्त पात्र योजना',
-      exclusionReason: 'अपात्रतेचे कारण',
-      viewDetails: 'तपशील पहा',
-      applyNow: 'अर्ज करा',
-      relevance: 'प्रासंगिकता:',
-      viewDetailsApply: 'तपशील पहा व अर्ज करा',
-      whyExcluded: 'अपात्रतेचे कारण (अटी पूर्ण झाल्या नाहीत):',
-      showTop10: 'फक्त पहिले 10 पहा',
-      showAll: 'सर्व योजना पहा'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'सरकारी कृषी योजना व अनुदान पहा',
-      searchPlaceholder: 'योजना, पीक किंवा मंत्रालयानुसार शोधा…',
-      allStates: 'सर्व राज्ये',
-      allCategories: 'सर्व वर्ग',
-      selectCategoryBegin: 'शुरू करण्यासाठी योजना वर्ग निवडा',
-      backToCategories: 'मागे जा',
-      allSchemes: 'सर्व योजना',
-      schemesAvailable: 'उपलब्ध योजना',
-      showingSchemes: 'दाखवत आहे',
-      of: 'पैकी',
-      resetFilters: 'फिल्टर रीसेट करा',
-      checkEligibility: 'पात्रता तपासा',
-      viewDetails: 'तपशील पहा',
-      keyBenefit: 'मुख्य लाभ:',
-      show12More: 'अजून 12 योजना पहा',
-      resetAndShowAll: 'रीसेट करा व सर्व पहा',
-      categories: {
-        ...defaultEnBrowse.categories,
-        dbtTag: 'प्रत्यक्ष लाभ',
-        dbtTitle: 'प्रत्यक्ष लाभ हस्तांतरण (DBT)',
-        dbtDesc: 'थेट तुमच्या बँक खात्यात रोख मदत (उदा. पीएम-किसान).',
-        insuranceTag: 'पीक विमा',
-        insuranceTitle: 'पीक विमा व नुकसान भरपाई',
-        insuranceDesc: 'अतिवृष्टी किंवा दुष्काळामुळे झालेल्या पिकाच्या नुकसानीची भरपाई.',
-        loansTag: 'कर्ज व क्रेडिट',
-        loansTitle: 'किसान क्रेडिट कार्ड व शेती कर्ज',
-        loansDesc: 'कमी व्याजाचे कर्ज आणि पीक कर्ज सवलत.',
-        inputsTag: 'इनपुट अनुदान',
-        inputsTitle: 'ट्रॅक्टर व यंत्रसामग्री अनुदान',
-        inputsDesc: 'ट्रॅक्टर, औजारे आणि बियाणे खरेदीवर मिळणारे अनुदान.',
-        infrastructureTag: 'पायाभूत सुविधा',
-        infrastructureTitle: 'सौर पंप व सिंचन',
-        infrastructureDesc: 'पीएम-कुसुम सौर पंप आणि ठिबक सिंचनासाठी अनुदान.',
-        organicTag: 'सेंद्रिय व तंत्रज्ञान',
-        organicTitle: 'सेंद्रिय शेती व माती आरोग्य',
-        organicDesc: 'मोफत मृदा आरोग्य पत्रिका आणि सेंद्रिय शेती प्रोत्साहन.',
-        allTag: 'सर्व',
-        allTitle: 'सर्व सरकारी योजना',
-        allDesc: 'शोध व फिल्टरसह राष्ट्रीय आणि राज्य कृषी योजनांची यादी.',
-        viewSchemes: 'योजना पहा',
-        schemesCount: 'योजना'
-      }
-    },
-    modal: {
-      ...defaultEnModal,
-      profileEligible: 'प्रोफाईल या योजनेसाठी पात्र आहे',
-      profileExcluded: 'प्रोफाईल योजनेसाठी अपात्र आहे',
-      reasonForExclusion: 'अपात्रतेचे कारण:',
-      descriptionAndGuidelines: 'योजनेचा तपशील व मार्गदर्शक तत्त्वे',
-      financialBenefit: 'आर्थिक लाभ व अनुदान',
-      documentChecklist: 'आवश्यक कागदपत्रे',
-      close: 'बंद करा',
-      applyOfficial: 'अधिकृत पोर्टलवर अर्ज करा'
-    },
-    auth: {
-      ...defaultEnAuth,
-      titleSignIn: 'साइन इन करा',
-      titleRegister: 'खाते तयार करा',
-      btnSignIn: 'साइन इन करा',
-      btnRegister: 'खाते तयार करा'
-    },
-    admin: {
-      ...defaultEnAdmin,
-      consoleTitle: 'ॲडमिन डेटा ऑपरेटर कंसोल',
-      submitBtn: 'योजना जतन करा'
-    },
-    notFound: {
-      ...defaultEnNotFound,
-      title: 'रस्ता चुकला का?',
-      desc: 'तुम्ही शोधत असलेले पृष्ठ सापडले नाही. चला तुम्हाला मुख्य पानावर घेऊन जाऊया!',
-      returnHome: 'मुख्य पानावर जा',
-      checkEligible: 'पात्र योजना तपासा'
-    },
-    footer: {
-      tagline: 'शेतकरी-योजना पात्रता मॅचर • टेक-अ-थॉन 2026 साठी तयार केले.',
-      meta: 'TF-IDF + hard-filter pure python/TS इंजिन'
     }
   },
 
@@ -1165,241 +1002,6 @@ export const translations: Record<LanguageCode, TranslationSchema> = {
     footer: {
       tagline: 'రైతు-పథకం అర్హత మ్యాచర్ • టెక్-ఎ-థాన్ 2026 కోసం నిర్మించబడింది.',
       meta: 'TF-IDF + హార్డ్-ఫిల్టర్ ప్యూర్ పైథాన్/TS ఇంజిన్'
-    }
-  },
-
-  ta: {
-    nav: {
-      browseSchemes: 'திட்டங்களை உலாவுக',
-      checkEligibility: 'தகுதியைச் சரிபார்க்கவும்',
-      signIn: 'உள்நுழைக',
-      admin: 'நிர்வாகி',
-      signOut: 'வெளியேறு'
-    },
-    hero: {
-      headingPart1: 'உங்கள் பண்ணைக்கு தேவையான ',
-      headingHighlight: 'அரசு உதவியைப் பெறுங்கள்.',
-      description: 'விதை, இயந்திரங்கள் மற்றும் விவசாய மானியங்களைக் கண்டறிந்து பெறுங்கள்.',
-      selectState: 'மாநிலத்தைத் தேர்ந்தெடுக்கவும்...',
-      searchSchemes: 'திட்டங்களைத் தேடுங்கள்',
-      modalTitle: 'மாநிலத்தைத் தேர்ந்தெடுக்கவும்',
-      searchStatePlaceholder: 'மாநிலங்களைத் தேடுங்கள்...',
-      noStateFound: 'எந்த மாநிலமும் கிடைக்கவில்லை',
-      clickMapToSelect: '(தேர்ந்தெடுக்க வரைபடத்தில் கிளிக் செய்யவும்)',
-      clickAnyStateHint: 'வரைபடத்தில் ஏதேனும் ஒரு மாநிலத்தைக் கிளிக் செய்யவும்'
-    },
-    form: defaultEnForm,
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'தகுதியான திட்டங்கள் & மானியங்கள்',
-      eligibleOnly: 'தகுதியான திட்டங்கள் மட்டும்',
-      viewDetails: 'விவரங்களைப் பார்க்கவும்',
-      applyNow: 'விண்ணப்பிக்கவும்'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'அரசு விவசாய திட்டங்களைப் பார்க்கவும்',
-      searchPlaceholder: 'திட்டங்களைத் தேடுங்கள்…',
-      allStates: 'அனைத்து மாநிலங்கள்',
-      allCategories: 'அனைத்து பிரிவுகள்',
-      checkEligibility: 'தகுதியைச் சரிபார்க்கவும்',
-      viewDetails: 'விவரங்களைப் பார்க்கவும்'
-    },
-    modal: defaultEnModal,
-    auth: defaultEnAuth,
-    admin: defaultEnAdmin,
-    notFound: defaultEnNotFound,
-    footer: {
-      tagline: 'விவசாயி-திட்ட தகுதி மேச்சர் • டெக்-ஏ-தான் 2026 க்காக உருவாக்கப்பட்டது.',
-      meta: 'TF-IDF + ஹார்ட்-ஃபில்டர் பியூர் பைதான்/டிஎஸ் என்ஜின்'
-    }
-  },
-
-  kn: {
-    nav: {
-      browseSchemes: 'ಯೋಜನೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
-      checkEligibility: 'ಅರ್ಹತೆಯನ್ನು ಪರಿಶೀಲಿಸಿ',
-      signIn: 'ಸೈನ್ ಇನ್',
-      admin: 'ಅಡ್ಮಿನ್',
-      signOut: 'ಸೈನ್ ಔಟ್'
-    },
-    hero: {
-      headingPart1: 'ನಿಮ್ಮ ಜಮೀನಿಗೆ ಸಿಗಬೇಕಾದ ',
-      headingHighlight: 'ಸರ್ಕಾರಿ ನೆರವು ಪಡೆಯಿರಿ.',
-      description: 'ಬೀಜಗಳು, ಯಂತ್ರೋಪಕರಣಗಳು ಮತ್ತು ಕೃಷಿ ಸಬ್ಸಿಡಿಗಳನ್ನು ಹುಡುಕಿ.',
-      selectState: 'ರಾಜ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ...',
-      searchSchemes: 'ಯೋಜನೆಗಳನ್ನು ಹುಡುಕಿ',
-      modalTitle: 'ರಾಜ್ಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ',
-      searchStatePlaceholder: 'ರಾಜ್ಯವನ್ನು ಹುಡುಕಿ...',
-      noStateFound: 'ಯಾವ ರಾಜ್ಯವೂ ಕಂಡುಬಂದಿಲ್ಲ',
-      clickMapToSelect: '(ಆಯ್ಕೆ ಮಾಡಲು ನಕ್ಷೆಯನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ)',
-      clickAnyStateHint: 'ನಕ್ಷೆಯಲ್ಲಿನ ಯಾವುದೇ ರಾಜ್ಯವನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ'
-    },
-    form: defaultEnForm,
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'ಅರ್ಹ ಯೋಜನೆಗಳು ಮತ್ತು ಸಬ್ಸಿಡಿಗಳು',
-      eligibleOnly: 'ಅರ್ಹ ಯೋಜನೆಗಳು ಮಾತ್ರ',
-      viewDetails: 'ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
-      applyNow: 'ಅರ್ಜಿ ಸಲ್ಲಿಸಿ'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'ಸರ್ಕಾರಿ ಕೃಷಿ ಯೋಜನೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ',
-      searchPlaceholder: 'ಯೋಜನೆಗಳನ್ನು ಹುಡುಕಿ…',
-      allStates: 'ಎಲ್ಲಾ ರಾಜ್ಯಗಳು',
-      allCategories: 'ಎಲ್ಲಾ ವರ್ಗಗಳು',
-      checkEligibility: 'ಅರ್ಹತೆ ಪರಿಶೀಲಿಸಿ',
-      viewDetails: 'ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ'
-    },
-    modal: defaultEnModal,
-    auth: defaultEnAuth,
-    admin: defaultEnAdmin,
-    notFound: defaultEnNotFound,
-    footer: {
-      tagline: 'ರೈತ-ಯೋಜನೆ ಅರ್ಹತೆ ಮ್ಯಾಚರ್ • ಟೆಕ್-ಎ-ಥಾನ್ 2026 ಗಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ.',
-      meta: 'TF-IDF + ಹಾರ್ಡ್-ಫಿಲ್ಟರ್ ಪ್ಯೂರ್ ಪೈಥಾನ್/TS ಇಂಜಿನ್'
-    }
-  },
-
-  ml: {
-    nav: {
-      browseSchemes: 'പദ്ധതികൾ കാണുക',
-      checkEligibility: 'അർഹത പരിശോധിക്കുക',
-      signIn: 'സൈൻ ഇൻ ചെയ്യുക',
-      admin: 'അഡ്മിൻ',
-      signOut: 'സൈൻ ഔട്ട്'
-    },
-    hero: {
-      headingPart1: 'നിങ്ങളുടെ കൃഷിയിടത്തിന് അർഹമായ ',
-      headingHighlight: 'സർക്കാർ സഹായം നേടുക.',
-      description: 'വിത്തുകൾ, യന്ത്രങ്ങൾ എന്നിവയ്ക്കുള്ള സംസ്ഥാന-കേന്ദ്ര സബ്‌സിഡികൾ കണ്ടെത്തുകയും നേടുകയും ചെയ്യുക.',
-      selectState: 'സംസ്ഥാനം തിരഞ്ഞെടുക്കുക...',
-      searchSchemes: 'പദ്ധതികൾ തിരയുക',
-      modalTitle: 'സംസ്ഥാനം തിരഞ്ഞെടുക്കുക',
-      searchStatePlaceholder: 'സംസ്ഥാനം തിരയുക...',
-      noStateFound: 'സംസ്ഥാനം കണ്ടെത്താനായില്ല',
-      clickMapToSelect: '(തിരഞ്ഞെടുക്കാൻ മാപ്പിൽ ക്ലിക്ക് ചെയ്യുക)',
-      clickAnyStateHint: 'മാപ്പിലെ ഏതെങ്കിലും സംസ്ഥാനത്ത് ക്ലിക്ക് ചെയ്യുക'
-    },
-    form: defaultEnForm,
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'അർഹമായ പദ്ധതികളും സബ്‌സിഡികളും',
-      eligibleOnly: 'അർഹമായ പദ്ധതികൾ മാത്രം',
-      viewDetails: 'വിശദാംശങ്ങൾ കാണുക',
-      applyNow: 'അപേക്ഷിക്കുക'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'സർക്കാർ കാർഷിക പദ്ധതികൾ കാണുക',
-      searchPlaceholder: 'പദ്ധതികൾ തിരയുക…',
-      allStates: 'എല്ലാ സംസ്ഥാനങ്ങളും',
-      allCategories: 'എല്ലാ വിഭാഗങ്ങളും',
-      checkEligibility: 'അർഹത പരിശോധിക്കുക',
-      viewDetails: 'വിശദാംശങ്ങൾ കാണുക'
-    },
-    modal: defaultEnModal,
-    auth: defaultEnAuth,
-    admin: defaultEnAdmin,
-    notFound: defaultEnNotFound,
-    footer: {
-      tagline: 'കർഷക-പദ്ധതി യോഗ്യത മാച്ചർ • ടെക്-എ-ഥോൺ 2026 നായി നിർമ്മിച്ചത്.',
-      meta: 'TF-IDF + ഹാർഡ്-ഫിൽട്ടർ പ്യുവർ പൈഥൺ/TS എഞ്ചിൻ'
-    }
-  },
-
-  gu: {
-    nav: {
-      browseSchemes: 'યોજનાઓ જુઓ',
-      checkEligibility: 'પાત્રતા ચકાસો',
-      signIn: 'સાઇન ઇન કરો',
-      admin: 'એડમિન',
-      signOut: 'સાઇન આઉટ'
-    },
-    hero: {
-      headingPart1: 'તમારા ખેતર માટે મળવાપાત્ર ',
-      headingHighlight: 'સરકારી સહાય મેળવો.',
-      description: 'બીજ, મશીનરી અને અન્ય સુવિધાઓ માટે રાજ્ય અને કેન્દ્ર સરકારની સબસિડી શોધો.',
-      selectState: 'રાજ્ય પસંદ કરો...',
-      searchSchemes: 'યોજનાઓ શોધો',
-      modalTitle: 'રાજ્ય પસંદ કરો',
-      searchStatePlaceholder: 'રાજ્ય શોધો...',
-      noStateFound: 'કોઈ રાજ્ય મળ્યું નથી',
-      clickMapToSelect: '(પસંદ કરવા માટે નકશા પર ક્લિક કરો)',
-      clickAnyStateHint: 'નકશા પરના કોઈપણ રાજ્ય પર ક્લિક કરો'
-    },
-    form: defaultEnForm,
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'પાત્ર યોજનાઓ અને સબસિડી',
-      eligibleOnly: 'માત્ર પાત્ર યોજનાઓ',
-      viewDetails: 'વિગતો જુઓ',
-      applyNow: 'અરજી કરો'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'સરકારી કૃષિ યોજનાઓ જુઓ',
-      searchPlaceholder: 'યોજનાઓ શોધો…',
-      allStates: 'તમામ રાજ્યો',
-      allCategories: 'તમામ શ્રેણીઓ',
-      checkEligibility: 'પાત્રતા ચકાસો',
-      viewDetails: 'વિગતો જુઓ'
-    },
-    modal: defaultEnModal,
-    auth: defaultEnAuth,
-    admin: defaultEnAdmin,
-    notFound: defaultEnNotFound,
-    footer: {
-      tagline: 'ખેડૂત-યોજના પાત્રતા મેચર • ટેક-એ-થોન 2026 માટે બનાવેલ.',
-      meta: 'TF-IDF + હાર્ડ-ફિલ્ટર પ્યોર પાયથન/TS એન્જિન'
-    }
-  },
-
-  bn: {
-    nav: {
-      browseSchemes: 'প্রকল্পগুলি দেখুন',
-      checkEligibility: 'যোগ্যতা পরীক্ষা করুন',
-      signIn: 'সাইন ইন করুন',
-      admin: 'অ্যাডমিন',
-      signOut: 'সাইন আউট'
-    },
-    hero: {
-      headingPart1: 'আপনার খামারের জন্য প্রাপ্য ',
-      headingHighlight: 'সরকারি সহায়তা পান।',
-      description: 'বীজ, যন্ত্রপাতি এবং অন্যান্য সুবিধার জন্য রাজ্য ও কেন্দ্র সরকারের ভর্তুকি খুঁজুন।',
-      selectState: 'রাজ্য নির্বাচন করুন...',
-      searchSchemes: 'প্রকল্প খুঁজুন',
-      modalTitle: 'রাজ্য নির্বাচন করুন',
-      searchStatePlaceholder: 'রাজ্য খুঁজুন...',
-      noStateFound: 'কোনো রাজ্য পাওয়া যায়নি',
-      clickMapToSelect: '(নির্বাচন করতে মানচিত্রে ক্লিক করুন)',
-      clickAnyStateHint: 'মানচিত্রের যেকোনো রাজ্যে ক্লিক করুন'
-    },
-    form: defaultEnForm,
-    results: {
-      ...defaultEnResults,
-      matchingSchemesTitle: 'যোগ্য প্রকল্প ও ভর্তুকি',
-      eligibleOnly: 'কেবলমাত্র যোগ্য প্রকল্প',
-      viewDetails: 'বিস্তারিত দেখুন',
-      applyNow: 'আবেদন করুন'
-    },
-    browse: {
-      ...defaultEnBrowse,
-      browseTitle: 'সরকারি কৃষি প্রকল্পগুলি দেখুন',
-      searchPlaceholder: 'প্রকল্প খুঁজুন…',
-      allStates: 'সকল রাজ্য',
-      allCategories: 'সকল বিভাগ',
-      checkEligibility: 'যোগ্যতা পরীক্ষা করুন',
-      viewDetails: 'বিস্তারিত দেখুন'
-    },
-    modal: defaultEnModal,
-    auth: defaultEnAuth,
-    admin: defaultEnAdmin,
-    notFound: defaultEnNotFound,
-    footer: {
-      tagline: 'কৃষক-প্রকল্প যোগ্যতা ম্যাচার • টেক-এ-থন ২০২৬-এর জন্য তৈরি।',
-      meta: 'TF-IDF + হার্ড-ফিল্টার পিওর পাইথন/টিএস ইঞ্জিন'
     }
   },
 
