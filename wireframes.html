@@ -1,0 +1,894 @@
+<title>Krishi Match — Frontend Wireframes</title>
+<style>
+  /* ---------- tokens ---------- */
+  :root{
+    --bg:#F3F4F1;
+    --surface:#FFFFFF;
+    --surface-2:#ECEDE8;
+    --line:#B7C0C0;
+    --line-strong:#333B3D;
+    --text:#1C2224;
+    --muted:#70787B;
+    --accent:#2E6F5E;
+    --accent-soft:#E4EFEA;
+    --danger:#B3432E;
+    --danger-soft:#F6E8E3;
+    --mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radius: 3px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0D2036;
+      --surface:#12304F;
+      --surface-2:#0F2740;
+      --line:#3C6489;
+      --line-strong:#8FD6F0;
+      --text:#E7F3FA;
+      --muted:#7FA7C3;
+      --accent:#63D9B8;
+      --accent-soft:rgba(99,217,184,0.12);
+      --danger:#F0A28C;
+      --danger-soft:rgba(240,162,140,0.12);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0D2036;
+    --surface:#12304F;
+    --surface-2:#0F2740;
+    --line:#3C6489;
+    --line-strong:#8FD6F0;
+    --text:#E7F3FA;
+    --muted:#7FA7C3;
+    --accent:#63D9B8;
+    --accent-soft:rgba(99,217,198,0.12);
+    --danger:#F0A28C;
+    --danger-soft:rgba(240,162,140,0.12);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.45;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+
+  .board{max-width:1180px;margin:0 auto;padding:40px 24px 96px;}
+
+  /* ---------- masthead ---------- */
+  .masthead{margin-bottom:28px;}
+  .masthead .eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    display:flex;align-items:center;gap:8px;
+    margin-bottom:10px;
+  }
+  .masthead .eyebrow::before{content:"";width:22px;height:1px;background:var(--accent);}
+  .masthead h1{
+    font-size:clamp(1.6rem,3vw,2.15rem);
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin:0 0 8px;
+    text-wrap:balance;
+  }
+  .masthead p{
+    max-width:62ch;
+    color:var(--muted);
+    font-size:.94rem;
+    margin:0;
+  }
+
+  /* ---------- legend ---------- */
+  .legend{
+    margin-top:22px;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--surface);
+    padding:14px 18px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px 28px;
+    font-size:12px;
+    color:var(--muted);
+  }
+  .legend-item{display:flex;align-items:center;gap:8px;white-space:nowrap;}
+  .swatch{width:22px;height:14px;flex:none;border-radius:2px;}
+  .swatch.solid{border:1px solid var(--line-strong);background:var(--surface);}
+  .swatch.dashed{border:1px dashed var(--accent);background:var(--accent-soft);}
+  .swatch.hatch{border:1px solid var(--line);background:
+    repeating-linear-gradient(45deg,var(--line) 0 1px,transparent 1px 7px);}
+  .swatch.badge{border:1px solid var(--accent);border-radius:8px;background:transparent;}
+  .swatch.mark{border-radius:50%;border:1px solid var(--accent);background:transparent;width:14px;height:14px;}
+
+  /* ---------- table of contents ---------- */
+  .toc{
+    position:sticky;top:0;z-index:5;
+    display:flex;flex-wrap:wrap;gap:6px;
+    margin:28px 0;
+    padding:10px 0;
+    background:var(--bg);
+    border-bottom:1px solid var(--line);
+  }
+  .toc a{
+    font-family:var(--mono);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--muted);
+    text-decoration:none;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:6px 12px;
+  }
+  .toc a:hover, .toc a:focus-visible{color:var(--accent);border-color:var(--accent);outline:none;}
+
+  /* ---------- frame shell ---------- */
+  .frame{
+    margin-bottom:44px;
+    border:1px solid var(--line-strong);
+    border-radius:6px;
+    background:var(--surface);
+    overflow:hidden;
+    scroll-margin-top:64px;
+  }
+  .frame-bar{
+    display:flex;align-items:center;gap:12px;
+    padding:9px 14px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--line);
+    font-family:var(--mono);
+  }
+  .frame-dots{letter-spacing:2px;color:var(--line);font-size:10px;}
+  .frame-route{
+    font-size:11px;color:var(--text);
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:2px 10px;
+  }
+  .frame-name{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);}
+  .frame-viewport{margin-left:auto;font-size:10px;color:var(--muted);}
+  .frame-body{padding:26px 22px;}
+  .frame-notes{
+    margin:0;padding:14px 22px 20px;
+    border-top:1px dashed var(--line);
+    list-style:none;
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .frame-notes li{display:flex;gap:10px;font-size:12.5px;color:var(--muted);}
+  .frame-notes strong{color:var(--text);font-weight:600;}
+
+  /* ---------- wireframe primitives ---------- */
+  .wf-label{
+    display:block;
+    font-family:var(--mono);
+    font-size:9.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:6px;
+  }
+  .wf-box{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--surface);
+    padding:12px;
+  }
+  .wf-box.dynamic{border-style:dashed;background:var(--accent-soft);}
+  .wf-box.excluded{border-style:dashed;border-color:var(--danger);background:var(--danger-soft);}
+  .wf-bar{height:9px;border-radius:2px;background:var(--line);opacity:.55;}
+  .wf-bar.short{width:55%;}
+  .wf-bar.mid{width:78%;}
+  .wf-bar.accent{background:var(--accent);opacity:.7;}
+
+  .wf-hatch{
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:repeating-linear-gradient(45deg, var(--line) 0 1px, transparent 1px 8px);
+    background-color:var(--surface-2);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--muted);font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;
+  }
+
+  .wf-btn{
+    border:1px solid var(--line-strong);
+    border-radius:3px;
+    padding:8px 14px;
+    font-size:12px;font-weight:600;
+    background:var(--surface);
+    color:var(--text);
+    text-align:center;
+    white-space:nowrap;
+  }
+  .wf-btn.primary{background:var(--text);border-color:var(--text);color:var(--bg);}
+  .wf-btn.ghost{background:transparent;}
+
+  .wf-input{
+    border:1px solid var(--line);border-radius:3px;
+    padding:8px 10px;font-size:12px;color:var(--muted);
+    background:var(--surface);
+    display:flex;justify-content:space-between;align-items:center;gap:6px;
+  }
+  .wf-input .chev{color:var(--line-strong);font-size:9px;}
+
+  .wf-chip{
+    display:inline-flex;align-items:center;
+    border:1px solid var(--line);border-radius:10px;
+    padding:2px 9px;font-size:10px;color:var(--muted);
+    font-family:var(--mono);
+  }
+  .wf-chip.accent{border-color:var(--accent);color:var(--accent);}
+  .wf-chip.danger{border-color:var(--danger);color:var(--danger);}
+
+  .wf-badge{
+    font-family:var(--mono);font-size:10.5px;font-weight:600;
+    border:1px solid var(--accent);color:var(--accent);
+    border-radius:10px;padding:3px 9px;white-space:nowrap;
+  }
+  .wf-badge.danger{border-color:var(--danger);color:var(--danger);}
+
+  .mark{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:16px;height:16px;flex:none;
+    border:1px solid var(--accent);border-radius:50%;
+    color:var(--accent);font-family:var(--mono);font-size:9px;
+    margin-left:4px;
+  }
+
+  /* ---------- layout helpers ---------- */
+  .row{display:flex;gap:14px;}
+  .col{display:flex;flex-direction:column;gap:10px;}
+  .wrap{flex-wrap:wrap;}
+  .between{justify-content:space-between;align-items:center;}
+  .grid{display:grid;gap:14px;}
+  .grid-2{grid-template-columns:repeat(2,1fr);}
+  .grid-3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .grid-4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));}
+  .grid-6{grid-template-columns:repeat(auto-fit,minmax(96px,1fr));}
+  .full{grid-column:1/-1;}
+  .center{text-align:center;}
+  .stack-tight{display:flex;flex-direction:column;gap:6px;}
+  hr.rule{border:none;border-top:1px dashed var(--line);margin:18px 0;}
+
+  @media (max-width:640px){
+    .grid-2{grid-template-columns:1fr;}
+    .row{flex-wrap:wrap;}
+  }
+</style>
+
+<div class="board">
+
+  <div class="masthead">
+    <span class="eyebrow">Krishi Match · Frontend</span>
+    <h1>Page Wireframes</h1>
+    <p>Low-fidelity structural layouts for every route in <code>App.tsx</code> — Hero, Browse Schemes,
+      Eligibility Wizard, Results, Admin Portal, plus the two modal overlays. Boxes stand in for real
+      components; copy is the actual fallback strings shipped in the app, not placeholder text.</p>
+
+    <div class="legend">
+      <div class="legend-item"><span class="swatch solid"></span> static element</div>
+      <div class="legend-item"><span class="swatch dashed"></span> conditional / dynamic (auth-gated, empty-state, modal)</div>
+      <div class="legend-item"><span class="swatch hatch"></span> image / illustration asset</div>
+      <div class="legend-item"><span class="swatch badge"></span> score, badge or chip</div>
+      <div class="legend-item"><span class="swatch mark"></span> numbered note, see list under each frame</div>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Jump to page">
+    <a href="#navbar">Navbar</a>
+    <a href="#hero">Hero /</a>
+    <a href="#browse">Browse /browse</a>
+    <a href="#eligibility">Eligibility /eligibility</a>
+    <a href="#results">Results /results</a>
+    <a href="#admin">Admin /admin</a>
+    <a href="#modals">Modals</a>
+  </nav>
+
+  <!-- ============ NAVBAR ============ -->
+  <section class="frame" id="navbar">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">global</span>
+      <span class="frame-name">Navbar — persistent chrome</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+      <div class="grid grid-2">
+        <div class="col">
+          <span class="wf-label">Guest state</span>
+          <div class="wf-box row between">
+            <strong style="font-size:14px;">Krishi Match</strong>
+            <div class="row" style="gap:18px;align-items:center;">
+              <span style="font-size:12px;color:var(--muted);">Check Eligibility</span>
+              <span style="font-size:12px;color:var(--muted);">Browse Schemes</span>
+              <span class="wf-chip">EN ▾</span>
+              <span class="wf-btn primary">Sign in</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <span class="wf-label">Authenticated · role = admin</span>
+          <div class="wf-box row between">
+            <strong style="font-size:14px;">Krishi Match</strong>
+            <div class="row" style="gap:18px;align-items:center;">
+              <span style="font-size:12px;color:var(--muted);">Check Eligibility</span>
+              <span style="font-size:12px;color:var(--accent);font-weight:600;">Browse Schemes</span>
+              <span class="wf-chip">EN ▾</span>
+              <span class="row" style="gap:6px;align-items:center;">
+                <span class="wf-chip accent">● Ramesh · admin</span>
+              </span>
+              <span class="wf-btn ghost">Admin<span class="mark">1</span></span>
+              <span class="wf-btn ghost">⎋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> "Admin" pill renders only when <strong>role = admin</strong>; visiting <code>/admin</code> directly without it redirects to Home.</li>
+      <li><span class="mark">2</span> Brand click always routes to Hero, from any section.</li>
+      <li><span class="mark">3</span> Language selection persists across all pages via a shared context.</li>
+    </ol>
+  </section>
+
+  <!-- ============ HERO ============ -->
+  <section class="frame" id="hero">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">/</span>
+      <span class="frame-name">Hero — Landing</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+      <div class="row" style="align-items:center;gap:20px;">
+        <div class="wf-hatch" style="width:140px;height:220px;flex:none;">farmer<br>illustration</div>
+
+        <div class="col center" style="flex:1;align-items:center;">
+          <div class="col" style="width:100%;max-width:480px;align-items:center;">
+            <div class="wf-bar mid" style="height:20px;"></div>
+            <div class="wf-bar short accent" style="height:20px;width:44%;"></div>
+          </div>
+          <div class="col" style="width:100%;max-width:420px;align-items:center;margin-top:10px;">
+            <div class="wf-bar" style="width:90%;"></div>
+            <div class="wf-bar" style="width:75%;"></div>
+          </div>
+
+          <div class="row" style="margin-top:20px;gap:8px;">
+            <div class="wf-input" style="width:220px;">
+              <span>Select State…</span><span class="chev">▾</span>
+            </div>
+            <span class="wf-btn primary">Search Schemes</span>
+          </div>
+          <span class="wf-chip" style="margin-top:8px;">state picker → full-screen modal<span class="mark">1</span></span>
+        </div>
+
+        <div class="wf-hatch" style="width:140px;height:260px;flex:none;">farmer<br>illustration</div>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Picking a state (dropdown list or the India map inside the modal) immediately fires a quick match and jumps to the Eligibility step with state pre-filled.</li>
+      <li><span class="mark">2</span> "Search Schemes" submits the currently selected state without opening the full picker.</li>
+      <li><span class="mark">3</span> Faint sprout / sun / wheat motif pattern fills the background — decorative only, no interaction.</li>
+    </ol>
+  </section>
+
+  <!-- ============ BROWSE SCHEMES ============ -->
+  <section class="frame" id="browse">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">/browse</span>
+      <span class="frame-name">Browse Schemes — two states</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+
+      <span class="wf-label">State A — Category hub (default view)</span>
+      <div class="wf-box row between" style="margin-bottom:14px;">
+        <div class="stack-tight">
+          <strong style="font-size:14px;">Browse Government Schemes &amp; Subsidies</strong>
+          <span style="font-size:11px;color:var(--muted);">Maharashtra · 2.5 acre · WHEAT (shown only once a profile exists)<span class="mark">1</span></span>
+        </div>
+        <span class="wf-btn primary">Check Eligibility</span>
+      </div>
+
+      <div class="grid grid-4" style="margin-bottom:22px;">
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Direct Benefit</strong><span class="wf-chip">14</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Crop Insurance</strong><span class="wf-chip">6</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Credit &amp; Loan</strong><span class="wf-chip">9</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Input Subsidy</strong><span class="wf-chip">11</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Infrastructure</strong><span class="wf-chip">7</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">Organic &amp; Tech</strong><span class="wf-chip">5</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+        <div class="wf-box" style="background:var(--surface-2);">
+          <div class="wf-hatch" style="height:56px;margin-bottom:8px;">image</div>
+          <div class="row between"><strong style="font-size:12px;">All Schemes</strong><span class="wf-chip">84</span></div>
+          <div class="wf-bar" style="margin-top:8px;"></div>
+          <div class="wf-bar short" style="margin-top:4px;"></div>
+        </div>
+      </div>
+
+      <hr class="rule">
+
+      <span class="wf-label">State B — Results view (after a category is picked or a search is typed)</span>
+      <div class="row between wrap" style="margin-bottom:12px;">
+        <div class="row" style="align-items:center;gap:10px;">
+          <span class="wf-btn ghost">← Back to Categories</span>
+          <strong style="font-size:13px;">Input Subsidy</strong>
+          <span class="wf-chip">11 schemes</span>
+        </div>
+      </div>
+
+      <div class="row wrap between" style="margin-bottom:16px;gap:10px;">
+        <div class="row" style="gap:8px;">
+          <div class="wf-input" style="width:150px;"><span>Category ▾</span></div>
+          <div class="wf-input" style="width:150px;"><span>State ▾</span></div>
+        </div>
+        <div class="wf-input" style="flex:1;min-width:220px;"><span style="color:var(--muted);">Search schemes by keyword, crop, or ministry…</span><span class="wf-chip">/<span class="mark">1</span></span></div>
+        <span style="font-size:11px;color:var(--muted);white-space:nowrap;">Showing 12 of 11 · Reset filters</span>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="wf-box">
+          <div class="row between"><span class="wf-chip">Input Subsidy</span><span style="font-size:10px;color:var(--muted);">Dept. of Agri.</span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">Solar Pump Subsidy (KUSUM)</strong>
+          <div class="wf-bar" style="margin-bottom:3px;"></div>
+          <div class="wf-bar short"></div>
+          <div class="wf-box dynamic" style="margin-top:8px;padding:8px;">
+            <span class="wf-label" style="margin:0;">Key benefit</span>
+            <span style="font-size:11px;">Up to 60% subsidy on solar irrigation pump</span>
+          </div>
+          <div class="row between" style="margin-top:10px;">
+            <span class="wf-btn ghost" style="font-size:10px;padding:6px 10px;">✨ Check Eligibility</span>
+            <span class="wf-btn" style="font-size:10px;padding:6px 10px;">View Details ↗</span>
+          </div>
+        </div>
+        <div class="wf-box">
+          <div class="row between"><span class="wf-chip">Input Subsidy</span><span style="font-size:10px;color:var(--muted);">Ministry of Agri.</span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">Seed Mini-Kit Distribution</strong>
+          <div class="wf-bar" style="margin-bottom:3px;"></div>
+          <div class="wf-bar short"></div>
+          <div class="wf-box dynamic" style="margin-top:8px;padding:8px;">
+            <span class="wf-label" style="margin:0;">Key benefit</span>
+            <span style="font-size:11px;">Free certified seed kits for smallholders</span>
+          </div>
+          <div class="row between" style="margin-top:10px;">
+            <span class="wf-btn ghost" style="font-size:10px;padding:6px 10px;">✨ Check Eligibility</span>
+            <span class="wf-btn" style="font-size:10px;padding:6px 10px;">View Details ↗</span>
+          </div>
+        </div>
+        <div class="wf-box">
+          <div class="row between"><span class="wf-chip">Input Subsidy</span><span style="font-size:10px;color:var(--muted);">State Agri. Dept.</span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">Farm Mechanization Grant</strong>
+          <div class="wf-bar" style="margin-bottom:3px;"></div>
+          <div class="wf-bar short"></div>
+          <div class="wf-box dynamic" style="margin-top:8px;padding:8px;">
+            <span class="wf-label" style="margin:0;">Key benefit</span>
+            <span style="font-size:11px;">40–50% subsidy on tractors &amp; implements</span>
+          </div>
+          <div class="row between" style="margin-top:10px;">
+            <span class="wf-btn ghost" style="font-size:10px;padding:6px 10px;">✨ Check Eligibility</span>
+            <span class="wf-btn" style="font-size:10px;padding:6px 10px;">View Details ↗</span>
+          </div>
+        </div>
+      </div>
+      <div class="center" style="margin-top:16px;">
+        <span class="wf-btn ghost">⌄ Show 12 More Schemes (72 remaining)<span class="mark">2</span></span>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Search field has a keyboard shortcut — pressing <strong>/</strong> or <strong>⌘/Ctrl K</strong> focuses it from anywhere on the page.</li>
+      <li><span class="mark">2</span> Results load 12 cards at a time; each new batch fades in on scroll rather than all at once.</li>
+      <li><span class="mark">3</span> State filter matches a scheme's explicit state list, or infers national scope from title/description wording when none is set (e.g. "Pradhan Mantri…", "central sector").</li>
+    </ol>
+  </section>
+
+  <!-- ============ ELIGIBILITY FORM ============ -->
+  <section class="frame" id="eligibility">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">/eligibility</span>
+      <span class="frame-name">Eligibility Wizard — 4 steps</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+
+      <!-- stepper -->
+      <div class="row between" style="margin-bottom:24px;position:relative;">
+        <div style="position:absolute;top:13px;left:5%;right:5%;height:2px;background:var(--line);z-index:0;"></div>
+        <div style="position:absolute;top:13px;left:5%;width:15%;height:2px;background:var(--accent);z-index:0;"></div>
+        <div class="col center" style="flex:1;z-index:1;">
+          <div style="width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px;font-family:var(--mono);">✓</div>
+          <span style="font-size:10px;color:var(--text);font-weight:600;">Location &amp; Records</span>
+        </div>
+        <div class="col center" style="flex:1;z-index:1;">
+          <div style="width:26px;height:26px;border-radius:50%;border:2px solid var(--accent);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px;font-family:var(--mono);">2</div>
+          <span style="font-size:10px;color:var(--muted);">Land &amp; Water</span>
+        </div>
+        <div class="col center" style="flex:1;z-index:1;">
+          <div style="width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px;font-family:var(--mono);">3</div>
+          <span style="font-size:10px;color:var(--muted);">Crops &amp; Farming</span>
+        </div>
+        <div class="col center" style="flex:1;z-index:1;">
+          <div style="width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px;font-family:var(--mono);">4</div>
+          <span style="font-size:10px;color:var(--muted);">Farmer Profile</span>
+        </div>
+      </div>
+
+      <span class="wf-label">Step 1 shown — fields render inline, one step visible at a time<span class="mark">1</span></span>
+      <div class="grid grid-2" style="margin-bottom:18px;">
+        <div class="wf-input"><span>State / Union Territory *</span><span class="chev">▾</span></div>
+        <div class="wf-input"><span style="color:var(--muted);">e.g. Nashik, Ludhiana, Pune…</span></div>
+        <div class="wf-input"><span style="color:var(--muted);">Tehsil / Taluka / Block (optional)</span></div>
+        <div class="wf-input"><span style="color:var(--muted);">PIN Code (6 digits) *</span></div>
+        <div class="wf-input full"><span style="color:var(--muted);">Khasra / 7-12 / Survey / Dag Number *</span></div>
+      </div>
+
+      <div class="row between wrap" style="margin-bottom:22px;">
+        <div class="row" style="gap:8px;">
+          <span class="wf-btn ghost">↻ Reset Form</span>
+          <span class="wf-btn ghost">✨ Autofill Form<span class="mark">2</span></span>
+        </div>
+        <span class="wf-btn primary">Next Step →</span>
+      </div>
+
+      <hr class="rule">
+      <span class="wf-label">Steps 2–4 at a glance (visual card pickers, not dropdowns)<span class="mark">3</span></span>
+      <div class="grid grid-3">
+        <div class="wf-box">
+          <strong style="font-size:12px;">2 · Land &amp; Water</strong>
+          <div class="row" style="gap:4px;margin:8px 0;">
+            <span class="wf-chip">Ha</span><span class="wf-chip accent">Acre</span><span class="wf-chip">Bigha</span>
+          </div>
+          <div class="wf-input" style="margin-bottom:8px;"><span style="color:var(--muted);">3.5</span><span>acre</span></div>
+          <div class="grid grid-6" style="gap:6px;">
+            <div class="wf-hatch" style="height:34px;">owner</div>
+            <div class="wf-hatch" style="height:34px;">tenant</div>
+            <div class="wf-hatch" style="height:34px;">leased</div>
+            <div class="wf-hatch" style="height:34px;">forest</div>
+          </div>
+        </div>
+        <div class="wf-box">
+          <strong style="font-size:12px;">3 · Crops &amp; Farming</strong>
+          <div class="wf-input" style="margin:8px 0;"><span style="color:var(--muted);">Primary Crop ▾</span></div>
+          <div class="wf-input" style="margin-bottom:8px;"><span style="color:var(--muted);">Annual Income ▾</span></div>
+          <div class="grid grid-6" style="gap:6px;">
+            <div class="wf-hatch" style="height:34px;">kharif</div>
+            <div class="wf-hatch" style="height:34px;">rabi</div>
+            <div class="wf-hatch" style="height:34px;">zaid</div>
+            <div class="wf-hatch" style="height:34px;">year</div>
+          </div>
+        </div>
+        <div class="wf-box">
+          <strong style="font-size:12px;">4 · Farmer Profile</strong>
+          <div class="wf-input" style="margin:8px 0;"><span style="color:var(--muted);">Full Name / Mobile / Aadhaar (last 4)</span></div>
+          <div class="wf-input" style="margin-bottom:8px;"><span style="color:var(--muted);">Social Category *▾</span></div>
+          <div class="grid grid-6" style="gap:6px;">
+            <div class="wf-hatch" style="height:34px;">small/marg.</div>
+            <div class="wf-hatch" style="height:34px;">women</div>
+            <div class="wf-hatch" style="height:34px;">divyang</div>
+            <div class="wf-hatch" style="height:34px;">ex-serv.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center" style="margin-top:20px;">
+        <span class="wf-btn primary" style="padding:12px 24px;">✨ Find Eligible Subsidies &amp; Schemes</span>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Jumping ahead to a later step-node validates every prior step first; the first invalid field shakes and gets focus instead of letting you skip.</li>
+      <li><span class="mark">2</span> "Autofill Form" fills every field with a realistic sample farmer for demoing without hand-typing.</li>
+      <li><span class="mark">3</span> Land size shows a live unit conversion beneath the input, e.g. "3.5 acre → 1.42 Ha · Qualifies for Small &amp; Marginal Subsidy."</li>
+      <li><span class="mark">4</span> Final submit shows a "Searching 45+ Govt Schemes…" loading label, then routes straight to Results.</li>
+    </ol>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section class="frame" id="results">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">/results</span>
+      <span class="frame-name">Results — two states + profile overlay</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+
+      <div class="row between wrap" style="margin-bottom:14px;">
+        <strong style="font-size:14px;">Eligible Schemes &amp; Subsidies Matched</strong>
+        <span class="wf-chip">👤 Farmer Profile ›<span class="mark">1</span></span>
+      </div>
+
+      <div class="row" style="gap:8px;margin-bottom:18px;">
+        <span class="wf-btn" style="font-size:11px;border-color:var(--accent);color:var(--accent);">✓ Eligible Schemes (18)</span>
+        <span class="wf-btn ghost" style="font-size:11px;">✕ Why Excluded (6)</span>
+      </div>
+
+      <span class="wf-label">State A — category hub, scoped to this profile's matches</span>
+      <div class="grid grid-4" style="margin-bottom:22px;">
+        <div class="wf-box" style="background:var(--surface-2);">
+          <div class="wf-hatch" style="height:40px;margin-bottom:6px;">◎</div>
+          <div class="row between"><strong style="font-size:11px;">All Categories</strong><span class="wf-chip">18</span></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:40px;margin-bottom:6px;">◎</div>
+          <div class="row between"><strong style="font-size:11px;">Direct Benefit</strong><span class="wf-chip">6</span></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:40px;margin-bottom:6px;">◎</div>
+          <div class="row between"><strong style="font-size:11px;">Input Subsidy</strong><span class="wf-chip">5</span></div>
+        </div>
+        <div class="wf-box">
+          <div class="wf-hatch" style="height:40px;margin-bottom:6px;">◎</div>
+          <div class="row between"><strong style="font-size:11px;">Irrigation</strong><span class="wf-chip">4</span></div>
+        </div>
+      </div>
+
+      <hr class="rule">
+
+      <span class="wf-label">State B — detail grid for a chosen category</span>
+      <div class="row between wrap" style="margin-bottom:14px;">
+        <div class="row" style="gap:10px;align-items:center;">
+          <span class="wf-btn ghost">← Back to Categories</span>
+          <strong style="font-size:13px;">Direct Benefit</strong>
+        </div>
+        <div class="row" style="gap:8px;">
+          <span class="wf-btn" style="font-size:11px;border-color:var(--accent);color:var(--accent);">✓ Eligible (18)</span>
+          <span class="wf-btn ghost" style="font-size:11px;">✕ Excluded (6)</span>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="wf-box">
+          <div class="row between"><span class="wf-chip">Direct Benefit</span><span class="wf-badge">92% Match<span class="mark">2</span></span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">PM-KISAN Samman Nidhi</strong>
+          <div class="wf-bar" style="margin-bottom:3px;"></div>
+          <div class="wf-bar short"></div>
+          <div class="row wrap" style="gap:4px;margin-top:8px;">
+            <span class="wf-chip accent">#wheat</span><span class="wf-chip accent">#punjab</span><span class="wf-chip">general</span>
+          </div>
+          <div class="wf-btn" style="margin-top:10px;font-size:10px;padding:6px 10px;text-align:right;">View Details &amp; Apply ↗</div>
+        </div>
+        <div class="wf-box excluded">
+          <div class="row between"><span class="wf-chip">Direct Benefit</span><span class="wf-badge danger">Excluded<span class="mark">3</span></span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">State Tenant Farmer Grant</strong>
+          <div class="wf-box" style="margin-top:6px;padding:8px;background:var(--surface);">
+            <span class="wf-label" style="margin:0;color:var(--danger);">Why excluded</span>
+            <span style="font-size:11px;">Land size exceeds maximum limit of 2.0 ha</span>
+          </div>
+          <div class="wf-btn ghost" style="margin-top:10px;font-size:10px;padding:6px 10px;text-align:right;">View Details ↗</div>
+        </div>
+        <div class="wf-box">
+          <div class="row between"><span class="wf-chip">Direct Benefit</span><span class="wf-badge">81% Match</span></div>
+          <strong style="font-size:13px;display:block;margin:8px 0 4px;">Rythu Bandhu Investment Support</strong>
+          <div class="wf-bar" style="margin-bottom:3px;"></div>
+          <div class="wf-bar short"></div>
+          <div class="row wrap" style="gap:4px;margin-top:8px;">
+            <span class="wf-chip accent">#general</span><span class="wf-chip">subsidy</span>
+          </div>
+          <div class="wf-btn" style="margin-top:10px;font-size:10px;padding:6px 10px;text-align:right;">View Details &amp; Apply ↗</div>
+        </div>
+      </div>
+
+      <hr class="rule">
+
+      <span class="wf-label">Overlay — Farmer Profile modal (dashed = shown on top, dismissible)</span>
+      <div class="wf-box dynamic">
+        <div class="row between" style="margin-bottom:10px;">
+          <strong style="font-size:13px;">Farmer Profile Details</strong>
+          <span class="wf-chip">×</span>
+        </div>
+        <div class="grid grid-6">
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">State</span><span style="font-size:11px;">Punjab</span></div>
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">District</span><span style="font-size:11px;">Ludhiana</span></div>
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">Land Size</span><span style="font-size:11px;">3.5 acre</span></div>
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">Crop</span><span style="font-size:11px;">WHEAT</span></div>
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">Category</span><span style="font-size:11px;">General</span></div>
+          <div class="wf-box" style="background:var(--surface);"><span class="wf-label" style="margin:0;">Water Source</span><span style="font-size:11px;">Canal / Borewell</span></div>
+        </div>
+        <div class="row" style="justify-content:flex-end;gap:8px;margin-top:12px;">
+          <span class="wf-btn ghost">Close</span>
+          <span class="wf-btn primary">✎ Edit Profile<span class="mark">4</span></span>
+        </div>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Opens the read-only profile summary below without leaving the results page.</li>
+      <li><span class="mark">2</span> Match % blends the TF-IDF text-similarity score with the hard-filter pass/fail outcome.</li>
+      <li><span class="mark">3</span> Excluded cards always show the specific rule that failed — never a bare "not eligible."</li>
+      <li><span class="mark">4</span> "Edit Profile" returns to the Eligibility wizard with every prior answer still filled in.</li>
+      <li>A confetti burst fires once, on first render, if at least one scheme matched.</li>
+    </ol>
+  </section>
+
+  <!-- ============ ADMIN ============ -->
+  <section class="frame" id="admin">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">/admin</span>
+      <span class="frame-name">Admin Portal — protected, role = admin</span>
+      <span class="frame-viewport">1280px · desktop</span>
+    </div>
+    <div class="frame-body">
+
+      <div class="wf-box dynamic row between" style="margin-bottom:18px;">
+        <div class="row" style="gap:10px;align-items:center;">
+          <span style="font-size:16px;">⛨</span>
+          <div class="stack-tight">
+            <strong style="font-size:12px;">Verified JWT Admin Session</strong>
+            <span style="font-size:11px;color:var(--muted);">Signed in as Ramesh Kumar (ramesh@krishi.gov.in)</span>
+          </div>
+        </div>
+        <span class="wf-chip">🔑 eyJhbGciOi…<span class="mark">1</span></span>
+      </div>
+
+      <div class="stack-tight" style="margin-bottom:18px;">
+        <span class="wf-chip accent" style="width:fit-content;">◫ Admin Data Operator Console</span>
+        <strong style="font-size:15px;">Paste Plain Text Scheme Ingestion</strong>
+        <span style="font-size:11px;color:var(--muted);">84 active schemes</span>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:12px;">
+        <div class="wf-input"><span style="color:var(--muted);">Scheme Full Title *</span></div>
+        <div class="wf-input"><span style="color:var(--muted);">Ministry / Department</span></div>
+      </div>
+
+      <div class="wf-box" style="height:70px;margin-bottom:12px;">
+        <span class="wf-label">Raw Scheme Description Text (TF-IDF vector corpus) *<span class="mark">2</span></span>
+        <div class="wf-bar" style="margin-bottom:4px;"></div>
+        <div class="wf-bar" style="margin-bottom:4px;"></div>
+        <div class="wf-bar short"></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-bottom:18px;">
+        <div class="wf-input"><span style="color:var(--muted);">Key Benefit Summary</span></div>
+        <div class="wf-input"><span style="color:var(--muted);">Official Application Portal URL</span></div>
+      </div>
+
+      <div class="wf-box" style="margin-bottom:18px;">
+        <strong style="font-size:12px;">Structured Hard-Rule Eligibility Constraints</strong>
+        <span class="wf-label" style="margin-top:12px;">Applicable states (empty = nationwide)<span class="mark">3</span></span>
+        <div class="row wrap" style="gap:6px;margin-bottom:14px;">
+          <span class="wf-chip accent">Punjab</span><span class="wf-chip">Haryana</span><span class="wf-chip">Maharashtra</span>
+          <span class="wf-chip">Gujarat</span><span class="wf-chip">Bihar</span><span class="wf-chip">…</span>
+        </div>
+        <span class="wf-label">Target crops (empty = all crops)</span>
+        <div class="row wrap" style="gap:6px;margin-bottom:14px;">
+          <span class="wf-chip accent">wheat</span><span class="wf-chip">rice</span><span class="wf-chip">cotton</span><span class="wf-chip">sugarcane</span><span class="wf-chip">…</span>
+        </div>
+        <div class="grid grid-2">
+          <div class="wf-input"><span style="color:var(--muted);">Min Land Size (ha)</span></div>
+          <div class="wf-input"><span style="color:var(--muted);">Max Land Size (ha)</span></div>
+        </div>
+      </div>
+
+      <div class="center">
+        <span class="wf-btn primary" style="padding:12px 24px;">+ Persist Scheme &amp; Re-Index TF-IDF Corpus</span>
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Route is guarded twice: signed-out visitors are prompted to sign in, signed-in non-admins see an access-denied message — both via the Auth modal, never a blank page.</li>
+      <li><span class="mark">2</span> This raw text is the only thing that feeds the TF-IDF matching corpus for the new scheme — everything else is metadata.</li>
+      <li><span class="mark">3</span> Leaving a pill group empty means "applies to everyone," not "applies to no one."</li>
+      <li>Known gap: there is no control yet for restricting a scheme to specific social categories — every new scheme defaults to open eligibility.</li>
+    </ol>
+  </section>
+
+  <!-- ============ MODALS ============ -->
+  <section class="frame" id="modals">
+    <div class="frame-bar">
+      <span class="frame-dots">●●●</span>
+      <span class="frame-route">overlay</span>
+      <span class="frame-name">Scheme Modal &amp; Auth Modal</span>
+      <span class="frame-viewport">560px · dialog</span>
+    </div>
+    <div class="frame-body">
+      <div class="grid grid-2">
+
+        <div>
+          <span class="wf-label">Scheme detail modal</span>
+          <div class="wf-box dynamic">
+            <div class="row between" style="margin-bottom:8px;">
+              <div class="stack-tight">
+                <span class="wf-chip">Direct Benefit</span>
+                <strong style="font-size:13px;">PM-KISAN Samman Nidhi</strong>
+                <span style="font-size:10px;color:var(--muted);">🏛 Ministry of Agriculture</span>
+              </div>
+              <span class="wf-chip">×</span>
+            </div>
+            <div class="wf-box" style="background:var(--accent-soft);border-color:var(--accent);margin-bottom:8px;">
+              <div class="row between">
+                <span style="font-size:11px;">✓ Profile Eligible · TF-IDF 78.4%</span>
+                <span class="wf-badge">1.78<span class="mark">1</span></span>
+              </div>
+            </div>
+            <div class="wf-bar" style="margin-bottom:3px;"></div>
+            <div class="wf-bar short" style="margin-bottom:8px;"></div>
+            <div class="wf-box" style="background:var(--surface);margin-bottom:8px;">
+              <span class="wf-label" style="margin:0;">Financial benefit</span>
+              <span style="font-size:11px;">₹6,000/year in three equal installments</span>
+            </div>
+            <div class="grid grid-2" style="gap:8px;margin-bottom:8px;">
+              <div class="stack-tight">
+                <span class="wf-label" style="margin:0;">Matched keywords</span>
+                <span class="wf-chip accent">#wheat</span>
+              </div>
+              <div class="stack-tight">
+                <span class="wf-label" style="margin:0;">Scheme keywords</span>
+                <span class="wf-chip">irrigation</span>
+              </div>
+            </div>
+            <div class="row" style="justify-content:flex-end;gap:8px;">
+              <span class="wf-btn ghost" style="font-size:11px;">Close</span>
+              <span class="wf-btn primary" style="font-size:11px;">Apply on Official Portal ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="wf-label">Auth modal — sign in / register</span>
+          <div class="wf-box dynamic">
+            <div class="col center" style="margin-bottom:10px;">
+              <span style="font-size:20px;">🌱</span>
+              <strong style="font-size:13px;">Sign in</strong>
+              <span style="font-size:10px;color:var(--muted);">to continue to Krishi Match Platform</span>
+            </div>
+            <div class="wf-box excluded" style="margin-bottom:10px;padding:8px;">
+              <span style="font-size:10px;">Administrator authentication required to access Admin Portal.<span class="mark">2</span></span>
+            </div>
+            <div class="wf-input" style="margin-bottom:8px;"><span style="color:var(--muted);">👤 Username</span></div>
+            <div class="wf-input" style="margin-bottom:10px;"><span style="color:var(--muted);">🔑 Password</span><span>👁</span></div>
+            <div class="wf-btn primary" style="text-align:center;margin-bottom:10px;">Sign in</div>
+            <div class="center" style="font-size:10px;color:var(--muted);">
+              Don't have an account? <span style="color:var(--accent);">Create account<span class="mark">3</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <ol class="frame-notes">
+      <li><span class="mark">1</span> Final score is additive (hard-filter pass = 1.0 or 0.0, plus TF-IDF similarity 0–1) — shown as a raw ~0–2 number here, not a percentage.</li>
+      <li><span class="mark">2</span> The notice banner only appears when the modal was opened by a guarded action (e.g. clicking Admin while signed out); it's blank on a normal sign-in.</li>
+      <li><span class="mark">3</span> Switching tabs swaps the field set in place — Register adds Full Name and an Account Role selector (Farmer / Administrator).</li>
+      <li>Escape closes either modal; a successful admin login/register auto-navigates into the Admin Portal.</li>
+    </ol>
+  </section>
+
+</div>
