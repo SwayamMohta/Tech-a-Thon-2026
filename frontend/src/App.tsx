@@ -14,20 +14,10 @@ import type { User } from './utils/auth';
 import { getCurrentUser, getStoredToken, logoutUser } from './utils/auth';
 import { CURATED_SCHEMES } from './data/schemes';
 import { fetchSchemes, matchProfile, addSchemeApi } from './api/client';
-import { matchAllClient } from './engine/matchingEngine';
 import './index.css';
 
-async function getMatches(profile: FarmerProfile, currentSchemes: Scheme[]): Promise<MatchResult[]> {
-  try {
-    const backendMatches = await matchProfile(profile);
-    if (backendMatches && backendMatches.length > 0) {
-      return backendMatches;
-    }
-    return matchAllClient(currentSchemes, profile);
-  } catch {
-    // Backend unreachable — seamless client-side matching engine fallback
-    return matchAllClient(currentSchemes, profile);
-  }
+async function getMatches(profile: FarmerProfile): Promise<MatchResult[]> {
+  return await matchProfile(profile);
 }
 
 type AppSection = 'hero' | 'browse' | 'eligibility' | 'results' | 'admin' | '404';
@@ -140,17 +130,23 @@ export function App() {
     setProfile(newProfile);
 
     setTimeout(async () => {
-      const updatedResults = await getMatches(newProfile, schemes);
-      setResults(updatedResults);
-      setIsCalculating(false);
-      navigateToSection('results');
+      try {
+        const updatedResults = await getMatches(newProfile);
+        setResults(updatedResults);
+      } catch (err) {
+        console.error('Backend match failed:', err);
+        setResults([]);
+      } finally {
+        setIsCalculating(false);
+        navigateToSection('results');
+      }
     }, 400);
   };
 
   const handleQuickHeroSearch = (searchState: string) => {
     const updatedProf = { ...profile, state: searchState };
     setProfile(updatedProf);
-    getMatches(updatedProf, schemes).then(setResults);
+    getMatches(updatedProf).then(setResults).catch(() => setResults([]));
     navigateToSection('eligibility');
   };
 
@@ -162,7 +158,7 @@ export function App() {
     } catch {
       // Backend unreachable — scheme still shows in the list locally and matches client-side
     }
-    const updatedResults = await getMatches(profile, updatedSchemes);
+    const updatedResults = await getMatches(profile);
     setResults(updatedResults);
   };
 

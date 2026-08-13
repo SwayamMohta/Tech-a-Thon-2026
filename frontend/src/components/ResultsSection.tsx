@@ -4,7 +4,7 @@ import { SchemeCard } from './SchemeCard';
 import {
   CheckCircle, XCircle, ChevronDown, Info,
   Coins, ShieldCheck, CreditCard, Tractor, Droplets,
-  Sprout, Sun, Wrench, Sparkles, LayoutGrid, ArrowLeft, ArrowRight,
+  Sprout, Sun, Wrench, Sparkles, ArrowLeft, ArrowRight,
   User, Edit3, ChevronRight, X
 } from 'lucide-react';
 import confetti from 'canvas-confetti';

@@ -41,7 +41,7 @@ export const SchemeModal: React.FC<SchemeModalProps> = ({ result, onClose }) => 
               <span className="modal-category">{getLocalizedCategory(scheme.category_tag, language)}</span>
               <span className={`modal-eligibility-pill ${passed_filter ? 'pill-eligible' : 'pill-excluded'}`}>
                 {passed_filter
-                  ? <><CheckCircle2 size={13} /> {matchPct}% {modalT.matchScore || 'match'}</>
+                  ? <><CheckCircle2 size={13} /> {matchPct}% {(modalT as Record<string, string>).matchScore || 'match'}</>
                   : <><XCircle size={13} /> {modalT.profileExcluded || 'Not eligible'}</>}
               </span>
             </div>
