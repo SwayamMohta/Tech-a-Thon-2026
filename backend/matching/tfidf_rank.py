@@ -82,11 +82,12 @@ def tfidf_rank(schemes: list[Scheme], profile: FarmerProfile):
     sims = np.clip((scheme_matrix @ query_vec.T).toarray().ravel(), 0.0, 1.0)
 
     query_tokens = set(tokenize(query_str))
-    dense = scheme_matrix.toarray()
 
     matched_all, missing_all = [], []
-    for row in dense:
-        top = _top_terms(row, feature_names, k=8)
+    for i in range(scheme_matrix.shape[0]):
+        row_sparse = scheme_matrix[i]
+        row_dense = row_sparse.toarray().ravel()
+        top = _top_terms(row_dense, feature_names, k=8)
         matched_all.append([t for t in top if t in query_tokens])
         missing_all.append([t for t in top if t not in query_tokens][:4])
 
