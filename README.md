@@ -1,6 +1,6 @@
 # Krishi Match - Farmer-to-Scheme Eligibility Matcher
 
-DEMO LINK : https://tech-a-thon-2026-d0aku6qr8-swayammohtas-projects.vercel.app/
+DEMO LINK : https://tech-a-thon-2026.vercel.app/
 
 > Built for **Tech-a-Thon 2026**
 Demo Video Link : [https://drive.google.com/file/d/1qewxrrh28DaJoOzPVyt3OAaottgGHyTR/view?usp=sharing ](https://drive.google.com/file/d/1qewxrrh28DaJoOzPVyt3OAaottgGHyTR/view?usp=sharing)
